@@ -13,7 +13,7 @@
     "keywords": [
         "polymedia",
         "sui",
-        "coinmetadata"
+        "coinmeta"
     ],
     "scripts": {
         "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
