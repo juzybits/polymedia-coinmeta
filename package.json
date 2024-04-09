@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "name": "polymedia-coinmeta-monorepo",
+    "license": "Apache-2.0",
+    "scripts": {
+        "build": "turbo run build",
+        "clean": "turbo run clean && rm -rf dist/ node_modules/ .turbo/",
+        "lint": "turbo run lint"
+    },
+    "dependencies": {
+        "@mysten/sui.js": "^0.51.2"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^7.6.0",
+        "@typescript-eslint/parser": "^7.6.0",
+        "eslint": "^8.57.0",
+        "turbo": "^1.13.2",
+        "typescript": "^5.4.4"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

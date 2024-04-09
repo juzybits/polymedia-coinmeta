@@ -1,0 +1,27 @@
+{
+    "private": true,
+    "version": "0.0.0",
+    "name": "@polymedia/coinmeta-cli",
+    "author": "@juzybits (https://polymedia.app)",
+    "homepage": "https://github.com/juzybits/polymedia-coinmeta",
+    "description": "TODO add description",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/juzybits/polymedia-coinmeta"
+    },
+    "keywords": [],
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf dist/ node_modules/ .turbo/",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    },
+    "dependencies": {
+        "@polymedia/coinmeta": "workspace:*"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.25"
+    },
+    "type": "module",
+    "sideEffects": false
+}
