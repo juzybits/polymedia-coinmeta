@@ -12,6 +12,7 @@
     },
     "keywords": [],
     "scripts": {
+        "hello": "tsc && node dist/hello.js",
         "build": "tsc",
         "clean": "rm -rf dist/ node_modules/ .turbo/",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"

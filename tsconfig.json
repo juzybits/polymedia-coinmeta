@@ -17,9 +17,9 @@
         // "resolveJsonModule": true,                          /* Enable importing .json files. */
 
         /* Emit */
-        "noEmit": true,                                     /* Disable emitting files from a compilation. */
-        // "declaration": true,                                /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
-        // "sourceMap": true,                                  /* Create source map files for emitted JavaScript files. */
+        // "noEmit": true,                                     /* Disable emitting files from a compilation. */
+        "declaration": true,                                /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+        "sourceMap": true,                                  /* Create source map files for emitted JavaScript files. */
         // "outDir": "dist",                                   /* Specify an output folder for all emitted files. */
 
         /* Interop Constraints */

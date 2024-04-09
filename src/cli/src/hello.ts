@@ -1,6 +1,12 @@
+import { Foo } from '@polymedia/coinmeta';
+
 function main()
 {
-    console.log('Hello world');
+    const foo: Foo = {
+        bar: 'hello',
+    };
+
+    console.log('Hello world', String(foo));
 }
 
 main();
