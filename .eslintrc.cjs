@@ -1,17 +1,8 @@
 module.exports = {
     root: true,
-    env: {},
-    extends: [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/strict-type-checked',
-        'plugin:@typescript-eslint/stylistic-type-checked',
-    ],
     ignorePatterns: ['dist', 'node_modules'],
+    env: {},
     parser: '@typescript-eslint/parser',
-    plugins: [],
-    rules: {
-        '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-    },
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
@@ -22,4 +13,27 @@ module.exports = {
         ],
         tsconfigRootDir: __dirname,
     },
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/strict-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
+    ],
+    plugins: [],
+    rules: {
+        '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+    },
+    overrides: [
+        {
+            files: ['src/cli/**/*'],
+            env: { node: true },
+            rules: {
+            },
+        },
+        {
+            files: ['src/sdk/**/*'],
+            env: { node: false },
+            rules: {
+            },
+        },
+    ],
 }
