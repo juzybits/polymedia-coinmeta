@@ -1,7 +1,7 @@
 module.exports = {
     root: true,
-    ignorePatterns: ['dist', 'node_modules'],
     env: {},
+    ignorePatterns: ['dist', 'node_modules'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
@@ -13,12 +13,12 @@ module.exports = {
         ],
         tsconfigRootDir: __dirname,
     },
+    plugins: [],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/strict-type-checked',
         'plugin:@typescript-eslint/stylistic-type-checked',
     ],
-    plugins: [],
     rules: {
         '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     },
@@ -36,4 +36,4 @@ module.exports = {
             },
         },
     ],
-}
+};
