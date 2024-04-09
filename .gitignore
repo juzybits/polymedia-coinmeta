@@ -1,16 +1,16 @@
 .DS_Store
 
 # JavaScript
-.turbo/
-.wrangler/
-dist/
-node_modules/
+.turbo
+.wrangler
+dist
+node_modules
 
 # Sui
 .coverage_map.mvcov
 .trace
-build/
+build
 
 # App specific
 .auth.ts
-data/
+data
