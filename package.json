@@ -5,9 +5,7 @@
     "scripts": {
         "build": "turbo run build",
         "clean": "turbo run clean && rm -rf dist/ node_modules/ .turbo/",
-        "lint": "turbo run lint",
-        "prettier:check": "prettier --check 'src/**/*.{ts,tsx}'",
-        "prettier:fix": "prettier --write 'src/**/*.{ts,tsx}'"
+        "lint": "turbo run lint"
     },
     "dependencies": {
         "@mysten/sui.js": "^0.51.2"
@@ -16,9 +14,6 @@
         "@typescript-eslint/eslint-plugin": "^7.6.0",
         "@typescript-eslint/parser": "^7.6.0",
         "eslint": "^8.57.0",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-prettier": "^5.1.3",
-        "prettier": "^3.2.5",
         "turbo": "^1.13.2",
         "typescript": "^5.4.4"
     },
