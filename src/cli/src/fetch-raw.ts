@@ -1,24 +1,27 @@
 import { CoinMetadata, SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
-import { mkdirSync, writeFileSync } from "fs";
+import { mkdirSync, readdirSync, writeFileSync } from "fs";
 import { InputCoin, inputCoins } from "./inputCoins.js";
 import { writeJsonFile } from "./utils.js";
+import path from "path";
 
+/* Config */
 const OUTPUT_META_FILE = "./data/raw-meta.json";
 const OUTPUT_IMAGE_DIR = "./data/raw-img";
-
-// Ensure the output directory exists
-mkdirSync(OUTPUT_IMAGE_DIR, { recursive: true });
+const REFETCH_IMAGES = false;
 
 async function main()
 {
+    // ensure the output directory exists
+    mkdirSync(OUTPUT_IMAGE_DIR, { recursive: true });
+
     const coinMetas: CoinMetadata[] = [];
 
-    for (const [networkName, coins] of inputCoins.entries()) {
-        console.log(`--- ${networkName} ---`);
-        const suiClient = new SuiClient({ url: getFullnodeUrl(networkName) });
+    for (const [network, coins] of inputCoins.entries()) {
+        console.log(`--- ${network} ---`);
+        const suiClient = new SuiClient({ url: getFullnodeUrl(network) });
 
         for (const coin of coins) {
-            console.log(`Fetching metadata: ${coin.type}`);
+            console.log(`\nFetching metadata: ${coin.type}`);
             const coinMeta = await suiClient.getCoinMetadata({ coinType: coin.type });
 
             if (coinMeta) {
@@ -34,6 +37,16 @@ async function main()
 
 async function downloadImage(coin: InputCoin) {
     const filename = coin.type.replace(/::/g, "-").replace(/\W+/g, "-");
+
+    if (!REFETCH_IMAGES) {
+        const files = readdirSync(OUTPUT_IMAGE_DIR);
+        const fileExists = files.some(file => path.basename(file, path.extname(file)) === filename);
+        if (fileExists) {
+            console.log(`Image already downloaded. Set \`REFETCH_IMAGES = true\` to re-download.`);
+            return;
+        }
+    }
+
     console.log(`Downloading image: ${coin.image}`);
 
     // fetch the image
