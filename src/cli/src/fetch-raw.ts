@@ -4,7 +4,7 @@ import { CoinMeta, InputCoin, InputFile, NetworkName } from "./types.js";
 import { findImagePath, getFilename, readJsonFile, writeJsonFile } from "./utils.js";
 
 /* Config */
-const INPUT_FILE = "data/input.json";
+const INPUT_FILE = "data/manual-input.json";
 const OUTPUT_META_FILE = "data/raw-meta.json";
 const OUTPUT_IMAGE_DIR = "data/raw-img";
 const REFETCH_IMAGES = false;

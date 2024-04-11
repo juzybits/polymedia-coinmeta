@@ -13,6 +13,6 @@ export type InputCoin = {
 };
 
 /**
- * The type of data/input.json
+ * The type of data/manual-input.json
  */
 export type InputFile = Record<NetworkName, InputCoin[]>;
