@@ -1,15 +1,19 @@
 import { CoinMetadata, SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
-import { inputCoinTypes } from "./inputCoinTypes.js";
-import { writeJsonFile } from "./utils.js";
+import { readJsonFile, writeJsonFile } from "./utils.js";
 
+const INPUT_FILE = "./data/input-coin-types.json";
 const OUTPUT_FILE = "./data/raw-meta.json";
+
+type NetworkName = "mainnet" | "testnet";
+type InputCoinTypes = Record<NetworkName, string[]>;
 
 async function main()
 {
+    const inputCoinTypes = readJsonFile<InputCoinTypes>(INPUT_FILE);
     const coinMetas: CoinMetadata[] = [];
-    for (const [networkName, coinTypes] of inputCoinTypes.entries()) {
+    for (const [networkName, coinTypes] of Object.entries(inputCoinTypes)) {
         console.log(`--- ${networkName} ---`);
-        const suiClient = new SuiClient({ url: getFullnodeUrl(networkName) });
+        const suiClient = new SuiClient({ url: getFullnodeUrl(networkName as NetworkName) });
         for (const coinType of coinTypes) {
             console.log(`Fetching ${coinType}`);
             const coinMeta = await suiClient.getCoinMetadata({ coinType });
