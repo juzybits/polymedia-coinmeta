@@ -13,7 +13,7 @@ pnpm add @polymedia/coinmeta
 
 Use it in your code, for example:
 ```typescript
-import { getCoinMeta } from '@polymedia/coinmeta';
+import { getCoinMeta } from "@polymedia/coinmeta";
 
 TODO add code example
 ```
