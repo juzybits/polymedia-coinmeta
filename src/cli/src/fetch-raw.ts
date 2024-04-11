@@ -1,10 +1,10 @@
 import { SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
 import { mkdirSync, writeFileSync } from "fs";
-import { InputCoin, inputCoins } from "./inputCoins.js";
-import { CoinMeta } from "./types.js";
-import { findImagePath, getFilename, writeJsonFile } from "./utils.js";
+import { CoinMeta, InputCoin, InputFile, NetworkName } from "./types.js";
+import { findImagePath, getFilename, readJsonFile, writeJsonFile } from "./utils.js";
 
 /* Config */
+const INPUT_FILE = "data/input.json";
 const OUTPUT_META_FILE = "data/raw-meta.json";
 const OUTPUT_IMAGE_DIR = "data/raw-img";
 const REFETCH_IMAGES = false;
@@ -15,10 +15,11 @@ async function main()
     mkdirSync(OUTPUT_IMAGE_DIR, { recursive: true });
 
     const coinMetas: CoinMeta[] = [];
+    const inputCoins = readJsonFile<InputFile>(INPUT_FILE);
 
-    for (const [network, coins] of inputCoins.entries()) {
+    for (const [network, coins] of Object.entries(inputCoins)) {
         console.log(`--- ${network} ---`);
-        const suiClient = new SuiClient({ url: getFullnodeUrl(network) });
+        const suiClient = new SuiClient({ url: getFullnodeUrl(network as NetworkName) });
 
         for (const coin of coins) { // TODO normalize Sui address
             console.log(`\nFetching metadata: ${coin.type}`);
