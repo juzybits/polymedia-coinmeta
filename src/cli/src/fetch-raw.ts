@@ -1,8 +1,8 @@
 import { CoinMetadata, SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
 import { mkdirSync, readdirSync, writeFileSync } from "fs";
+import path from "path";
 import { InputCoin, inputCoins } from "./inputCoins.js";
 import { writeJsonFile } from "./utils.js";
-import path from "path";
 
 /* Config */
 const OUTPUT_META_FILE = "./data/raw-meta.json";
@@ -28,7 +28,7 @@ async function main()
                 coinMetas.push(coinMeta);
                 await downloadImage(coin);
             } else {
-                throw new Error(`CoinMetadata was null for type ${coin}`);
+                throw new Error(`CoinMetadata was null for type ${coin.type}`);
             }
         }
     }
@@ -38,7 +38,7 @@ async function main()
 async function downloadImage(coin: InputCoin) {
     const filename = coin.type.replace(/::/g, "-").replace(/\W+/g, "-");
 
-    if (!REFETCH_IMAGES) {
+    if (!REFETCH_IMAGES) { // eslint-disable-line @typescript-eslint/no-unnecessary-condition
         const files = readdirSync(OUTPUT_IMAGE_DIR);
         const fileExists = files.some(file => path.basename(file, path.extname(file)) === filename);
         if (fileExists) {
@@ -60,19 +60,20 @@ async function downloadImage(coin: InputCoin) {
 
     // if extension is not found in URL, get it from the MIME type
     if (!ext || ext.includes("/") || ext.length > 5) {
-        const mimeType = response.headers.get("Content-Type") || "";
+        const mimeType = response.headers.get("Content-Type") ?? "";
         ext = getExtensionFromMimeType(mimeType);
     }
 
     // write the file
     const buffer = Buffer.from(await response.arrayBuffer());
-    writeFileSync(`${OUTPUT_IMAGE_DIR}/${filename}.${ext}`, buffer);
+    const imagePath = `${OUTPUT_IMAGE_DIR}/${filename}.${ext}`;
+    writeFileSync(imagePath, buffer);
 }
 
 function getExtensionFromMimeType(mimeType: string): string {
     const parts = mimeType.split("/");
     const type = parts[1];
-    return type?.split("+")[0] || "bin"; // default to .bin for unknown types
+    return type.split("+")[0] || "bin"; // default to .bin for unknown types
 }
 
 void main();
