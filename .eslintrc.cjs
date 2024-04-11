@@ -1,36 +1,40 @@
 module.exports = {
     root: true,
     env: {},
-    ignorePatterns: ['dist', 'node_modules'],
-    parser: '@typescript-eslint/parser',
+    ignorePatterns: ["dist", "node_modules"],
+    parser: "@typescript-eslint/parser",
     parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
+        ecmaVersion: "latest",
+        sourceType: "module",
         project: [
-            './tsconfig.json',
-            './src/cli/tsconfig.json',
-            './src/sdk/tsconfig.json',
+            "./tsconfig.json",
+            "./src/cli/tsconfig.json",
+            "./src/sdk/tsconfig.json",
         ],
         tsconfigRootDir: __dirname,
     },
     plugins: [],
     extends: [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/strict-type-checked',
-        'plugin:@typescript-eslint/stylistic-type-checked',
+        "eslint:recommended",
+        "plugin:@typescript-eslint/strict-type-checked",
+        "plugin:@typescript-eslint/stylistic-type-checked",
     ],
     rules: {
-        '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+        "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     },
     overrides: [
         {
-            files: ['src/cli/**/*'],
+            files: ["src/cli/**/*"],
             env: { node: true },
             rules: {
+                // Chill with the any checks
+                "@typescript-eslint/no-unsafe-assignment": "off",
+                "@typescript-eslint/no-unsafe-call": "off",
+                "@typescript-eslint/no-unsafe-member-access": "off",
             },
         },
         {
-            files: ['src/sdk/**/*'],
+            files: ["src/sdk/**/*"],
             env: { node: false },
             rules: {
             },
