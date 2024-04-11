@@ -18,7 +18,8 @@
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
     },
     "dependencies": {
-        "@polymedia/coinmeta": "workspace:*"
+        "@polymedia/coinmeta": "workspace:*",
+        "sharp": "^0.33.3"
     },
     "devDependencies": {
         "@types/node": "^20.11.25"
