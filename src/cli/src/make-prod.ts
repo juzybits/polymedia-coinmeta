@@ -2,7 +2,7 @@ import { cpSync, mkdirSync, readdirSync } from "fs";
 import path from "path";
 import sharp from "sharp";
 import { CoinMeta } from "./types.js";
-import { getFilename, readJsonFile } from "./utils.js";
+import { findImagePath, getFilename, readJsonFile } from "./utils.js";
 
 /* Config */
 const INPUT_META_FILE = "./data/raw-meta.json";
@@ -22,7 +22,7 @@ async function main()
         console.log(filename);
 
         // find the raw image
-        const rawImagePath = findRawImagePath(OUTPUT_IMAGE_RAW_DIR, filename);
+        const rawImagePath = findImagePath(OUTPUT_IMAGE_RAW_DIR, filename);
         if (!rawImagePath) {
             console.error(`Raw image not found for: ${filename}`);
             continue;
@@ -46,10 +46,3 @@ async function main()
 }
 
 void main();
-
-// Function to find the raw image path based on the filename without extension
-function findRawImagePath(directory: string, filename: string): string | null {
-    const files = readdirSync(directory);
-    const file = files.find(f => path.basename(f, path.extname(f)) === filename);
-    return file ? path.join(directory, file) : null;
-}
