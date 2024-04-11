@@ -1,5 +1,6 @@
-type NetworkName = "mainnet" | "testnet";
-type InputCoin = {
+export type NetworkName = "mainnet" | "testnet";
+
+export type InputCoin = {
     type: string,
     image: string,
 };
