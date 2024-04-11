@@ -2,7 +2,7 @@ import { CoinMetadata, SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
 import { inputCoinTypes } from "./inputCoinTypes.js";
 import { writeJsonFile } from "./utils.js";
 
-const OUTPUT_FILE = "./data/raw.json";
+const OUTPUT_FILE = "./data/raw-meta.json";
 
 async function main()
 {
