@@ -1,13 +1,12 @@
 import { SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
-import { mkdirSync, readdirSync, writeFileSync } from "fs";
-import path from "path";
+import { mkdirSync, writeFileSync } from "fs";
 import { InputCoin, inputCoins } from "./inputCoins.js";
 import { CoinMeta } from "./types.js";
 import { findImagePath, getFilename, writeJsonFile } from "./utils.js";
 
 /* Config */
-const OUTPUT_META_FILE = "./data/raw-meta.json";
-const OUTPUT_IMAGE_DIR = "./data/raw-img";
+const OUTPUT_META_FILE = "data/raw-meta.json";
+const OUTPUT_IMAGE_DIR = "data/raw-img";
 const REFETCH_IMAGES = false;
 
 async function main()
