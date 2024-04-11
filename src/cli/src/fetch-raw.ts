@@ -1,8 +1,9 @@
-import { CoinMetadata, SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
+import { SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
 import { mkdirSync, readdirSync, writeFileSync } from "fs";
 import path from "path";
 import { InputCoin, inputCoins } from "./inputCoins.js";
-import { writeJsonFile } from "./utils.js";
+import { CoinMeta } from "./types.js";
+import { getFilename, writeJsonFile } from "./utils.js";
 
 /* Config */
 const OUTPUT_META_FILE = "./data/raw-meta.json";
@@ -14,17 +15,17 @@ async function main()
     // ensure the output directory exists
     mkdirSync(OUTPUT_IMAGE_DIR, { recursive: true });
 
-    const coinMetas: CoinMetadata[] = [];
+    const coinMetas: CoinMeta[] = [];
 
     for (const [network, coins] of inputCoins.entries()) {
         console.log(`--- ${network} ---`);
         const suiClient = new SuiClient({ url: getFullnodeUrl(network) });
 
-        for (const coin of coins) {
+        for (const coin of coins) { // TODO normalize Sui address
             console.log(`\nFetching metadata: ${coin.type}`);
-            const coinMeta = await suiClient.getCoinMetadata({ coinType: coin.type });
-
-            if (coinMeta) {
+            const coinMetadata = await suiClient.getCoinMetadata({ coinType: coin.type });
+            if (coinMetadata) {
+                const coinMeta = Object.assign(coinMetadata, { type: coin.type });
                 coinMetas.push(coinMeta);
                 await downloadImage(coin);
             } else {
@@ -36,7 +37,7 @@ async function main()
 }
 
 async function downloadImage(coin: InputCoin) {
-    const filename = coin.type.replace(/::/g, "-").replace(/\W+/g, "-");
+    const filename = getFilename(coin.type);
 
     if (!REFETCH_IMAGES) { // eslint-disable-line @typescript-eslint/no-unnecessary-condition
         const files = readdirSync(OUTPUT_IMAGE_DIR);

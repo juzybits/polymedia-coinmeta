@@ -13,6 +13,7 @@
     "keywords": [],
     "scripts": {
         "fetch-raw": "tsc && node dist/fetch-raw.js",
+        "make-prod": "tsc && node dist/make-prod.js",
         "build": "tsc",
         "clean": "rm -rf dist/ node_modules/ .turbo/",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
