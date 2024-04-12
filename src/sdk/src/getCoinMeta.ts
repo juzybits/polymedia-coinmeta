@@ -1,8 +1,9 @@
 import { CoinMetadata, SuiClient } from '@mysten/sui.js/client';
 import data from './data.json';
+import { CoinMeta } from './types';
 
 const cache = new Map<string, CoinMetadata>(
-    data.map(meta => [meta.type, meta])
+    (data as CoinMeta[]).map(meta => [meta.type, meta])
 );
 
 export async function getCoinMeta(coinType: string, client: SuiClient): Promise<CoinMetadata> {
