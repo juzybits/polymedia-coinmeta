@@ -3,19 +3,29 @@ import { mkdirSync, writeFileSync } from "fs";
 import { CoinMeta, InputCoin, InputFile, NetworkName } from "./types.js";
 import { findImagePath, getFilename, readJsonFile, writeJsonFile } from "./utils.js";
 
+/*
+This script:
+- Reads a list of coin types and icon URLs from INPUT_MANUAL_FILE
+- For each coin:
+    - Fetches the CoinMetadata<T> from Sui
+    - Downloads the coin logo from the URL
+- Writes all CoinMeta<T> to OUTPUT_RAW_META_FILE
+- Saves all coin logos in OUTPUT_RAW_IMAGE_DIR
+ */
+
 /* Config */
-const INPUT_FILE = "data/manual-input.json";
-const OUTPUT_META_FILE = "data/raw-meta.json";
-const OUTPUT_IMAGE_DIR = "data/raw-img";
+const INPUT_MANUAL_FILE = "data/manual-input.json";
+const OUTPUT_RAW_META_FILE = "data/raw-meta.json";
+const OUTPUT_RAW_IMAGE_DIR = "data/raw-img";
 const REFETCH_IMAGES = false;
 
 async function main()
 {
     // ensure the output directory exists
-    mkdirSync(OUTPUT_IMAGE_DIR, { recursive: true });
+    mkdirSync(OUTPUT_RAW_IMAGE_DIR, { recursive: true });
 
     const coinMetas: CoinMeta[] = [];
-    const inputCoins = readJsonFile<InputFile>(INPUT_FILE);
+    const inputCoins = readJsonFile<InputFile>(INPUT_MANUAL_FILE);
 
     for (const [network, coins] of Object.entries(inputCoins)) {
         console.log(`--- ${network} ---`);
@@ -34,14 +44,14 @@ async function main()
             }
         }
     }
-    writeJsonFile(OUTPUT_META_FILE, coinMetas);
+    writeJsonFile(OUTPUT_RAW_META_FILE, coinMetas);
 }
 
 async function downloadImage(coin: InputCoin) {
     const filename = getFilename(coin.type);
 
     if (!REFETCH_IMAGES) { // eslint-disable-line @typescript-eslint/no-unnecessary-condition
-        const imagePath = findImagePath(OUTPUT_IMAGE_DIR, filename);
+        const imagePath = findImagePath(OUTPUT_RAW_IMAGE_DIR, filename);
         if (imagePath) {
             console.log(`Image already downloaded. Set \`REFETCH_IMAGES = true\` to re-download.`);
             return;
@@ -67,7 +77,7 @@ async function downloadImage(coin: InputCoin) {
 
     // write the file
     const buffer = Buffer.from(await response.arrayBuffer());
-    const imagePath = `${OUTPUT_IMAGE_DIR}/${filename}.${ext}`;
+    const imagePath = `${OUTPUT_RAW_IMAGE_DIR}/${filename}.${ext}`;
     writeFileSync(imagePath, buffer);
 }
 
