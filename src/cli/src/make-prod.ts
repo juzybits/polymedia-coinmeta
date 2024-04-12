@@ -1,7 +1,7 @@
+import { CoinMeta } from "@polymedia/coinmeta";
 import { cpSync, mkdirSync } from "fs";
 import path from "path";
 import sharp from "sharp";
-import { CoinMeta } from "./types.js";
 import { findImagePath, getFilename, readJsonFile, writeJsonFile } from "./utils.js";
 
 /*

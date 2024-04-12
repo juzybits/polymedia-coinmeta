@@ -1,6 +1,7 @@
 import { SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
+import { CoinMeta } from "@polymedia/coinmeta";
 import { mkdirSync, writeFileSync } from "fs";
-import { CoinMeta, InputCoin, InputFile, NetworkName } from "./types.js";
+import { InputCoin, InputFile, NetworkName } from "./types.js";
 import { findImagePath, getFilename, readJsonFile, writeJsonFile } from "./utils.js";
 
 /*
