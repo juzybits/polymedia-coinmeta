@@ -1,6 +1,6 @@
 # Polymedia CoinMeta
 
-Hard-coded `CoinMetadata` for various `Coin<T>`.
+Sui `CoinMetadata` for various `Coin<T>`.
 
 If the `CoinMetadata` is not available, falls back to `SuiClient.getCoinMetadata()`.
 

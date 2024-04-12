@@ -10,6 +10,7 @@ module.exports = {
             "./tsconfig.json",
             "./src/cli/tsconfig.json",
             "./src/sdk/tsconfig.json",
+            "./src/web/tsconfig.json",
         ],
         tsconfigRootDir: __dirname,
     },
@@ -37,6 +38,32 @@ module.exports = {
             files: ["src/sdk/**/*"],
             env: { node: false },
             rules: {
+            },
+        },
+        {
+            files: ["src/web/**/*"],
+            env: { browser: true },
+            plugins: ["react-refresh"],
+            extends: [
+                "plugin:react-hooks/recommended",
+                "plugin:react/jsx-runtime",
+                "plugin:react/recommended",
+            ],
+            rules: {
+                "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+                "@typescript-eslint/no-floating-promises": "off",
+                "@typescript-eslint/no-misused-promises": "off",
+                "@typescript-eslint/prefer-nullish-coalescing": [ "error", { "ignoreConditionalTests": true } ],
+                "@typescript-eslint/restrict-template-expressions": "off",
+                "react-hooks/exhaustive-deps": "off",
+                "react/no-unescaped-entities": "off",
+                "react/prop-types": "off",
+                "react/react-in-jsx-scope": "off",
+            },
+            settings: {
+                react: {
+                    version: "detect"
+                }
             },
         },
     ],

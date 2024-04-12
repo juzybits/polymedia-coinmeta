@@ -1,0 +1,46 @@
+{
+    "private": true,
+    "version": "0.0.0",
+    "name": "@polymedia/coinmeta-web",
+    "author": "@juzybits (https://polymedia.app)",
+    "homepage": "https://coinmeta.polymedia.app",
+    "description": "TODO add description",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/juzybits/polymedia-coinmeta"
+    },
+    "keywords": [],
+    "scripts": {
+        "build": "vite build",
+        "clean": "rm -rf dist/ node_modules/ .wrangler/",
+        "deploy-dev": "pnpm build && wrangler pages deploy dist/ --project-name polymedia-coinmeta --branch dev",
+        "deploy-prod": "pnpm build && wrangler pages deploy dist/ --project-name polymedia-coinmeta --branch main",
+        "dev": "vite",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "pnpm build && vite preview"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.22.3"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.77",
+        "@types/react-dom": "^18.2.25",
+        "@typescript-eslint/eslint-plugin": "^7.6.0",
+        "@typescript-eslint/parser": "^7.6.0",
+        "@vitejs/plugin-react-swc": "^3.6.0",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react": "^7.34.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.6",
+        "less": "^4.2.0",
+        "typescript": "^5.4.5",
+        "vite": "^5.2.8",
+        "wrangler": "^3.50.0"
+    },
+    "type": "module",
+    "sideEffects": false
+}
