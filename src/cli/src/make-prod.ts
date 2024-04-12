@@ -15,10 +15,10 @@ This script:
 */
 
 /* Config */
-const INPUT_RAW_META_FILE = "data/raw-meta.json";
-const INPUT_RAW_IMAGE_DIR = "data/raw-img";
-const OUTPUT_PROD_META_FILE = "data/prod-meta.json";
-const OUTPUT_PROD_IMAGE_DIR = "data/prod-img";
+const INPUT_RAW_META_FILE = "../../data/raw-meta.json";
+const INPUT_RAW_IMAGE_DIR = "../../data/raw-img";
+const OUTPUT_PROD_META_FILE = "../../data/prod-meta.json";
+const OUTPUT_PROD_IMAGE_DIR = "../../data/prod-img";
 
 async function main()
 {

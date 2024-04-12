@@ -14,9 +14,9 @@ This script:
  */
 
 /* Config */
-const INPUT_MANUAL_FILE = "data/manual-input.json";
-const OUTPUT_RAW_META_FILE = "data/raw-meta.json";
-const OUTPUT_RAW_IMAGE_DIR = "data/raw-img";
+const INPUT_MANUAL_FILE = "../../data/manual-input.json";
+const OUTPUT_RAW_META_FILE = "../../data/raw-meta.json";
+const OUTPUT_RAW_IMAGE_DIR = "../../data/raw-img";
 const REFETCH_IMAGES = false;
 
 async function main()
