@@ -3,6 +3,9 @@
     "name": "polymedia-coinmeta-monorepo",
     "license": "Apache-2.0",
     "scripts": {
+        "cli:fetch-raw": "cd src/cli && pnpm run fetch-raw",
+        "cli:make-prod": "cd src/cli && pnpm run make-prod",
+
         "build": "turbo run build",
         "clean": "turbo run clean && rm -rf dist/ node_modules/ .turbo/",
         "lint": "turbo run lint"
