@@ -1,7 +1,7 @@
 import { SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
 import { CoinMeta } from "@polymedia/coinmeta";
 import { mkdirSync, writeFileSync } from "fs";
-import { InputCoin, InputFile, NetworkName } from "./types.js";
+import { InputCoin, InputFile } from "./types.js";
 import { findImagePath, getFilename, readJsonFile, writeJsonFile } from "./utils.js";
 
 /*
@@ -28,21 +28,17 @@ async function main()
     const coinMetas: CoinMeta[] = [];
     const inputCoins = readJsonFile<InputFile>(INPUT_MANUAL_FILE);
 
-    for (const [network, coins] of Object.entries(inputCoins)) {
-        console.log(`--- ${network} ---`);
-        const suiClient = new SuiClient({ url: getFullnodeUrl(network as NetworkName) });
+    const suiClient = new SuiClient({ url: getFullnodeUrl('mainnet') });
+    for (const coin of inputCoins) { // TODO normalize Sui address
+        console.log(`\nFetching metadata: ${coin.type}`);
+        const coinMetadata = await suiClient.getCoinMetadata({ coinType: coin.type });
 
-        for (const coin of coins) { // TODO normalize Sui address
-            console.log(`\nFetching metadata: ${coin.type}`);
-            const coinMetadata = await suiClient.getCoinMetadata({ coinType: coin.type });
-
-            if (coinMetadata) {
-                const coinMeta = Object.assign(coinMetadata, { type: coin.type });
-                coinMetas.push(coinMeta);
-                await downloadImage(coin);
-            } else {
-                throw new Error(`CoinMetadata was null for type ${coin.type}`);
-            }
+        if (coinMetadata) {
+            const coinMeta = Object.assign(coinMetadata, { type: coin.type });
+            coinMetas.push(coinMeta);
+            await downloadImage(coin);
+        } else {
+            throw new Error(`CoinMetadata was null for type ${coin.type}`);
         }
     }
     writeJsonFile(OUTPUT_RAW_META_FILE, coinMetas);

@@ -1,5 +1,3 @@
-export type NetworkName = "mainnet" | "testnet";
-
 export type InputCoin = {
     name: string,
     type: string,
@@ -9,4 +7,4 @@ export type InputCoin = {
 /**
  * The type of data/manual-input.json
  */
-export type InputFile = Record<NetworkName, InputCoin[]>;
+export type InputFile = InputCoin[];
