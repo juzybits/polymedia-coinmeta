@@ -4,7 +4,7 @@
     "name": "@polymedia/coinmeta",
     "author": "@juzybits (https://polymedia.app)",
     "homepage": "https://github.com/juzybits/polymedia-coinmeta",
-    "description": "It provides the helper function getCoinMeta()",
+    "description": "It provides the helper functions getCoinMeta() and getCoinMetas()",
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
