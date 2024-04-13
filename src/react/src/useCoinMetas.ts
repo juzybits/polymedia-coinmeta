@@ -3,7 +3,7 @@ import { CoinMetadata, SuiClient } from '@mysten/sui.js/client';
 import { getCoinMetas } from '@polymedia/coinmeta';
 
 export function useCoinMetas(
-    client: SuiClient,
+    suiClient: SuiClient,
     coinTypes: string[] | undefined
 ) {
     const [coinMetas, setCoinMetas] = useState<Map<string, CoinMetadata | null>>(new Map());
@@ -20,11 +20,11 @@ export function useCoinMetas(
         }
 
         setLoading(true);
-        getCoinMetas(client, coinTypes)
+        getCoinMetas(suiClient, coinTypes)
             .then(setCoinMetas)
             .catch(setError)
             .finally(() => setLoading(false));
-    }, [client, coinTypes]);
+    }, [suiClient, coinTypes]);
 
     return { coinMetas, isLoadingCoinMetas, errorCoinMetas };
 }

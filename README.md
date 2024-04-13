@@ -4,15 +4,15 @@ Sui `CoinMetadata<T>` for popular coins.
 
 <!-- ![Polymedia CoinMeta](https://coinmeta.polymedia.app/img/open-graph.webp) TODO -->
 
-## SDK: [./src/sdk/](./ts/sdk/)
+## SDK: [./src/sdk/](./src/sdk/)
 
 The `@polymedia/coinmeta` NPM package.
 
-It provides the helper function `getCoinMeta()`, which uses a long list of hard-coded
-`CoinMetadata<T>` to avoid Sui RPC requests.
+It provides the helper functions `getCoinMeta()` and `getCoinMetas()`, which use
+a long list of hard-coded `CoinMetadata<T>` to avoid Sui RPC requests.
 
-If a `CoinMetadata<T>` is not known, if fetches it from the Sui RPC with
-`SuiClient.getCoinMetadata()` and caches the response.
+If a `CoinMetadata<T>` is not known, they fetch it from the Sui RPC with
+`SuiClient.getCoinMetadata()` and cache the response.
 
 ### How to use it
 
@@ -21,12 +21,36 @@ Add the package to your project:
 pnpm add @polymedia/coinmeta
 ```
 
-Import it in your code:
+Use it in your code:
 ```typescript
 import { getCoinMeta } from "@polymedia/coinmeta";
+...
+const meta = await getCoinMeta(suiClient, coinType);
 ```
 
-## Web: [./src/web/](./ts/web/)
+## React: [./src/react/](./src/react/)
+
+The `@polymedia/coinmeta-react` NPM package.
+
+It provides the React hooks `useCoinMeta()` and `useCoinMetas()`, which under the hood use
+the SDK helper functions (see previous section).
+
+### How to use it
+
+Add the package to your project:
+```bash
+pnpm add @polymedia/coinmeta-react
+```
+
+Use it in your code:
+```typescript
+import { useCoinMeta } from '@polymedia/coinmeta-react';
+...
+const { coinMeta, isLoadingCoinMeta, errorCoinMeta } = useCoinMeta(suiClient, coinType);
+
+```
+
+## Web: [./src/web/](./src/web/)
 
 The https://coinmeta.polymedia.app webapp, hosted on CloudFlare.
 
@@ -34,26 +58,16 @@ The https://coinmeta.polymedia.app webapp, hosted on CloudFlare.
 
 - It serves the full list of hard-coded `CoinMetadata<T>` via [`/api/data.json`](https://coinmeta.polymedia.app)
 
-## CLI: [./src/cli/](./ts/cli/)
+## CLI: [./src/cli/](./src/cli/)
 
 Command line tools to fetch `CoinMetadata<T>` objects and coin logo images.
 
-### pnpm cli:fetch-raw
-
-Source: [./src/cli/src/fetch-raw.ts](./src/cli/src/fetch-raw.ts)
+### `pnpm cli:fetch-raw`
 
 It downloads the `CoinMetadata<T>` objects and the coin logos for all coins in [./data/manual-input.json](./data/manual-input.json)
 
-### pnpm cli:make-prod
-
-Source: [./src/cli/src/make-prod.ts](./src/cli/src/make-prod.ts)
+### `pnpm cli:make-prod`
 
 It transforms the output of the previous script into production-ready images (compressed and resized) and hard-coded data for the `getCoinMeta()` function and the `api/data.json` endpoint.
 
-## Usage: React
-
-TODO add useCoinMeta/useCoinMetas hooks
-
 ## How to contribute TODO
-
-<!-- ![Polymedia CoinMeta](https://assets.polymedia.app/img/coinmeta/open-graph.webp) TODO -->
