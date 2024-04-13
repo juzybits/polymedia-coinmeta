@@ -4,7 +4,7 @@
     "name": "@polymedia/coinmeta-web",
     "author": "@juzybits (https://polymedia.app)",
     "homepage": "https://coinmeta.polymedia.app",
-    "description": "TODO add description",
+    "description": "The Polymedia CoinMeta webapp",
     "license": "Apache-2.0",
     "repository": {
         "type": "git",

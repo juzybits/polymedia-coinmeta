@@ -4,7 +4,7 @@
     "name": "@polymedia/coinmeta-cli",
     "author": "@juzybits (https://polymedia.app)",
     "homepage": "https://github.com/juzybits/polymedia-coinmeta",
-    "description": "TODO add description",
+    "description": "Command line tools to fetch CoinMetadata<T> objects and coin logos",
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
