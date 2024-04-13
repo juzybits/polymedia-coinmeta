@@ -24,11 +24,12 @@
     "dependencies": {
         "@polymedia/coinmeta": "workspace:*"
     },
-    "devDependencies": {
-        "@types/react": "^18.2.77"
-    },
     "peerDependencies": {
         "react": "18"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.78",
+        "@types/react-dom": "^18.2.25"
     },
     "type": "module",
     "sideEffects": false,

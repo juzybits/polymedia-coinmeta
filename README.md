@@ -54,16 +54,6 @@ It transforms the output of the previous script into production-ready images (co
 
 TODO add useCoinMeta/useCoinMetas hooks
 
-## Development
-
-```
-pnpm install
-pnpm build
-pnpm dev
-```
-
-Then visit http://localhost:1234
-
 ## How to contribute TODO
 
 <!-- ![Polymedia CoinMeta](https://assets.polymedia.app/img/coinmeta/open-graph.webp) TODO -->
