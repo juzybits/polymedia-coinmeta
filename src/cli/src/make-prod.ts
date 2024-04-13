@@ -1,5 +1,5 @@
 import { CoinMeta } from "@polymedia/coinmeta";
-import { cpSync, mkdirSync } from "fs";
+import { cpSync } from "fs";
 import path from "path";
 import sharp from "sharp";
 import { findImagePath, getFilename, readJsonFile, writeJsonFile } from "./utils.js";
@@ -10,21 +10,19 @@ This script:
 - For each CoinMeta<T>:
     - Resizes and compresses the coin logo image
     - Replaces iconUrl with the path to the local image
-- Writes all CoinMeta to OUTPUT_PROD_META_FILE
-- Saves all coin logos in OUTPUT_PROD_IMAGE_DIR
+- Writes all CoinMeta to OUTPUT_SDK_META_FILE and OUTPUT_WEB_META_FILE
+- Saves all coin logos in OUTPUT_WEB_IMAGE_DIR
 */
 
 /* Config */
 const INPUT_RAW_META_FILE = "../../data/raw-meta.json";
 const INPUT_RAW_IMAGE_DIR = "../../data/raw-img";
-const OUTPUT_PROD_META_FILE = "../../data/prod-meta.json";
-const OUTPUT_PROD_IMAGE_DIR = "../../data/prod-img";
+const OUTPUT_SDK_META_FILE = "../sdk/src/data.json";
+const OUTPUT_WEB_META_FILE = "../web/public/api/data.json";
+const OUTPUT_WEB_IMAGE_DIR = "../web/public/img";
 
 async function main()
 {
-    // ensure the output directory exists
-    mkdirSync(OUTPUT_PROD_IMAGE_DIR, { recursive: true });
-
     const rawMetas = readJsonFile<CoinMeta[]>(INPUT_RAW_META_FILE);
     const prodMetas: CoinMeta[] = [];
     for (const meta of rawMetas) {
@@ -43,10 +41,10 @@ async function main()
         // resize and convert the image to .webp
         let prodImagePath: string;
         if (ext === '.svg') {
-            prodImagePath = `${OUTPUT_PROD_IMAGE_DIR}/${filename}.svg`;
+            prodImagePath = `${OUTPUT_WEB_IMAGE_DIR}/${filename}.svg`;
             cpSync(rawImagePath, prodImagePath);
         } else {
-            prodImagePath = `${OUTPUT_PROD_IMAGE_DIR}/${filename}.webp`;
+            prodImagePath = `${OUTPUT_WEB_IMAGE_DIR}/${filename}.webp`;
             await sharp(rawImagePath)
                 .resize({ height: 256 })
                 .webp({ quality: 80 })
@@ -54,10 +52,11 @@ async function main()
         }
 
         // save the CoinMeta
-        meta.iconUrl = prodImagePath;
+        meta.iconUrl = path.basename(prodImagePath);
         prodMetas.push(meta);
     }
-    writeJsonFile(OUTPUT_PROD_META_FILE, prodMetas);
+    writeJsonFile(OUTPUT_SDK_META_FILE, prodMetas);
+    writeJsonFile(OUTPUT_WEB_META_FILE, prodMetas);
 }
 
 void main();

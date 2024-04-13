@@ -13,3 +13,4 @@ build
 
 # App specific
 .auth.ts
+data/raw-*
