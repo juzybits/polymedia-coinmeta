@@ -1,5 +1,8 @@
 import { allCoinMetas } from "@polymedia/coinmeta";
-import "./styles/app.less";
+import { shortenSuiAddress } from "@polymedia/suits";
+import { ReactNode } from "react";
+import "./styles/App.less";
+import "./styles/ListCoinMetas.less";
 
 export const App: React.FC = () =>
 {
@@ -14,7 +17,7 @@ export const App: React.FC = () =>
                 </div>
             </div>
         </div>
-        {/* <Footer /> */}
+        <footer />
     </div>
     );
 };
@@ -47,14 +50,22 @@ const ListCoinMetas: React.FC = () =>
     <div id="ListCoinMetas">
         {allCoinMetas.map(meta => (
             <div key={meta.type} className="meta tight">
-                <p>decimals: {meta.decimals}</p>
-                <p>name: {meta.name}</p>
-                <p>symbol: {meta.symbol}</p>
-                <p>description: {meta.description}</p>
-                <p>id: {meta.id}</p>
-                <p>type: {meta.type}</p>
-                <p><img src={'/img/' + meta.iconUrl} alt={meta.symbol} /></p>
+                <p><img className='logo' src={'/img/' + meta.iconUrl} alt={meta.symbol} /></p>
+                <p>{meta.name}</p>
+                <p>({meta.symbol})</p>
+                {formatCoinType(meta.type)}
+                {/* <p>id: {meta.id}</p> */}
+                {/* <p>decimals: {meta.decimals}</p> */}
+                {/* <p>description: {shortDescription(meta.description)}</p> */}
             </div>
         ))}
     </div>
 );
+
+function formatCoinType(coinType: string): ReactNode {
+    const [ address, module, struct ] = coinType.split('::');
+    return <>
+        <p>{shortenSuiAddress(address)}</p>
+        <p>::{module}::{struct}</p>
+    </>;
+}

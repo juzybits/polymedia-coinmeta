@@ -73,6 +73,9 @@ importers:
       '@polymedia/coinmeta':
         specifier: workspace:*
         version: link:../sdk
+      '@polymedia/suits':
+        specifier: ^0.0.39
+        version: 0.0.39(typescript@5.4.5)
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -961,6 +964,14 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
     dev: true
+
+  /@polymedia/suits@0.0.39(typescript@5.4.5):
+    resolution: {integrity: sha512-UR904waKIDXwDATxlERdas4gVRfCLwFxe/Gp5AeUUzk2+yBuhx0PAgKef/EUSjlA942iDZkm0z5Nx8zZ4kpMLw==}
+    dependencies:
+      '@mysten/sui.js': 0.51.2(typescript@5.4.5)
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /@rollup/rollup-android-arm-eabi@4.14.2:
     resolution: {integrity: sha512-ahxSgCkAEk+P/AVO0vYr7DxOD3CwAQrT0Go9BJyGQ9Ef0QxVOfjDZMiF4Y2s3mLyPrjonchIMH/tbWHucJMykQ==}
