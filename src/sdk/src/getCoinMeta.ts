@@ -28,14 +28,20 @@ export async function getCoinMeta(
 
 export async function getCoinMetas(
     client: SuiClient,
-    coinTypes: string[])
-: Promise<(CoinMetadata|null)[]>
+    coinTypes: string[]
+): Promise<Map<string, CoinMetadata | null>>
 {
     const results = await Promise.allSettled(
         coinTypes.map(coinType => getCoinMeta(client, coinType))
     );
 
-    return results.map(result =>
-        result.status === 'fulfilled' ? result.value : null
-    );
+    const metas = new Map<string, CoinMetadata | null>();
+    results.forEach((result, index) => {
+        metas.set(
+            coinTypes[index],
+            result.status === 'fulfilled' ? result.value : null
+        );
+    });
+
+    return metas;
 }
