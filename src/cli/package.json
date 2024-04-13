@@ -10,7 +10,8 @@
         "type": "git",
         "url": "https://github.com/juzybits/polymedia-coinmeta"
     },
-    "keywords": [],
+    "keywords": [
+    ],
     "scripts": {
         "fetch-raw": "tsc && node dist/fetch-raw.js",
         "make-prod": "tsc && node dist/make-prod.js",

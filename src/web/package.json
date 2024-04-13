@@ -10,7 +10,8 @@
         "type": "git",
         "url": "https://github.com/juzybits/polymedia-coinmeta"
     },
-    "keywords": [],
+    "keywords": [
+    ],
     "scripts": {
         "build": "vite build",
         "clean": "rm -rf dist/ node_modules/ .wrangler/",

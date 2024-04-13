@@ -1,0 +1,51 @@
+{
+    "private": false,
+    "version": "0.0.1",
+    "name": "@polymedia/coinmeta-react",
+    "author": "@juzybits (https://polymedia.app)",
+    "homepage": "https://github.com/juzybits/polymedia-coinmeta",
+    "description": "It provides the React hooks useCoinMeta() and useCoinMetas()",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/juzybits/polymedia-coinmeta"
+    },
+    "keywords": [
+        "polymedia",
+        "sui",
+        "coinmeta"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
+        "clean": "rm -rf dist/ node_modules/ .turbo/",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "prepublishOnly": "rm -rf dist/ && pnpm build"
+    },
+    "dependencies": {
+        "@polymedia/coinmeta": "workspace:*"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.77"
+    },
+    "peerDependencies": {
+        "react": "18"
+    },
+    "type": "module",
+    "sideEffects": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "dist/"
+    ],
+    "types": "./dist/cjs/index.d.ts",
+    "main": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.js",
+    "exports": {
+        ".": {
+            "types": "./dist/cjs/index.d.ts",
+            "main": "./dist/cjs/index.js",
+            "import": "./dist/esm/index.js"
+        }
+    }
+}

@@ -48,7 +48,7 @@ module.exports = {
             },
         },
         {
-            files: ["src/web/**/*"],
+            files: ["src/react/**/*", "src/web/**/*"],
             env: { browser: true },
         },
     ],
