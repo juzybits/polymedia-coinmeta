@@ -1,7 +1,15 @@
+import { data } from "@polymedia/coinmeta";
+import { useEffect } from "react";
 import "./styles/app.less";
 
 export const App: React.FC = () =>
 {
+    useEffect(() => {
+        (() => {
+            console.log(data);
+        })();
+    }, []);
+
     return (
     <div id="layout">
         <div>
