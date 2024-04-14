@@ -75,7 +75,7 @@ type CoinBoth = {
     vision?: CoinSuivision,
 };
 
-type CsvLine = {
+type TsvLine = {
     type: string; // s.type == v.coinID
     s_symbol: string;
     v_symbol: string;
@@ -104,7 +104,7 @@ type CsvLine = {
     v_totalSupply: string;
 };
 
-const csvHeaders = {
+const tsvHeaders = {
     type: "type",
     s_symbol: "s_symbol",
     v_symbol: "v_symbol",
@@ -156,13 +156,13 @@ function main()
         }
     }
 
-    /* Assemble CSV lines */
+    /* Assemble TSV lines */
 
-    const csvLines: CsvLine[] = [ csvHeaders ];
+    const tsvLines: TsvLine[] = [ tsvHeaders ];
     for (const [coinType, both] of coinsBoth.entries()) {
         const s = both.scan;
         const v = both.vision;
-        csvLines.push({
+        tsvLines.push({
             type: coinType,
             s_symbol: s ? s.symbol : "",
             v_symbol: v ? v.symbol : "",
@@ -192,13 +192,12 @@ function main()
         });
     }
 
-    /* Write the CSV */
+    /* Write the TSV */
 
-    const toCsvSafeString = (val: unknown) => `"${String(val).replace(/"/g, '""')}"`
-    const csvString = csvLines.map(line =>
-        Object.values(line).map(toCsvSafeString).join("\t")
+    const tsvContents = tsvLines.map(line =>
+        tsvLine(Object.values(line))
     ).join("\n");
-    writeFileSync( OUTPUT_FILE, csvString );
+    writeFileSync( OUTPUT_FILE, tsvContents );
 }
 
 main();
@@ -208,4 +207,15 @@ main();
 function normalizeCoinType(type: string): string { // TODO move to library
     const [ address, module, struct ] = type.split('::');
     return normalizeSuiAddress(address) + '::' + module + '::' + struct;
+}
+
+function tsvLine(values: unknown[]): string { // TODO move to library
+    return values.map(tsvSafeString).join("\t");
+}
+
+function tsvSafeString(value: unknown): string {
+    return `"${String(value)
+        .replace(/"/g, '""')      // escape double quotes by doubling them
+        .replace(/\t/g, ' ')      // replace tabs with a space
+        .replace(/(\r\n|\n|\r)/g, ' ')}"`;  // replace newlines with a space
 }
