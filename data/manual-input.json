@@ -91,11 +91,13 @@
     },
     {
         "name": "USDCsol",
+        "nameOverride": "USDCsol",
         "type": "0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037::coin::COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
     {
         "name": "USDCbnb",
+        "nameOverride": "USDCbnb",
         "type": "0x909cba62ce96d54de25bec9502de5ca7b4f28901747bbf96b76c2e63ec5f1cba::coin::COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
@@ -106,6 +108,7 @@
     },
     {
         "name": "cUSDCe",
+        "nameOverride": "cUSDCe",
         "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdc_coin::CELER_USDC_COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
@@ -166,6 +169,7 @@
     },
     {
         "name": "cUSDTe",
+        "nameOverride": "cUSDTe",
         "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdt_coin::CELER_USDT_COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public"
     },
@@ -181,6 +185,7 @@
     },
     {
         "name": "USDCarb",
+        "nameOverride": "USDCarb",
         "type": "0xe32d3ebafa42e6011b87ef1087bbc6053b499bf6f095807b9013aff5a6ecd7bb::coin::COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },

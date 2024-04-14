@@ -35,6 +35,10 @@ async function main()
 
         if (coinMetadata) {
             const coinMeta = Object.assign(coinMetadata, { type: coin.type });
+            if (coin.nameOverride) { // USDCsol, USDCbnb, cUSDCe, cUSDTe, USDCarb
+                coinMeta.name = coin.nameOverride;
+                coinMeta.symbol = coin.nameOverride;
+            }
             coinMetas.push(coinMeta);
             await downloadImage(coin);
         } else {

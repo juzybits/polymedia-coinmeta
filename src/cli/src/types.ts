@@ -1,5 +1,6 @@
 export type InputCoin = {
     name: string,
+    nameOverride?: string,
     type: string,
     image: string,
 };
