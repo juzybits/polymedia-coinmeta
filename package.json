@@ -3,6 +3,7 @@
     "name": "polymedia-coinmeta-monorepo",
     "license": "Apache-2.0",
     "scripts": {
+        "cli:analyze-sources": "cd src/cli && pnpm run analyze-sources",
         "cli:fetch-raw": "cd src/cli && pnpm run fetch-raw",
         "cli:make-prod": "cd src/cli && pnpm run make-prod",
 

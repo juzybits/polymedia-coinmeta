@@ -12,7 +12,6 @@ export function findImagePath(directory: string, filename: string): string | nul
     return file ? path.join(directory, file) : null;
 }
 
-
 export function readJsonFile<T>(filename: string): T {
     const fileContent = readFileSync(filename, 'utf8');
     const jsonData: T = JSON.parse(fileContent);
