@@ -1,3 +1,4 @@
+import { normalizeSuiAddress } from '@mysten/sui.js/utils';
 import { writeFileSync } from "fs";
 import { readJsonFile } from "./utils.js";
 
@@ -141,15 +142,17 @@ function main()
     const coinsSuivision = readJsonFile<CoinSuivision[]>(INPUT_SUIVISION_FILE);
 
     for (const scan of coinsSuiscan) {
-        coinsBoth.set(scan.type, { scan });
+        const coinType = normalizeCoinType(scan.type);
+        coinsBoth.set(coinType, { scan });
     }
 
     for (const vision of coinsSuivision) {
-        const both = coinsBoth.get(vision.coinID);
+        const coinType = normalizeCoinType(vision.coinID);
+        const both = coinsBoth.get(coinType);
         if (both) {
             both.vision = vision;
         } else {
-            coinsBoth.set(vision.coinID, { vision });
+            coinsBoth.set(coinType, { vision });
         }
     }
 
@@ -199,3 +202,10 @@ function main()
 }
 
 main();
+
+/* Helpers */
+
+function normalizeCoinType(type: string): string { // TODO move to library
+    const [ address, module, struct ] = type.split('::');
+    return normalizeSuiAddress(address) + '::' + module + '::' + struct;
+}

@@ -63,7 +63,7 @@ const ListCoinMetas: React.FC = () =>
 );
 
 function formatCoinType(coinType: string): ReactNode {
-    const [ address, module, struct ] = coinType.split('::');
+    const [ address, module, struct ] = coinType.split('::'); // TODO move to library
     return <>
         <p>{shortenSuiAddress(address)}</p>
         <p>::{module}::{struct}</p>
