@@ -1,6 +1,6 @@
 # Polymedia CoinMeta
 
-Sui `CoinMetadata<T>` for popular coins.
+CoinMetadata for Sui coins, and web-optimized logos.
 
 <!-- ![Polymedia CoinMeta](https://coinmeta.polymedia.app/img/open-graph.webp) TODO -->
 
