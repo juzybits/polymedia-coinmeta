@@ -28,7 +28,18 @@ const PageHome: React.FC = () => (
         <h1>Polymedia <span className="rainbow">CoinMeta</span></h1>
 
         <br />
-        <h2>Sui CoinMetadata for various Coin&lt;T&gt;</h2>
+        <h2>
+            CoinMetadata for Sui coins, and web-optimized logos
+        </h2>
+        <p>
+            The data can be accessed in JS/TS with <i>@polymedia/coinmeta</i>, in React apps with <i>@polymedia/coinmeta-react</i>, or anywhere with a REST API request.
+        </p>
+        <p>
+            <a href='https://github.com/juzybits/polymedia-coinmeta'>Read the docs</a>
+        </p>
+
+        <br /><br />
+        <h2>Supported Coins:</h2>
 
         <ListCoinMetas />
 
