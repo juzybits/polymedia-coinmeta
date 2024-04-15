@@ -1,3 +1,4 @@
+import { parseStructTag } from "@mysten/sui.js/utils";
 import { allCoinMetas } from "@polymedia/coinmeta";
 import { shortenSuiAddress } from "@polymedia/suits";
 import { ReactNode } from "react";
@@ -74,10 +75,10 @@ const ListCoinMetas: React.FC = () =>
 );
 
 function formatCoinType(coinType: string): ReactNode {
-    const [ address, module, struct ] = coinType.split('::'); // TODO move to library
+    const { address, module, name } = parseStructTag(coinType);
     return <>
         <p>{shortenSuiAddress(address)}</p>
-        <p>::{module}::{struct}</p>
+        <p>::{module}::{name}</p>
     </>;
 }
 
