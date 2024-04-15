@@ -31,14 +31,16 @@ export async function getCoinMetas(
     coinTypes: string[]
 ): Promise<Map<string, CoinMetadata | null>>
 {
+    const uniqueTypes = Array.from(new Set(coinTypes));
+
     const results = await Promise.allSettled(
-        coinTypes.map(coinType => getCoinMeta(client, coinType))
+        uniqueTypes.map(coinType => getCoinMeta(client, coinType))
     );
 
     const metas = new Map<string, CoinMetadata | null>();
     results.forEach((result, index) => {
         metas.set(
-            coinTypes[index],
+            uniqueTypes[index],
             result.status === 'fulfilled' ? result.value : null
         );
     });
