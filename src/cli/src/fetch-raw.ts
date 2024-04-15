@@ -1,7 +1,8 @@
 import { SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
+import { normalizeStructTag } from '@mysten/sui.js/utils';
 import { CoinMeta } from "@polymedia/coinmeta";
 import { mkdirSync, writeFileSync } from "fs";
-import { InputCoin, InputFile } from "./types.js";
+import { InputFile } from "./types.js";
 import { findImagePath, getFilename, readJsonFile, writeJsonFile } from "./utils.js";
 
 /*
@@ -29,28 +30,31 @@ async function main()
     const inputCoins = readJsonFile<InputFile>(INPUT_MANUAL_FILE);
 
     const suiClient = new SuiClient({ url: getFullnodeUrl('mainnet') });
-    for (const coin of inputCoins) { // TODO normalize Sui address
-        console.log(`\nFetching metadata: ${coin.type}`);
-        const coinMetadata = await suiClient.getCoinMetadata({ coinType: coin.type });
+    for (const coin of inputCoins) {
+        const coinType = normalizeStructTag(coin.type);
+        console.log(`\nFetching metadata: ${coinType}`);
+        const coinMetadata = await suiClient.getCoinMetadata({ coinType });
 
         if (coinMetadata) {
-            const coinMeta = Object.assign(coinMetadata, { type: coin.type });
+            const coinMeta = Object.assign(coinMetadata, { type: coinType });
             if (coin.nameOverride) { // USDCsol, USDCbnb, cUSDCe, cUSDTe, USDCarb
                 coinMeta.name = coin.nameOverride;
                 coinMeta.symbol = coin.nameOverride;
             }
             coinMetas.push(coinMeta);
-            await downloadImage(coin);
+
+            await downloadImage(
+                getFilename(coinType),
+                coin.image
+            );
         } else {
-            throw new Error(`CoinMetadata was null for type ${coin.type}`);
+            throw new Error(`CoinMetadata was null for type ${coinType}`);
         }
     }
     writeJsonFile(OUTPUT_RAW_META_FILE, coinMetas);
 }
 
-async function downloadImage(coin: InputCoin) {
-    const filename = getFilename(coin.type);
-
+async function downloadImage(filename: string, imageUrl: string) {
     if (!REFETCH_IMAGES) { // eslint-disable-line @typescript-eslint/no-unnecessary-condition
         const imagePath = findImagePath(OUTPUT_RAW_IMAGE_DIR, filename);
         if (imagePath) {
@@ -59,16 +63,16 @@ async function downloadImage(coin: InputCoin) {
         }
     }
 
-    console.log(`Downloading image: ${coin.image}`);
+    console.log(`Downloading image: ${imageUrl}`);
 
     // fetch the image
-    const response = await fetch(coin.image);
+    const response = await fetch(imageUrl);
     if (!response.ok) {
-        throw new Error(`Failed to download ${coin.image}: ${response.statusText}`);
+        throw new Error(`Failed to download ${imageUrl}: ${response.statusText}`);
     }
 
     // grab the extension from the URL
-    let ext = coin.image.split(".").pop()?.split("?")[0];
+    let ext = imageUrl.split(".").pop()?.split("?")[0];
 
     // if extension is not found in URL, get it from the MIME type
     if (!ext || ext.includes("/") || ext.length > 5) {

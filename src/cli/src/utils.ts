@@ -1,8 +1,8 @@
 import { readFileSync, readdirSync, writeFileSync } from "fs";
 import path from "path";
 
-export function getFilename(coinType: string): string {
-    return coinType.replace(/::/g, "-").replace(/\W+/g, "-");
+export function getFilename(normalizedCoinType: string): string {
+    return normalizedCoinType.replace(/::/g, "-").replace(/\W+/g, "-");
 }
 
 // Function to find the image path based on the filename without extension
