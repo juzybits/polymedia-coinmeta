@@ -83,7 +83,7 @@ function formatCoinType(coinType: string): ReactNode {
 }
 
 function getIconUrl(iconUrl: string): string {
-    return window.location.hostname === 'localhost'
-        ? iconUrl.replace('https://coinmeta.polymedia.app/', '/')
+    return window.location.hostname === "localhost"
+        ? iconUrl.replace("https://coinmeta.polymedia.app/", "/")
         : iconUrl;
 }

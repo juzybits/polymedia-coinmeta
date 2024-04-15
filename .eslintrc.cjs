@@ -23,6 +23,7 @@ module.exports = {
         "@typescript-eslint/no-misused-promises": "off",
         "@typescript-eslint/prefer-nullish-coalescing": [ "error", { "ignoreConditionalTests": true } ],
         "@typescript-eslint/restrict-template-expressions": "off",
+        "quotes": [ "error", "double", { "avoidEscape": true } ],
     },
     overrides: [
         {

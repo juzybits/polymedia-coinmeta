@@ -1,5 +1,5 @@
 import { SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
-import { normalizeStructTag } from '@mysten/sui.js/utils';
+import { normalizeStructTag } from "@mysten/sui.js/utils";
 import { CoinMeta } from "@polymedia/coinmeta";
 import { mkdirSync, writeFileSync } from "fs";
 import { InputFile } from "./types.js";
@@ -29,7 +29,7 @@ async function main()
     const coinMetas: CoinMeta[] = [];
     const inputCoins = readJsonFile<InputFile>(INPUT_MANUAL_FILE);
 
-    const suiClient = new SuiClient({ url: getFullnodeUrl('mainnet') });
+    const suiClient = new SuiClient({ url: getFullnodeUrl("mainnet") });
     for (const coin of inputCoins) {
         const coinType = normalizeStructTag(coin.type);
         console.log(`\nFetching metadata: ${coinType}`);
@@ -58,7 +58,7 @@ async function downloadImage(filename: string, imageUrl: string) {
     if (!REFETCH_IMAGES) { // eslint-disable-line @typescript-eslint/no-unnecessary-condition
         const imagePath = findImagePath(OUTPUT_RAW_IMAGE_DIR, filename);
         if (imagePath) {
-            console.log(`Image already downloaded. Set \`REFETCH_IMAGES = true\` to re-download.`);
+            console.log("Image already downloaded. Set `REFETCH_IMAGES = true` to re-download.");
             return;
         }
     }

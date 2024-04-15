@@ -1,4 +1,4 @@
-import { normalizeStructTag } from '@mysten/sui.js/utils';
+import { normalizeStructTag } from "@mysten/sui.js/utils";
 import { writeFileSync } from "fs";
 import { readJsonFile } from "./utils.js";
 
@@ -211,6 +211,6 @@ function tsvLine(values: unknown[]): string { // TODO move to library
 function tsvSafeString(value: unknown): string {
     return `"${String(value)
         .replace(/"/g, '""')      // escape double quotes by doubling them
-        .replace(/\t/g, ' ')      // replace tabs with a space
-        .replace(/(\r\n|\n|\r)/g, ' ')}"`;  // replace newlines with a space
+        .replace(/\t/g, " ")      // replace tabs with a space
+        .replace(/(\r\n|\n|\r)/g, " ")}"`;  // replace newlines with a space
 }

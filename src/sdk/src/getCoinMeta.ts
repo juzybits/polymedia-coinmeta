@@ -1,7 +1,7 @@
-import { CoinMetadata, SuiClient } from '@mysten/sui.js/client';
-import { normalizeStructTag } from '@mysten/sui.js/utils';
-import data from './data.json';
-import { CoinMeta } from './types';
+import { CoinMetadata, SuiClient } from "@mysten/sui.js/client";
+import { normalizeStructTag } from "@mysten/sui.js/utils";
+import data from "./data.json";
+import { CoinMeta } from "./types";
 
 const cache = new Map<string, CoinMetadata>(
     (data as CoinMeta[]).map(meta => [meta.type, meta])
@@ -45,7 +45,7 @@ export async function getCoinMetas(
     results.forEach((result, index) => {
         metas.set(
             uniqueTypes[index],
-            result.status === 'fulfilled' ? result.value : null
+            result.status === "fulfilled" ? result.value : null
         );
     });
 

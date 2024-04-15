@@ -1,4 +1,4 @@
-import allData from './data.json';
+import allData from "./data.json";
 type OneData = typeof allData[number];
 export const allCoinMetas = allData as OneData[];
 
