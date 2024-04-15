@@ -1,4 +1,5 @@
 import { CoinMetadata, SuiClient } from '@mysten/sui.js/client';
+import { normalizeStructTag } from '@mysten/sui.js/utils';
 import data from './data.json';
 import { CoinMeta } from './types';
 
@@ -11,17 +12,18 @@ export async function getCoinMeta(
     coinType: string)
 : Promise<CoinMetadata>
 {
-    const cachedMeta = cache.get(coinType);
+    const normalizedType = normalizeStructTag(coinType);
+    const cachedMeta = cache.get(normalizedType);
     if (cachedMeta) {
         return cachedMeta;
     }
 
-    const coinMeta = await client.getCoinMetadata({ coinType });
+    const coinMeta = await client.getCoinMetadata({ coinType: normalizedType });
     if (!coinMeta) {
-        throw new Error(`CoinMetadata not found for type: ${coinType}`);
+        throw new Error(`CoinMetadata not found for type: ${normalizedType}`);
     }
 
-    cache.set(coinType, coinMeta);
+    cache.set(normalizedType, coinMeta);
 
     return coinMeta;
 }
