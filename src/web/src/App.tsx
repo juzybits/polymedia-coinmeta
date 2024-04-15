@@ -61,7 +61,7 @@ const ListCoinMetas: React.FC = () =>
     <div id="ListCoinMetas">
         {allCoinMetas.map(meta => (
             <div key={meta.type} className="meta tight">
-                <p><img className='logo' src={'/img/' + meta.iconUrl} alt={meta.symbol} /></p>
+                <p><img className='logo' src={getIconUrl(meta.iconUrl)} alt={meta.symbol} /></p>
                 <p>{meta.name}</p>
                 <p>({meta.symbol})</p>
                 {formatCoinType(meta.type)}
@@ -79,4 +79,10 @@ function formatCoinType(coinType: string): ReactNode {
         <p>{shortenSuiAddress(address)}</p>
         <p>::{module}::{struct}</p>
     </>;
+}
+
+function getIconUrl(iconUrl: string): string {
+    return window.location.hostname === 'localhost'
+        ? iconUrl.replace('https://coinmeta.polymedia.app/', '/')
+        : iconUrl;
 }
