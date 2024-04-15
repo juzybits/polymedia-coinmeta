@@ -20,6 +20,7 @@ const INPUT_RAW_IMAGE_DIR = "../../data/raw-img";
 const OUTPUT_SDK_META_FILE = "../sdk/src/data.json";
 const OUTPUT_WEB_META_FILE = "../web/public/api/data.json";
 const OUTPUT_WEB_IMAGE_DIR = "../web/public/img"; // careful, gets deleted
+const BASE_URL_IMG = "https://coinmeta.polymedia.app/img/";
 
 async function main()
 {
@@ -56,7 +57,7 @@ async function main()
         }
 
         // save the CoinMeta
-        meta.iconUrl = path.basename(prodImagePath);
+        meta.iconUrl = BASE_URL_IMG + path.basename(prodImagePath);
         prodMetas.push(meta);
     }
     writeJsonFile(OUTPUT_SDK_META_FILE, prodMetas);
