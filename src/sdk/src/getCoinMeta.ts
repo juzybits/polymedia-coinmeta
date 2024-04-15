@@ -33,6 +33,8 @@ export async function getCoinMetas(
     coinTypes: string[]
 ): Promise<Map<string, CoinMetadata | null>>
 {
+    // It's possible (but unlikely) that some duplicates remain if addresses are
+    // inconsistently normalized, e.g. ['0x000...002::sui::SUI', '0x2::sui::SUI'].
     const uniqueTypes = Array.from(new Set(coinTypes));
 
     const results = await Promise.allSettled(
