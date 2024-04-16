@@ -40,6 +40,11 @@
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/seapad.png/public"
     },
     {
+        "name": "KOTO",
+        "type": "0xa99166e802527eeb5439cbda12b0a02851bf2305d3c96a592b1440014fcb8975::koto::KOTO",
+        "image": "https://sm.xyz/images/koto.webp"
+    },
+    {
         "name": "Volo Staked SUI",
         "type": "0x549e8b69270defbfafd4f94e17ec44cdbdd99820b33bda2278dea3b9a32d3f55::cert::CERT",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/vSUI.png/public"
@@ -285,6 +290,11 @@
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/GENERIS.png/public"
     },
     {
+        "name": "SuiPad",
+        "type": "0xe4239cd951f6c53d9c41e25270d80d31f925ad1655e5ba5b543843d4a66975ee::SUIP::SUIP",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suipad.png/public"
+    },
+    {
         "name": "USDCsol",
         "nameOverride": "USDCsol",
         "type": "0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037::coin::COIN",
@@ -297,20 +307,15 @@
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
     {
-        "name": "SuiPad",
-        "type": "0xe4239cd951f6c53d9c41e25270d80d31f925ad1655e5ba5b543843d4a66975ee::SUIP::SUIP",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suipad.png/public"
+        "name": "USDCarb",
+        "nameOverride": "USDCarb",
+        "type": "0xe32d3ebafa42e6011b87ef1087bbc6053b499bf6f095807b9013aff5a6ecd7bb::coin::COIN",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
     {
         "name": "cUSDCe",
         "nameOverride": "cUSDCe",
         "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdc_coin::CELER_USDC_COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
-    },
-    {
-        "name": "USDCarb",
-        "nameOverride": "USDCarb",
-        "type": "0xe32d3ebafa42e6011b87ef1087bbc6053b499bf6f095807b9013aff5a6ecd7bb::coin::COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
     {
