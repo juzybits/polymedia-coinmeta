@@ -2,7 +2,7 @@
 
 CoinMetadata for Sui coins, and web-optimized logos.
 
-<!-- ![Polymedia CoinMeta](https://coinmeta.polymedia.app/img/open-graph.webp) TODO -->
+![Polymedia CoinMeta](https://coinmeta.polymedia.app/img/open-graph.webp?x1)
 
 ## SDK: [./src/sdk/](./src/sdk/)
 
