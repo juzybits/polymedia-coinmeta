@@ -20,11 +20,6 @@
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public"
     },
     {
-        "name": "Suiswap Token",
-        "type": "0x361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc::TOKEN::TOKEN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suiswap.png/public"
-    },
-    {
         "name": "Bucket USD",
         "type": "0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/buck.svg/public"
@@ -75,6 +70,11 @@
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/afsui.png/public"
     },
     {
+        "name": "Suiswap Token",
+        "type": "0x361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc::TOKEN::TOKEN",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suiswap.png/public"
+    },
+    {
         "name": "SuiBoxer Coin",
         "type": "0xbff8dc60d3f714f678cd4490ff08cabbea95d308c6de47a150c79cc875e0c7c6::sbox::SBOX",
         "image": "https://pntvpw2m7uxvx7j4roojxy3sb2lrc57jqzwo66kafwdjaj5v3oea.arweave.net/e2dX20z9L1v9PIucm-NyDpcRd-mGbO95QC2GkCe124g"
@@ -88,29 +88,6 @@
         "name": "Sacabam",
         "type": "0x9a5502414b5d51d01c8b5641db7436d789fa15a245694b24aa37c25c2a6ce001::scb::SCB",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/sacabam.png/public"
-    },
-    {
-        "name": "USDCsol",
-        "nameOverride": "USDCsol",
-        "type": "0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
-    },
-    {
-        "name": "USDCbnb",
-        "nameOverride": "USDCbnb",
-        "type": "0x909cba62ce96d54de25bec9502de5ca7b4f28901747bbf96b76c2e63ec5f1cba::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
-    },
-    {
-        "name": "SuiPad",
-        "type": "0xe4239cd951f6c53d9c41e25270d80d31f925ad1655e5ba5b543843d4a66975ee::SUIP::SUIP",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suipad.png/public"
-    },
-    {
-        "name": "cUSDCe",
-        "nameOverride": "cUSDCe",
-        "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdc_coin::CELER_USDC_COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
     {
         "name": "MOVE",
@@ -168,12 +145,6 @@
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/Suizuki.png/public"
     },
     {
-        "name": "cUSDTe",
-        "nameOverride": "cUSDTe",
-        "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdt_coin::CELER_USDT_COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public"
-    },
-    {
         "name": "Burrial",
         "type": "0x6db9a7bb22829898fd281879778a175120ebfc77eafc1f8ee341654cfc3f8dc2::burry::BURRY",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/burry.jpg/public"
@@ -182,12 +153,6 @@
         "name": "Poseidollar",
         "type": "0x4fc3949a4a8fe3ad9c75cec9724ff2b2d8520506b6129c9d8f0fcc2a1e4a8880::pdo::PDO",
         "image": "https://ipfs.io/ipfs/bafkreiapkqzmovj53bn3dnh53sdjaiitzdg7hoiq5y5fq42zier4ll44xq"
-    },
-    {
-        "name": "USDCarb",
-        "nameOverride": "USDCarb",
-        "type": "0xe32d3ebafa42e6011b87ef1087bbc6053b499bf6f095807b9013aff5a6ecd7bb::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
     {
         "name": "Sudo LP Token",
@@ -318,5 +283,40 @@
         "name": "Sui Generis",
         "type": "0x18d1215fb5a050ed22da5cdefb9601adead8a9c3576e30c9bc03cbdb2eb17b47::generis::GENERIS",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/GENERIS.png/public"
+    },
+    {
+        "name": "USDCsol",
+        "nameOverride": "USDCsol",
+        "type": "0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037::coin::COIN",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
+    },
+    {
+        "name": "USDCbnb",
+        "nameOverride": "USDCbnb",
+        "type": "0x909cba62ce96d54de25bec9502de5ca7b4f28901747bbf96b76c2e63ec5f1cba::coin::COIN",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
+    },
+    {
+        "name": "SuiPad",
+        "type": "0xe4239cd951f6c53d9c41e25270d80d31f925ad1655e5ba5b543843d4a66975ee::SUIP::SUIP",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suipad.png/public"
+    },
+    {
+        "name": "cUSDCe",
+        "nameOverride": "cUSDCe",
+        "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdc_coin::CELER_USDC_COIN",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
+    },
+    {
+        "name": "USDCarb",
+        "nameOverride": "USDCarb",
+        "type": "0xe32d3ebafa42e6011b87ef1087bbc6053b499bf6f095807b9013aff5a6ecd7bb::coin::COIN",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
+    },
+    {
+        "name": "cUSDTe",
+        "nameOverride": "cUSDTe",
+        "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdt_coin::CELER_USDT_COIN",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public"
     }
 ]
