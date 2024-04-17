@@ -28,7 +28,6 @@ const PageHome: React.FC = () => (
 
         <h1>Polymedia <span className="rainbow">CoinMeta</span></h1>
 
-        <br />
         <h2>
             CoinMetadata for Sui coins, and web-optimized logos
         </h2>

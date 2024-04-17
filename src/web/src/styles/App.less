@@ -1,3 +1,9 @@
+/*
+This file is shared by the following Polymedia projects:
+- CoinMeta
+- Send
+*/
+
 @import "../../node_modules/normalize.css/normalize.css";
 @import "./constants.less";
 
@@ -185,6 +191,9 @@ nav {
         padding-bottom: @space;
         font-weight: 500;
     }
+    h1 {
+        padding-bottom: calc(@space*2);
+    }
     h2, h3 {
         padding-top: @space;
     }
@@ -257,7 +266,6 @@ nav {
         margin-bottom: @space;
         outline: none;
         padding: @input-padding;
-        width: @input-width;
         max-width: 100%;
         text-align: center;
         font-size: @text-size;
@@ -281,12 +289,11 @@ nav {
     .dropdown {
         margin-top: @space;
         margin-bottom: @space;
-        width: @input-width;
         max-width: 100%;
         display: inline-block;
         .dropdown-input {
             margin: 0;
-            text-align: center;
+            width: 100%;
             &:hover {
                 cursor: pointer;
                 &:disabled {
@@ -308,6 +315,8 @@ nav {
             overflow-y: scroll;
             border-bottom-left-radius: @radius;
             border-bottom-right-radius: @radius;
+            width: 100%;
+            word-break: break-all;
             .dropdown-option {
                 background-color: @input-background;
                 color: @input-color;
@@ -315,6 +324,7 @@ nav {
                 overflow-wrap: break-word;
                 font-size: @text-size;
                 font-weight: 300;
+                width: 100%;
                 &:hover {
                     background-color: @color-blue-1;
                     &:hover {
@@ -324,6 +334,15 @@ nav {
                 &:last-of-type {
                     border-bottom-left-radius: @radius;
                     border-bottom-right-radius: @radius;
+                }
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                span {
+                    color: @input-color;
+                }
+                img {
+                    border-radius: 100%;
                 }
             }
         }
