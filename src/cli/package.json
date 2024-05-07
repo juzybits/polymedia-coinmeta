@@ -10,8 +10,7 @@
         "type": "git",
         "url": "https://github.com/juzybits/polymedia-coinmeta"
     },
-    "keywords": [
-    ],
+    "keywords": [],
     "scripts": {
         "analyze-sources": "tsc && node dist/analyze-sources.js",
         "fetch-raw": "tsc && node dist/fetch-raw.js",
@@ -25,7 +24,7 @@
         "sharp": "^0.33.3"
     },
     "devDependencies": {
-        "@types/node": "^20.11.25"
+        "@types/node": "^20.12.10"
     },
     "type": "module",
     "sideEffects": false
