@@ -6,23 +6,22 @@
         "cli:analyze-sources": "cd src/cli && pnpm run analyze-sources",
         "cli:fetch-raw": "cd src/cli && pnpm run fetch-raw",
         "cli:make-prod": "cd src/cli && pnpm run make-prod",
-
         "build": "turbo run build",
         "clean": "turbo run clean && rm -rf dist/ node_modules/ .turbo/",
         "lint": "turbo run lint"
     },
     "dependencies": {
-        "@mysten/sui.js": "^0.51.2"
+        "@mysten/sui.js": "^0.52.0"
     },
     "devDependencies": {
-        "@stylistic/eslint-plugin": "^1.7.0",
-        "@typescript-eslint/eslint-plugin": "^7.6.0",
-        "@typescript-eslint/parser": "^7.6.0",
+        "@stylistic/eslint-plugin": "^1.8.0",
+        "@typescript-eslint/eslint-plugin": "^7.8.0",
+        "@typescript-eslint/parser": "^7.8.0",
         "eslint": "^8.57.0",
         "eslint-plugin-react": "^7.34.1",
-        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-hooks": "^4.6.2",
         "eslint-plugin-react-refresh": "^0.4.6",
-        "turbo": "^1.13.2",
+        "turbo": "^1.13.3",
         "typescript": "^5.4.5"
     },
     "engines": {
