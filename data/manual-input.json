@@ -10,6 +10,11 @@
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/fud.png/public"
     },
     {
+        "name": "SPAM",
+        "type": "0x30a644c3485ee9b604f52165668895092191fcaf5489a846afa7fc11cdb9b24a::spam::SPAM",
+        "image": "manually added"
+    },
+    {
         "name": "USDC",
         "type": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"

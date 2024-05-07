@@ -18,6 +18,15 @@
         "type": "0x76cb819b01abed502bee8a702b4c2d547532c12f25001c9dea795a5e631c26f1::fud::FUD"
     },
     {
+        "decimals": 4,
+        "name": "SPAM",
+        "symbol": "SPAM",
+        "description": "The original Proof of Spam coin",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x30a644c3485ee9b604f52165668895092191fcaf5489a846afa7fc11cdb9b24a-spam-SPAM.webp",
+        "id": "0xe01e2172335cd2b52bf2b3010ae6c95e8c2b4958db72ba11330be70e85793274",
+        "type": "0x30a644c3485ee9b604f52165668895092191fcaf5489a846afa7fc11cdb9b24a::spam::SPAM"
+    },
+    {
         "decimals": 6,
         "name": "USD Coin",
         "symbol": "USDC",
