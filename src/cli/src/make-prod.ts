@@ -31,7 +31,7 @@ async function main()
     const rawMetas = readJsonFile<CoinMeta[]>(INPUT_RAW_META_FILE);
     const prodMetas: CoinMeta[] = [];
     for (const meta of rawMetas) {
-        const filename = getFilename(meta.type)
+        const filename = getFilename(meta.type);
         console.log(filename);
 
         // find the raw image

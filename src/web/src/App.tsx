@@ -35,7 +35,7 @@ const PageHome: React.FC = () => (
             The data can be accessed in JS/TS with <i>@polymedia/coinmeta</i>, in React apps with <i>@polymedia/coinmeta-react</i>, or anywhere with a REST API request.
         </p>
         <p>
-            <a href='https://github.com/juzybits/polymedia-coinmeta'>Read the docs</a>
+            <a href="https://github.com/juzybits/polymedia-coinmeta">Read the docs</a>
         </p>
 
         <br /><br />
@@ -61,7 +61,7 @@ const ListCoinMetas: React.FC = () =>
     <div id="ListCoinMetas">
         {allCoinMetas.map(meta => (
             <div key={meta.type} className="meta tight">
-                <p><img className='logo' src={getIconUrl(meta.iconUrl)} alt={meta.symbol} /></p>
+                <p><img className="logo" src={getIconUrl(meta.iconUrl)} alt={meta.symbol} /></p>
                 <p>{meta.name}</p>
                 <p>({meta.symbol})</p>
                 {formatCoinType(meta.type)}

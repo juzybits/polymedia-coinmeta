@@ -72,7 +72,7 @@ type CoinSuivision = {
 
 type CoinBoth = {
     scan?: CoinSuiscan;
-    vision?: CoinSuivision,
+    vision?: CoinSuivision;
 };
 
 type TsvLine = {
