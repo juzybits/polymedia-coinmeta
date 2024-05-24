@@ -1,5 +1,5 @@
 import { normalizeStructTag } from "@mysten/sui.js/utils";
-import { writeFileSync } from "fs";
+import { writeTsvFile } from "@polymedia/suitcase-node";
 import { readJsonFile } from "./utils.js";
 
 /*
@@ -194,23 +194,10 @@ function main()
 
     /* Write the TSV */
 
-    const tsvContents = tsvLines.map(line =>
-        tsvLine(Object.values(line))
-    ).join("\n");
-    writeFileSync( OUTPUT_FILE, tsvContents );
+    const tsvData = tsvLines.map(line =>
+        Object.values(line)
+    );
+    writeTsvFile(OUTPUT_FILE, tsvData);
 }
 
 main();
-
-/* Helpers */
-
-function tsvLine(values: unknown[]): string { // TODO move to library
-    return values.map(tsvSafeString).join("\t");
-}
-
-function tsvSafeString(value: unknown): string {
-    return `"${String(value)
-        .replace(/"/g, '""')      // escape double quotes by doubling them
-        .replace(/\t/g, " ")      // replace tabs with a space
-        .replace(/(\r\n|\n|\r)/g, " ")}"`;  // replace newlines with a space
-}

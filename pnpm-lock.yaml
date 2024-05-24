@@ -41,6 +41,9 @@ importers:
       '@polymedia/coinmeta':
         specifier: workspace:*
         version: link:../sdk
+      '@polymedia/suitcase-node':
+        specifier: ^0.0.3
+        version: 0.0.3(@mysten/sui.js@0.54.1(svelte@4.2.17)(typescript@5.4.5))
       sharp:
         specifier: ^0.33.4
         version: 0.33.4
@@ -82,9 +85,9 @@ importers:
       '@polymedia/coinmeta':
         specifier: workspace:*
         version: link:../sdk
-      '@polymedia/suits':
-        specifier: ^0.0.42
-        version: 0.0.42(svelte@4.2.17)(typescript@5.4.5)
+      '@polymedia/suitcase-core':
+        specifier: ^0.0.3
+        version: 0.0.3(@mysten/sui.js@0.54.1(svelte@4.2.17)(typescript@5.4.5))
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -134,21 +137,21 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@babel/helper-string-parser@7.24.1':
-    resolution: {integrity: sha512-2ofRCjnnA9y+wk8b9IAREroeUP02KHp431N2mhKniy2yKIDKpbrHv9eXwm8cBeWQYcJmzv5qKCu65P47eCF7CQ==}
+  '@babel/helper-string-parser@7.24.6':
+    resolution: {integrity: sha512-WdJjwMEkmBicq5T9fm/cHND3+UlFa2Yj8ALLgmoSQAJZysYbBjw+azChSGPN4DSPLXOcooGRvDwZWMcF/mLO2Q==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/helper-validator-identifier@7.24.5':
-    resolution: {integrity: sha512-3q93SSKX2TWCG30M2G2kwaKeTYgEUp5Snjuj8qm729SObL6nbtUldAi37qbxkD5gg3xnBio+f9nqpSepGZMvxA==}
+  '@babel/helper-validator-identifier@7.24.6':
+    resolution: {integrity: sha512-4yA7s865JHaqUdRbnaxarZREuPTHrjpDT+pXoAZ1yhyo6uFnIEpS8VMu16siFOHDpZNKYv5BObhsB//ycbICyw==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/parser@7.24.5':
-    resolution: {integrity: sha512-EOv5IK8arwh3LI47dz1b0tKUb/1uhHAnHJOrjgtQMIpu1uXd9mlFrJg9IUgGUgZ41Ch0K8REPTYpO7B76b4vJg==}
+  '@babel/parser@7.24.6':
+    resolution: {integrity: sha512-eNZXdfU35nJC2h24RznROuOpO94h6x8sg9ju0tT9biNtLZ2vuP8SduLqqV+/8+cebSLV9SJEAN5Z3zQbJG/M+Q==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  '@babel/types@7.24.5':
-    resolution: {integrity: sha512-6mQNsaLeXTw0nxYUYu+NSa4Hx4BlF1x1x8/PMFbiR+GBSr+2DkECc69b8hgy2frEodNcvPffeH8YfWd3LI6jhQ==}
+  '@babel/types@7.24.6':
+    resolution: {integrity: sha512-WaMsgi6Q8zMgMth93GvWPXkhAIEobfsIkLTacoVZoK1J0CevIPGYY2Vo5YvJGqyHqXM6P4ppOYGsIRU8MM9pFQ==}
     engines: {node: '>=6.9.0'}
 
   '@cloudflare/kv-asset-handler@0.3.2':
@@ -690,9 +693,15 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@polymedia/suits@0.0.42':
-    resolution: {integrity: sha512-hq3ywZVKanEPmlxUGbpCqwrwTESimSJnL9Pk8uCF4xeoznno6duY9TiMypxbwJm0cZAx3/+apK6JE96XUR4yiw==}
-    deprecated: This package has been superseded by @polymedia/suitcase-core.
+  '@polymedia/suitcase-core@0.0.3':
+    resolution: {integrity: sha512-jTpZ/StllVU0zoVFmvFeQiW9XR7Z4hB6AG6K5PckFBTZ/fD/DUcgi7AD88Q7fzndPLcKSpPIcdaLgP/F+vyD4A==}
+    peerDependencies:
+      '@mysten/sui.js': ^0.54.1
+
+  '@polymedia/suitcase-node@0.0.3':
+    resolution: {integrity: sha512-rqHzddzxNqDlCGdiIRc1ukz1/3Zrq0yosLTFrehOvy1VxIBmqETy5OPYXXf/gRYe/O/UbmGnFNYn5jSdblo7Nw==}
+    peerDependencies:
+      '@mysten/sui.js': ^0.54.1
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
     resolution: {integrity: sha512-Tya6xypR10giZV1XzxmH5wr25VcZSncG0pZIjfePT0OVBvqNEurzValetGNarVrGiq66EBVAFn15iYX4w6FKgQ==}
@@ -2279,18 +2288,18 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@babel/helper-string-parser@7.24.1': {}
+  '@babel/helper-string-parser@7.24.6': {}
 
-  '@babel/helper-validator-identifier@7.24.5': {}
+  '@babel/helper-validator-identifier@7.24.6': {}
 
-  '@babel/parser@7.24.5':
+  '@babel/parser@7.24.6':
     dependencies:
-      '@babel/types': 7.24.5
+      '@babel/types': 7.24.6
 
-  '@babel/types@7.24.5':
+  '@babel/types@7.24.6':
     dependencies:
-      '@babel/helper-string-parser': 7.24.1
-      '@babel/helper-validator-identifier': 7.24.5
+      '@babel/helper-string-parser': 7.24.6
+      '@babel/helper-validator-identifier': 7.24.6
       to-fast-properties: 2.0.0
 
   '@cloudflare/kv-asset-handler@0.3.2':
@@ -2666,12 +2675,14 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@polymedia/suits@0.0.42(svelte@4.2.17)(typescript@5.4.5)':
+  '@polymedia/suitcase-core@0.0.3(@mysten/sui.js@0.54.1(svelte@4.2.17)(typescript@5.4.5))':
     dependencies:
       '@mysten/sui.js': 0.54.1(svelte@4.2.17)(typescript@5.4.5)
-    transitivePeerDependencies:
-      - svelte
-      - typescript
+
+  '@polymedia/suitcase-node@0.0.3(@mysten/sui.js@0.54.1(svelte@4.2.17)(typescript@5.4.5))':
+    dependencies:
+      '@mysten/sui.js': 0.54.1(svelte@4.2.17)(typescript@5.4.5)
+      '@polymedia/suitcase-core': 0.0.3(@mysten/sui.js@0.54.1(svelte@4.2.17)(typescript@5.4.5))
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
     optional: true
@@ -2961,7 +2972,7 @@ snapshots:
 
   '@vue/compiler-core@3.4.27':
     dependencies:
-      '@babel/parser': 7.24.5
+      '@babel/parser': 7.24.6
       '@vue/shared': 3.4.27
       entities: 4.5.0
       estree-walker: 2.0.2

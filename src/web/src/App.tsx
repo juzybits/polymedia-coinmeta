@@ -1,6 +1,6 @@
 import { parseStructTag } from "@mysten/sui.js/utils";
 import { allCoinMetas } from "@polymedia/coinmeta";
-import { shortenSuiAddress } from "@polymedia/suits";
+import { shortenSuiAddress } from "@polymedia/suitcase-core";
 import { ReactNode } from "react";
 import "./styles/.shared.app.less";
 import "./styles/App.less";

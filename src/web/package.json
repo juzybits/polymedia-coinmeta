@@ -23,7 +23,7 @@
     "dependencies": {
         "@mysten/sui.js": "^0.54.1",
         "@polymedia/coinmeta": "workspace:*",
-        "@polymedia/suits": "^0.0.42",
+        "@polymedia/suitcase-core": "^0.0.3",
         "normalize.css": "^8.0.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
