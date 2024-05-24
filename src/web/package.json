@@ -21,6 +21,7 @@
         "preview": "pnpm build && vite preview"
     },
     "dependencies": {
+        "@mysten/sui.js": "^0.54.1",
         "@polymedia/coinmeta": "workspace:*",
         "@polymedia/suits": "^0.0.42",
         "normalize.css": "^8.0.1",
@@ -28,9 +29,9 @@
         "react-dom": "^18.3.1"
     },
     "devDependencies": {
-        "@types/react": "^18.3.2",
+        "@types/react": "^18.3.3",
         "@types/react-dom": "^18.3.0",
-        "@vitejs/plugin-react-swc": "^3.6.0",
+        "@vitejs/plugin-react-swc": "^3.7.0",
         "less": "^4.2.0",
         "vite": "^5.2.11",
         "wrangler": "^3.57.1"

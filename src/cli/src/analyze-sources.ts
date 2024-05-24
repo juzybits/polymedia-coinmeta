@@ -3,7 +3,7 @@ import { writeFileSync } from "fs";
 import { readJsonFile } from "./utils.js";
 
 /*
-- Reads a list of coin from Suiscan and SuiVision ... TODO
+- Reads a list of coin from Suiscan and SuiVision
 */
 
 /* Config */
