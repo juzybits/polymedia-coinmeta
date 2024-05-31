@@ -22,7 +22,7 @@
         "prepublishOnly": "rm -rf dist/ && pnpm build"
     },
     "dependencies": {
-        "@mysten/sui": "^1.0.3"
+        "@mysten/sui": "^1.2.0"
     },
     "type": "module",
     "sideEffects": false,
@@ -40,5 +40,8 @@
             "require": "./dist/cjs/index.js",
             "import": "./dist/esm/index.js"
         }
+    },
+    "devDependencies": {
+        "typescript": "^5.5.2"
     }
 }

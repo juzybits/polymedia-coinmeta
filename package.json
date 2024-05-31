@@ -1,26 +1,38 @@
 {
     "private": true,
+    "version": "0.0.0",
     "name": "polymedia-coinmeta-monorepo",
+    "author": "@juzybits (https://polymedia.app)",
+    "homepage": "https://github.com/juzybits/polymedia-coinmeta",
+    "description": "CoinMetadata for Sui coins, and web-optimized logos",
     "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/juzybits/polymedia-coinmeta"
+    },
+    "keywords": [],
     "scripts": {
         "cli:analyze-sources": "cd src/cli && pnpm run analyze-sources",
         "cli:fetch-raw": "cd src/cli && pnpm run fetch-raw",
         "cli:make-prod": "cd src/cli && pnpm run make-prod",
         "build": "turbo run build",
-        "clean": "turbo run clean && rm -rf dist/ node_modules/ .turbo/",
-        "lint": "turbo run lint"
+        "clean": "turbo run clean && rm -rf dist/ node_modules/ .turbo/ src/sui*/build/",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "typecheck": "turbo run typecheck"
     },
     "devDependencies": {
-        "@eslint/compat": "^1.0.3",
-        "@eslint/js": "^9.3.0",
-        "@stylistic/eslint-plugin": "^2.1.0",
-        "eslint": "^9.3.0",
-        "eslint-plugin-react": "^7.34.2",
-        "turbo": "^1.13.3",
-        "typescript": "^5.4.5",
-        "typescript-eslint": "^7.11.0"
+        "@eslint/compat": "^1.1.0",
+        "@eslint/js": "^9.6.0",
+        "@stylistic/eslint-plugin": "^2.3.0",
+        "eslint": "^9.6.0",
+        "eslint-plugin-react": "^7.34.3",
+        "turbo": "^2.0.6",
+        "typescript": "^5.5.2",
+        "typescript-eslint": "^7.14.1"
     },
     "engines": {
         "node": ">=18"
-    }
+    },
+    "packageManager": "pnpm@9.4.0"
 }

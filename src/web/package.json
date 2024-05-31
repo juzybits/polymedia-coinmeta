@@ -21,9 +21,9 @@
         "preview": "pnpm build && vite preview"
     },
     "dependencies": {
-        "@mysten/sui": "^1.0.3",
+        "@mysten/sui": "^1.2.0",
         "@polymedia/coinmeta": "workspace:*",
-        "@polymedia/suitcase-core": "^0.0.6",
+        "@polymedia/suitcase-core": "^0.0.7",
         "normalize.css": "^8.0.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
@@ -33,8 +33,9 @@
         "@types/react-dom": "^18.3.0",
         "@vitejs/plugin-react-swc": "^3.7.0",
         "less": "^4.2.0",
-        "vite": "^5.2.12",
-        "wrangler": "^3.57.2"
+        "typescript": "^5.5.2",
+        "vite": "^5.3.2",
+        "wrangler": "^3.62.0"
     },
     "type": "module",
     "sideEffects": false

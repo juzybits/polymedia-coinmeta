@@ -20,13 +20,14 @@
         "lint": "eslint src/ --report-unused-disable-directives --max-warnings 0"
     },
     "dependencies": {
-        "@mysten/sui": "^1.0.3",
+        "@mysten/sui": "^1.2.0",
         "@polymedia/coinmeta": "workspace:*",
-        "@polymedia/suitcase-node": "^0.0.6",
+        "@polymedia/suitcase-node": "^0.0.7",
         "sharp": "^0.33.4"
     },
     "devDependencies": {
-        "@types/node": "^20.12.13"
+        "@types/node": "^20.14.9",
+        "typescript": "^5.5.2"
     },
     "type": "module",
     "sideEffects": false
