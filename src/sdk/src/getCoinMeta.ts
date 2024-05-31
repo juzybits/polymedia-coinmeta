@@ -1,5 +1,5 @@
-import { CoinMetadata, SuiClient } from "@mysten/sui.js/client";
-import { normalizeStructTag } from "@mysten/sui.js/utils";
+import { CoinMetadata, SuiClient } from "@mysten/sui/client";
+import { normalizeStructTag } from "@mysten/sui/utils";
 import data from "./data.json";
 import { CoinMeta } from "./types";
 

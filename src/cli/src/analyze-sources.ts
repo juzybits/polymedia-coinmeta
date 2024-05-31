@@ -1,4 +1,4 @@
-import { normalizeStructTag } from "@mysten/sui.js/utils";
+import { normalizeStructTag } from "@mysten/sui/utils";
 import { writeTsvFile } from "@polymedia/suitcase-node";
 import { readJsonFile } from "./utils.js";
 

@@ -1,4 +1,4 @@
-import { parseStructTag } from "@mysten/sui.js/utils";
+import { parseStructTag } from "@mysten/sui/utils";
 import { allCoinMetas } from "@polymedia/coinmeta";
 import { shortenSuiAddress } from "@polymedia/suitcase-core";
 import { ReactNode } from "react";

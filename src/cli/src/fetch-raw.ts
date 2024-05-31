@@ -1,5 +1,5 @@
-import { SuiClient, getFullnodeUrl } from "@mysten/sui.js/client";
-import { normalizeStructTag } from "@mysten/sui.js/utils";
+import { SuiClient, getFullnodeUrl } from "@mysten/sui/client";
+import { normalizeStructTag } from "@mysten/sui/utils";
 import { CoinMeta } from "@polymedia/coinmeta";
 import { mkdirSync, writeFileSync } from "fs";
 import { InputFile } from "./types.js";
@@ -55,7 +55,7 @@ async function main()
 }
 
 async function downloadImage(filename: string, imageUrl: string) {
-    if (!REFETCH_IMAGES) { // eslint-disable-line @typescript-eslint/no-unnecessary-condition
+    if (!REFETCH_IMAGES) {
         const imagePath = findImagePath(OUTPUT_RAW_IMAGE_DIR, filename);
         if (imagePath) {
             console.log("Image already downloaded. Set `REFETCH_IMAGES = true` to re-download.");

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { CoinMetadata, SuiClient } from "@mysten/sui.js/client";
+import { CoinMetadata, SuiClient } from "@mysten/sui/client";
 import { getCoinMetas } from "@polymedia/coinmeta";
 
 export function useCoinMetas(
