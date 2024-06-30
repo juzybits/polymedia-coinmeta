@@ -17,7 +17,8 @@
         "make-prod": "tsc && node dist/make-prod.js",
         "build": "tsc",
         "clean": "rm -rf dist/ node_modules/ .turbo/",
-        "lint": "eslint src/ --report-unused-disable-directives --max-warnings 0"
+        "lint": "eslint src/ --report-unused-disable-directives --max-warnings 0",
+        "typecheck": "tsc -b"
     },
     "dependencies": {
         "@mysten/sui": "^1.2.0",

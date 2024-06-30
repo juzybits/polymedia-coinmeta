@@ -17,8 +17,10 @@
         "deploy-dev": "pnpm build && wrangler pages deploy dist/ --project-name polymedia-coinmeta --branch dev",
         "deploy-prod": "pnpm build && wrangler pages deploy dist/ --project-name polymedia-coinmeta --branch main",
         "dev": "vite",
-        "lint": "eslint src/ --report-unused-disable-directives --max-warnings 0",
-        "preview": "pnpm build && vite preview"
+        "lint": "eslint src/ *.ts --report-unused-disable-directives --max-warnings 0",
+        "preview": "pnpm build && vite preview",
+        "tunnel": "lt --port 1234",
+        "typecheck": "tsc -b"
     },
     "dependencies": {
         "@mysten/sui": "^1.2.0",
