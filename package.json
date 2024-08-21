@@ -16,9 +16,13 @@
         "cli:fetch-raw": "cd src/cli && pnpm run fetch-raw",
         "cli:make-prod": "cd src/cli && pnpm run make-prod",
         "build": "turbo run build",
+        "bump-version": "node src/cli/dist/bump-version.js",
         "clean": "turbo run clean && rm -rf dist/ node_modules/ .turbo/ src/sui*/build/",
         "dev": "turbo run dev",
         "lint": "turbo run lint",
+        "publish-all": "pnpm clean && pnpm i && pnpm build && pnpm publish -r --filter=./src/*",
+        "test": "turbo run test",
+        "test:watch": "jest --watch",
         "typecheck": "turbo run typecheck"
     },
     "devDependencies": {
@@ -34,5 +38,5 @@
     "engines": {
         "node": ">=18"
     },
-    "packageManager": "pnpm@9.4.0"
+    "packageManager": "pnpm@9.7.0"
 }
