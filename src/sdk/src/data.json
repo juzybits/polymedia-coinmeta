@@ -90,6 +90,15 @@
         "type": "0xa99166e802527eeb5439cbda12b0a02851bf2305d3c96a592b1440014fcb8975::koto::KOTO"
     },
     {
+        "decimals": 2,
+        "name": "BLUB",
+        "symbol": "BLUB",
+        "description": "A Dirty Fish in the Waters of the Sui Ocean",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xfa7ac3951fdca92c5200d468d31a365eb03b2be9936fde615e69f0c1274ad3a0-BLUB-BLUB.webp",
+        "id": "0xac32b519790cae96c3317457d903d61d04f1bc8f7710096d80fcba72c7a53703",
+        "type": "0xfa7ac3951fdca92c5200d468d31a365eb03b2be9936fde615e69f0c1274ad3a0::BLUB::BLUB"
+    },
+    {
         "decimals": 9,
         "name": "Volo Staked SUI",
         "symbol": "vSUI",
