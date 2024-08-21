@@ -21,14 +21,14 @@
         "typecheck": "tsc -b"
     },
     "dependencies": {
-        "@mysten/sui": "^1.2.0",
+        "@mysten/sui": "^1.7.0",
         "@polymedia/coinmeta": "workspace:*",
-        "@polymedia/suitcase-node": "^0.0.7",
-        "sharp": "^0.33.4"
+        "@polymedia/suitcase-node": "^0.0.19",
+        "sharp": "^0.33.5"
     },
     "devDependencies": {
-        "@types/node": "^20.14.9",
-        "typescript": "^5.5.2"
+        "@types/node": "^22.4.2",
+        "typescript": "^5.5.4"
     },
     "type": "module",
     "sideEffects": false

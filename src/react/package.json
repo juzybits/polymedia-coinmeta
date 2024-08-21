@@ -23,16 +23,16 @@
         "typecheck": "tsc -p tsconfig.esm.json"
     },
     "dependencies": {
-        "@mysten/sui": "^1.2.0",
+        "@mysten/sui": "^1.7.0",
         "@polymedia/coinmeta": "workspace:*"
     },
     "peerDependencies": {
         "react": "18"
     },
     "devDependencies": {
-        "@types/react": "^18.3.3",
+        "@types/react": "^18.3.4",
         "@types/react-dom": "^18.3.0",
-        "typescript": "^5.5.2"
+        "typescript": "^5.5.4"
     },
     "type": "module",
     "sideEffects": false,
