@@ -3,7 +3,8 @@ import { normalizeStructTag } from "@mysten/sui/utils";
 import { CoinMeta } from "@polymedia/coinmeta";
 import { mkdirSync, writeFileSync } from "fs";
 import { InputFile } from "./types.js";
-import { findImagePath, getFilename, readJsonFile, writeJsonFile } from "./utils.js";
+import { findImagePath, getFilename } from "./utils.js";
+import { readJsonFile, writeJsonFile } from "@polymedia/suitcase-node";
 
 /*
 This script:

@@ -1,6 +1,5 @@
 import { normalizeStructTag } from "@mysten/sui/utils";
-import { writeTsvFile } from "@polymedia/suitcase-node";
-import { readJsonFile } from "./utils.js";
+import { readJsonFile, writeTsvFile } from "@polymedia/suitcase-node";
 
 /*
 - Reads a list of coin from Suiscan and SuiVision
