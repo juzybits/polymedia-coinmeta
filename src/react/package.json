@@ -23,10 +23,10 @@
         "typecheck": "tsc -p tsconfig.esm.json"
     },
     "dependencies": {
-        "@mysten/sui": "^1.7.0",
         "@polymedia/coinmeta": "workspace:*"
     },
     "peerDependencies": {
+        "@mysten/sui": "^1.7.0",
         "react": "18"
     },
     "devDependencies": {
