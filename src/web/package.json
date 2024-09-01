@@ -25,19 +25,19 @@
     "dependencies": {
         "@mysten/sui": "^1.7.0",
         "@polymedia/coinmeta": "workspace:*",
-        "@polymedia/suitcase-core": "^0.0.22",
+        "@polymedia/suitcase-core": "^0.0.26",
         "normalize.css": "^8.0.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
     },
     "devDependencies": {
-        "@types/react": "^18.3.4",
+        "@types/react": "^18.3.5",
         "@types/react-dom": "^18.3.0",
         "@vitejs/plugin-react-swc": "^3.7.0",
         "less": "^4.2.0",
         "typescript": "^5.5.4",
         "vite": "^5.4.2",
-        "wrangler": "^3.72.2"
+        "wrangler": "^3.73.0"
     },
     "type": "module",
     "sideEffects": false
