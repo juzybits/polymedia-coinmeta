@@ -70,9 +70,8 @@ Use it in your code:
 ```typescript
 import { useCoinMeta, useCoinMetas } from '@polymedia/coinmeta-react';
 ...
-const { coinMeta, isLoadingCoinMeta, errorCoinMeta } = useCoinMeta(suiClient, coinType);      // one coin
-const { coinMetas, isLoadingCoinMetas, errorCoinMetas } = useCoinMetas(suiClient, coinTypes); // many coins
-
+const { coinMeta, errorCoinMeta } = useCoinMeta(suiClient, coinType);      // one coin
+const { coinMetas, errorCoinMetas } = useCoinMetas(suiClient, coinTypes);  // many coins
 ```
 
 ## Web: [src/web](./src/web/)

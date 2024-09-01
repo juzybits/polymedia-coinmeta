@@ -6,25 +6,26 @@ export function useCoinMetas(
     suiClient: SuiClient,
     coinTypes: string[] | undefined
 ) {
-    const [coinMetas, setCoinMetas] = useState<Map<string, CoinMetadata | null>>(new Map());
-    const [isLoadingCoinMetas, setLoading] = useState<boolean>(false);
+    const [coinMetas, setCoinMetas] = useState<Map<string, CoinMetadata | null> | undefined>();
     const [errorCoinMetas, setError] = useState<Error | null>(null);
 
     useEffect(() => {
         setError(null);
 
         if (!coinTypes) {
-            setLoading(false);
             setCoinMetas(new Map());
             return;
         }
 
-        setLoading(true);
+        setCoinMetas(undefined); // loading
+
         getCoinMetas(suiClient, coinTypes)
             .then(setCoinMetas)
-            .catch(setError)
-            .finally(() => setLoading(false));
+            .catch((error) => {
+                setError(error);
+                setCoinMetas(new Map());
+            });
     }, [suiClient, coinTypes]);
 
-    return { coinMetas, isLoadingCoinMetas, errorCoinMetas };
+    return { coinMetas, errorCoinMetas };
 }

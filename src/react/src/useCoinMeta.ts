@@ -6,25 +6,26 @@ export function useCoinMeta(
     suiClient: SuiClient,
     coinType: string | undefined
 ) {
-    const [coinMeta, setCoinMeta] = useState<CoinMetadata | null>(null);
-    const [isLoadingCoinMeta, setLoading] = useState<boolean>(false);
+    const [coinMeta, setCoinMeta] = useState<CoinMetadata | null | undefined>();
     const [errorCoinMeta, setError] = useState<Error | null>(null);
 
     useEffect(() => {
         setError(null);
 
         if (!coinType) {
-            setLoading(false);
             setCoinMeta(null);
             return;
         }
 
-        setLoading(true);
+        setCoinMeta(undefined); // loading
+
         getCoinMeta(suiClient, coinType)
             .then(setCoinMeta)
-            .catch(setError)
-            .finally(() => setLoading(false));
+            .catch(error => {
+                setError(error);
+                setCoinMeta(null);
+            });
     }, [suiClient, coinType]);
 
-    return { coinMeta, isLoadingCoinMeta, errorCoinMeta };
+    return { coinMeta, errorCoinMeta };
 }
