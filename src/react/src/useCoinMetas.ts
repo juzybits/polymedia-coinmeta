@@ -21,8 +21,8 @@ export function useCoinMetas(
 
         getCoinMetas(suiClient, coinTypes)
             .then(setCoinMetas)
-            .catch((error) => {
-                setError(error);
+            .catch((error: unknown) => {
+                setError(error instanceof Error ? error : new Error(String(error)));
                 setCoinMetas(new Map());
             });
     }, [suiClient, coinTypes]);

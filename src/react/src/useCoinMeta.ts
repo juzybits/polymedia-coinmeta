@@ -21,8 +21,8 @@ export function useCoinMeta(
 
         getCoinMeta(suiClient, coinType)
             .then(setCoinMeta)
-            .catch(error => {
-                setError(error);
+            .catch((error: unknown) => {
+                setError(error instanceof Error ? error : new Error(String(error)));
                 setCoinMeta(null);
             });
     }, [suiClient, coinType]);
