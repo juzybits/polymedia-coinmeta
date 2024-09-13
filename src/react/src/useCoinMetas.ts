@@ -9,7 +9,8 @@ export function useCoinMetas(
     const [coinMetas, setCoinMetas] = useState<Map<string, CoinMetadata | null> | undefined>();
     const [errorCoinMetas, setError] = useState<Error | null>(null);
 
-    useEffect(() => {
+    useEffect(() =>
+    {
         setError(null);
 
         if (!coinTypes) {
