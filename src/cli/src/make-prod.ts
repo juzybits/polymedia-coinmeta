@@ -1,5 +1,5 @@
 import { CoinMeta } from "@polymedia/coinmeta";
-import { cpSync, mkdirSync, rmSync } from "fs";
+import { cpSync, mkdirSync, rmSync, writeFileSync } from "fs";
 import path from "path";
 import sharp from "sharp";
 import { findImagePath, getFilename } from "./utils.js";
@@ -18,7 +18,7 @@ This script:
 /* Config */
 const INPUT_RAW_META_FILE = "../../data/raw-meta.json";
 const INPUT_RAW_IMAGE_DIR = "../../data/raw-img";
-const OUTPUT_SDK_META_FILE = "../sdk/src/data.json";
+const OUTPUT_SDK_META_FILE = "../sdk/src/data.ts";
 const OUTPUT_WEB_META_FILE = "../web/public/api/data.json";
 const OUTPUT_WEB_IMAGE_DIR = "../web/public/img/coins"; // careful, gets deleted
 const BASE_URL_IMG = "https://coinmeta.polymedia.app/img/coins/";
@@ -61,8 +61,15 @@ async function main()
         meta.iconUrl = BASE_URL_IMG + path.basename(prodImagePath);
         prodMetas.push(meta);
     }
-    writeJsonFile(OUTPUT_SDK_META_FILE, prodMetas);
+    writeTextFile(OUTPUT_SDK_META_FILE, `export const data = ${JSON.stringify(prodMetas, null, 4)};`);
     writeJsonFile(OUTPUT_WEB_META_FILE, prodMetas);
 }
 
 void main();
+
+function writeTextFile(filename: string, contents: string): void {
+    writeFileSync(
+        filename,
+        contents + "\n"
+    );
+}

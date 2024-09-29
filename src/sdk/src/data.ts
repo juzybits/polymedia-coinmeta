@@ -1,4 +1,4 @@
-[
+export const data = [
     {
         "decimals": 9,
         "name": "Sui",
@@ -593,4 +593,4 @@
         "id": "0x2bce194d8454616d16d3ee756fef0c83970556233851fb9da2e5d154952338b8",
         "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdt_coin::CELER_USDT_COIN"
     }
-]
+];

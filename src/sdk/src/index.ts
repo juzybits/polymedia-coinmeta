@@ -1,8 +1,8 @@
-import allData from "./data.json";
+import { data } from "./data.js";
 
-type OneData = typeof allData[number];
+type OneData = typeof data[number];
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-export const allCoinMetas = allData as OneData[];
+export const allCoinMetas = data as OneData[];
 
 export * from "./getCoinMeta.js";
 export * from "./types.js";
