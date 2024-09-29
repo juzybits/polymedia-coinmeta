@@ -1,7 +1,7 @@
 import { CoinMetadata, SuiClient } from "@mysten/sui/client";
 import { normalizeStructTag } from "@mysten/sui/utils";
 import data from "./data.json";
-import { CoinMeta } from "./types";
+import { CoinMeta } from "./types.js";
 
 const cache = new Map<string, CoinMetadata>(
     (data as CoinMeta[]).map(meta => [meta.type, meta])
