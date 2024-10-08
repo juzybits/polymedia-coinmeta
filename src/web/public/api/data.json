@@ -28,6 +28,15 @@
     },
     {
         "decimals": 6,
+        "name": "USDC",
+        "symbol": "USDC",
+        "description": "USDC is a US dollar-backed stablecoin issued by Circle. USDC is designed to provide a faster, safer, and more efficient way to send, spend, and exchange money around the world.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7-usdc-USDC.webp",
+        "id": "0x69b7a7c3c200439c1b5f3b19d7d495d5966d5f08de66c69276152f8db3992ec6",
+        "type": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC"
+    },
+    {
+        "decimals": 6,
         "name": "USD Coin",
         "symbol": "USDC",
         "description": "",
@@ -124,6 +133,15 @@
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xbde4ba4c2e274a60ce15c1cfff9e5c42e41654ac8b6d906a57efa4bd3c29f47d-hasui-HASUI.svg",
         "id": "0x2c5f33af93f6511df699aaaa5822d823aac6ed99d4a0de2a4a50b3afa0172e24",
         "type": "0xbde4ba4c2e274a60ce15c1cfff9e5c42e41654ac8b6d906a57efa4bd3c29f47d::hasui::HASUI"
+    },
+    {
+        "decimals": 9,
+        "name": "HammerHead",
+        "symbol": "HHS",
+        "description": "The Coolest Shark on SUI ocean",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x996374e9df45796fe8112663a37272af4d33e7531c67d21aaa5cc93b3d1ded5c-hhs-HHS.webp",
+        "id": "0x7e24b4469033ee68de54da91032a598e27e5c0ddfc366315d22d1eba7a955f96",
+        "type": "0x996374e9df45796fe8112663a37272af4d33e7531c67d21aaa5cc93b3d1ded5c::hhs::HHS"
     },
     {
         "decimals": 9,
