@@ -28,6 +28,15 @@
     },
     {
         "decimals": 6,
+        "name": "DeepBook Token",
+        "symbol": "DEEP",
+        "description": "The DEEP token secures the DeepBook protocol, the premier wholesale liquidity venue for on-chain trading.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xdeeb7a4662eec9f2f3def03fb937a663dddaa2e215b8078a284d026b7946c270-deep-DEEP.svg",
+        "id": "0x6e60b051a08fa836f5a7acd7c464c8d9825bc29c44657fe170fe9b8e1e4770c0",
+        "type": "0xdeeb7a4662eec9f2f3def03fb937a663dddaa2e215b8078a284d026b7946c270::deep::DEEP"
+    },
+    {
+        "decimals": 6,
         "name": "USDC",
         "symbol": "USDC",
         "description": "USDC is a US dollar-backed stablecoin issued by Circle. USDC is designed to provide a faster, safer, and more efficient way to send, spend, and exchange money around the world.",

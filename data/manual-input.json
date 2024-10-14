@@ -15,6 +15,11 @@
         "image": "manually added"
     },
     {
+        "name": "DEEP",
+        "type": "0xdeeb7a4662eec9f2f3def03fb937a663dddaa2e215b8078a284d026b7946c270::deep::DEEP",
+        "image": "https://images.deepbook.tech/icon.svg"
+    },
+    {
         "name": "USDC",
         "type": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
