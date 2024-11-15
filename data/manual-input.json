@@ -88,7 +88,7 @@
     {
         "name": "REAP",
         "type": "0xde2d3e02ba60b806f81ee9220be2a34932a513fe8d7f553167649e95de21c066::reap_token::REAP_TOKEN",
-        "image": "https://images.releap.xyz/reap_token.jpeg"
+        "image": "manually added"
     },
     {
         "name": "Scallop",
@@ -288,7 +288,7 @@
     {
         "name": "KIMCHI",
         "type": "0xb6baa75577e4bbffba70207651824606e51d38ae23aa94fb9fb700e0ecf50064::kimchi::KIMCHI",
-        "image": "https://assets.kimchi.gg/CoinLogo.png"
+        "image": "manually added"
     },
     {
         "name": "Pikasui",

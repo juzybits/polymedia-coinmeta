@@ -56,6 +56,11 @@ async function main()
 }
 
 async function downloadImage(filename: string, imageUrl: string) {
+    if (imageUrl === "manually added") {
+        console.log("Image manually added.");
+        return;
+    }
+
     if (!REFETCH_IMAGES) {
         const imagePath = findImagePath(OUTPUT_RAW_IMAGE_DIR, filename);
         if (imagePath) {
