@@ -100,7 +100,7 @@ importers:
         version: link:../sdk
       '@polymedia/suitcase-core':
         specifier: ^0.0.36
-        version: 0.0.36(@mysten/sui@1.15.1(typescript@5.7.2))
+        version: link:../../../polymedia-suitcase/src/core
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
