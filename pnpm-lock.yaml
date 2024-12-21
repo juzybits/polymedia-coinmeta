@@ -45,8 +45,8 @@ importers:
         specifier: workspace:*
         version: link:../sdk
       '@polymedia/suitcase-node':
-        specifier: ^0.0.36
-        version: 0.0.36(@mysten/sui@1.18.0(typescript@5.7.2))
+        specifier: ^0.0.37
+        version: 0.0.37(@mysten/sui@1.18.0(typescript@5.7.2))
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
@@ -96,8 +96,8 @@ importers:
         specifier: workspace:*
         version: link:../sdk
       '@polymedia/suitcase-core':
-        specifier: ^0.0.36
-        version: 0.0.36(@mysten/sui@1.18.0(typescript@5.7.2))
+        specifier: ^0.0.37
+        version: 0.0.37(@mysten/sui@1.18.0(typescript@5.7.2))
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -711,15 +711,15 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@polymedia/suitcase-core@0.0.36':
-    resolution: {integrity: sha512-iLwY3i/cUnkKARS8eQFuXYKxxpVjVE6iWZyde36AhWsyfX8VhwL43IoVwdr/kTsLk/QOlqEpimEP/QiHQ+v58Q==}
+  '@polymedia/suitcase-core@0.0.37':
+    resolution: {integrity: sha512-ftjq5/Nzu2dKeZrtwTKskp5tlRmu+Tz6mWko7SWs70tLUYXe4oKu3oQ2lFSCCRecWHjr4qnlEpWUh6aOMiBKJw==}
     peerDependencies:
-      '@mysten/sui': ^1.15.1
+      '@mysten/sui': ^1.18.0
 
-  '@polymedia/suitcase-node@0.0.36':
-    resolution: {integrity: sha512-b65Wf9NQ/K+qH3WzKsicRSJT5FaqbeUSfU2N/X97oZTP5A9Y4CbW0pV1P9goDKlrlOgLjuDyaba9eg6/zHd+FQ==}
+  '@polymedia/suitcase-node@0.0.37':
+    resolution: {integrity: sha512-x+75bBvb1JrWaBSgQmj6LERP8HeA1FF3NhWDPv36VgR0ADHCUMiAYC7cVPkor7k/XthBoaXvS+3gBf0xV4l5qQ==}
     peerDependencies:
-      '@mysten/sui': ^1.15.1
+      '@mysten/sui': ^1.18.0
 
   '@rollup/rollup-android-arm-eabi@4.29.1':
     resolution: {integrity: sha512-ssKhA8RNltTZLpG6/QNkCSge+7mBQGUqJRisZ2MDQcEGaK93QESEgWK2iOpIDZ7k9zPVkG5AS3ksvD5ZWxmItw==}
@@ -2638,14 +2638,14 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@polymedia/suitcase-core@0.0.36(@mysten/sui@1.18.0(typescript@5.7.2))':
+  '@polymedia/suitcase-core@0.0.37(@mysten/sui@1.18.0(typescript@5.7.2))':
     dependencies:
       '@mysten/sui': 1.18.0(typescript@5.7.2)
 
-  '@polymedia/suitcase-node@0.0.36(@mysten/sui@1.18.0(typescript@5.7.2))':
+  '@polymedia/suitcase-node@0.0.37(@mysten/sui@1.18.0(typescript@5.7.2))':
     dependencies:
       '@mysten/sui': 1.18.0(typescript@5.7.2)
-      '@polymedia/suitcase-core': 0.0.36(@mysten/sui@1.18.0(typescript@5.7.2))
+      '@polymedia/suitcase-core': 0.0.37(@mysten/sui@1.18.0(typescript@5.7.2))
 
   '@rollup/rollup-android-arm-eabi@4.29.1':
     optional: true
