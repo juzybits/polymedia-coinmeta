@@ -132,8 +132,8 @@ importers:
 
 packages:
 
-  '@0no-co/graphql.web@1.0.11':
-    resolution: {integrity: sha512-xuSJ9WXwTmtngWkbdEoopMo6F8NLtjy84UNAMsAr5C3/2SgAL/dEU10TMqTIsipqPQ8HA/7WzeqQ9DEQxSvPPA==}
+  '@0no-co/graphql.web@1.0.12':
+    resolution: {integrity: sha512-BTDjjsV/zSPy5fqItwm+KWUfh9CSe9tTtR6rCB72ddtkAxdcHbi4Ir4r/L1Et4lyxmL+i7Rb3m9sjLLi9tYrzA==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     peerDependenciesMeta:
@@ -1438,8 +1438,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  graphql@16.9.0:
-    resolution: {integrity: sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==}
+  graphql@16.10.0:
+    resolution: {integrity: sha512-AjqGKbDGUFRKIRCP9tCKiIGHyriz2oHEbPIbEtcSLSs4YjReZOIPQQWek4+6hjw62H9QShXHyaGivGiYVLeYFQ==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   has-bigints@1.1.0:
@@ -2246,14 +2246,14 @@ packages:
 
 snapshots:
 
-  '@0no-co/graphql.web@1.0.11(graphql@16.9.0)':
+  '@0no-co/graphql.web@1.0.12(graphql@16.10.0)':
     optionalDependencies:
-      graphql: 16.9.0
+      graphql: 16.10.0
 
-  '@0no-co/graphqlsp@1.12.16(graphql@16.9.0)(typescript@5.7.2)':
+  '@0no-co/graphqlsp@1.12.16(graphql@16.10.0)(typescript@5.7.2)':
     dependencies:
-      '@gql.tada/internal': 1.0.8(graphql@16.9.0)(typescript@5.7.2)
-      graphql: 16.9.0
+      '@gql.tada/internal': 1.0.8(graphql@16.10.0)(typescript@5.7.2)
+      graphql: 16.10.0
       typescript: 5.7.2
 
   '@cloudflare/kv-asset-handler@0.3.4':
@@ -2479,22 +2479,22 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@gql.tada/cli-utils@1.6.3(@0no-co/graphqlsp@1.12.16(graphql@16.9.0)(typescript@5.7.2))(graphql@16.9.0)(typescript@5.7.2)':
+  '@gql.tada/cli-utils@1.6.3(@0no-co/graphqlsp@1.12.16(graphql@16.10.0)(typescript@5.7.2))(graphql@16.10.0)(typescript@5.7.2)':
     dependencies:
-      '@0no-co/graphqlsp': 1.12.16(graphql@16.9.0)(typescript@5.7.2)
-      '@gql.tada/internal': 1.0.8(graphql@16.9.0)(typescript@5.7.2)
-      graphql: 16.9.0
+      '@0no-co/graphqlsp': 1.12.16(graphql@16.10.0)(typescript@5.7.2)
+      '@gql.tada/internal': 1.0.8(graphql@16.10.0)(typescript@5.7.2)
+      graphql: 16.10.0
       typescript: 5.7.2
 
-  '@gql.tada/internal@1.0.8(graphql@16.9.0)(typescript@5.7.2)':
+  '@gql.tada/internal@1.0.8(graphql@16.10.0)(typescript@5.7.2)':
     dependencies:
-      '@0no-co/graphql.web': 1.0.11(graphql@16.9.0)
-      graphql: 16.9.0
+      '@0no-co/graphql.web': 1.0.12(graphql@16.10.0)
+      graphql: 16.10.0
       typescript: 5.7.2
 
-  '@graphql-typed-document-node/core@3.2.0(graphql@16.9.0)':
+  '@graphql-typed-document-node/core@3.2.0(graphql@16.10.0)':
     dependencies:
-      graphql: 16.9.0
+      graphql: 16.10.0
 
   '@humanfs/core@0.19.1': {}
 
@@ -2599,7 +2599,7 @@ snapshots:
 
   '@mysten/sui@1.18.0(typescript@5.7.2)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
       '@mysten/bcs': 1.2.0
       '@noble/curves': 1.7.0
       '@noble/hashes': 1.6.1
@@ -2608,8 +2608,8 @@ snapshots:
       '@simplewebauthn/typescript-types': 7.4.0
       '@suchipi/femver': 1.0.0
       bech32: 2.0.0
-      gql.tada: 1.8.10(graphql@16.9.0)(typescript@5.7.2)
-      graphql: 16.9.0
+      gql.tada: 1.8.10(graphql@16.10.0)(typescript@5.7.2)
+      graphql: 16.10.0
       jose: 5.9.6
       poseidon-lite: 0.2.1
       valibot: 0.36.0
@@ -3533,12 +3533,12 @@ snapshots:
 
   gopd@1.2.0: {}
 
-  gql.tada@1.8.10(graphql@16.9.0)(typescript@5.7.2):
+  gql.tada@1.8.10(graphql@16.10.0)(typescript@5.7.2):
     dependencies:
-      '@0no-co/graphql.web': 1.0.11(graphql@16.9.0)
-      '@0no-co/graphqlsp': 1.12.16(graphql@16.9.0)(typescript@5.7.2)
-      '@gql.tada/cli-utils': 1.6.3(@0no-co/graphqlsp@1.12.16(graphql@16.9.0)(typescript@5.7.2))(graphql@16.9.0)(typescript@5.7.2)
-      '@gql.tada/internal': 1.0.8(graphql@16.9.0)(typescript@5.7.2)
+      '@0no-co/graphql.web': 1.0.12(graphql@16.10.0)
+      '@0no-co/graphqlsp': 1.12.16(graphql@16.10.0)(typescript@5.7.2)
+      '@gql.tada/cli-utils': 1.6.3(@0no-co/graphqlsp@1.12.16(graphql@16.10.0)(typescript@5.7.2))(graphql@16.10.0)(typescript@5.7.2)
+      '@gql.tada/internal': 1.0.8(graphql@16.10.0)(typescript@5.7.2)
       typescript: 5.7.2
     transitivePeerDependencies:
       - '@gql.tada/svelte-support'
@@ -3550,7 +3550,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  graphql@16.9.0: {}
+  graphql@16.10.0: {}
 
   has-bigints@1.1.0: {}
 

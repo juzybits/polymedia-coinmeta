@@ -9,8 +9,8 @@ PATH_LOCAL=$HOME/data/code/polymedia-coinmeta
 REACT_VERSION="^18.0.0"
 
 cd $PATH_LOCAL
-pnpm upgrade --latest --recursive
-pnpm upgrade --latest -w
+pnpm up --latest --recursive
+pnpm up --latest -w
 
 cd $PATH_LOCAL/src/react
 pnpm add -D @types/react@$REACT_VERSION
@@ -18,3 +18,7 @@ pnpm add -D @types/react@$REACT_VERSION
 cd $PATH_LOCAL/src/web
 pnpm add react@$REACT_VERSION react-dom@$REACT_VERSION
 pnpm add -D @types/react@$REACT_VERSION @types/react-dom@$REACT_VERSION
+
+cd $PATH_LOCAL
+pnpm up --recursive
+pnpm up -w
