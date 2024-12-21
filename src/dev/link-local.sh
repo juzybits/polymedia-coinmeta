@@ -11,8 +11,8 @@ PATH_LOCAL=$HOME/data/code/polymedia-coinmeta
 cd $PATH_SUITCASE
 pnpm build
 
-cd $PATH_LOCAL/src/sdk
+cd $PATH_LOCAL/src/cli
 pnpm link $PATH_SUITCASE/src/node
 
 cd $PATH_LOCAL/src/web
-pnpm link $PATH_SUITCASE/src/core
+pnpm link $PATH_SUITCASE/src/react
