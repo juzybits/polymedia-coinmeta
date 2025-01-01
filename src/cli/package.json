@@ -24,11 +24,11 @@
     "dependencies": {
         "@mysten/sui": "^1.18.0",
         "@polymedia/coinmeta": "workspace:*",
-        "@polymedia/suitcase-node": "^0.0.37",
+        "@polymedia/suitcase-node": "^0.0.38",
         "sharp": "^0.33.5"
     },
     "devDependencies": {
-        "@types/node": "^22.10.2",
+        "@types/node": "^22.10.3",
         "typescript": "^5.7.2"
     },
     "type": "module",

@@ -25,7 +25,7 @@
     "dependencies": {
         "@mysten/sui": "^1.18.0",
         "@polymedia/coinmeta": "workspace:*",
-        "@polymedia/suitcase-core": "^0.0.37",
+        "@polymedia/suitcase-core": "^0.0.38",
         "normalize.css": "^8.0.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
@@ -36,7 +36,7 @@
         "@vitejs/plugin-react-swc": "^3.7.2",
         "less": "^4.2.1",
         "typescript": "^5.7.2",
-        "vite": "^6.0.5",
+        "vite": "^6.0.6",
         "wrangler": "^3.99.0"
     },
     "type": "module",
