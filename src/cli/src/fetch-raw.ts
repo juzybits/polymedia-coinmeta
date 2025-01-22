@@ -1,10 +1,13 @@
+import { mkdirSync, writeFileSync } from "fs";
+
 import { SuiClient, getFullnodeUrl } from "@mysten/sui/client";
 import { normalizeStructTag } from "@mysten/sui/utils";
 import { CoinMeta } from "@polymedia/coinmeta";
-import { mkdirSync, writeFileSync } from "fs";
+import { readJsonFile, writeJsonFile } from "@polymedia/suitcase-node";
+
 import { InputFile } from "./types.js";
 import { findImagePath, getFilename } from "./utils.js";
-import { readJsonFile, writeJsonFile } from "@polymedia/suitcase-node";
+
 
 /*
 This script:

@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
 import { CoinMetadata, SuiClient } from "@mysten/sui/client";
 import { getCoinMeta } from "@polymedia/coinmeta";
+import { useState, useEffect } from "react";
 
 export function useCoinMeta(
     suiClient: SuiClient,
