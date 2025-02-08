@@ -619,5 +619,14 @@ export const data = [
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690-celer_usdt_coin-CELER_USDT_COIN.webp",
         "id": "0x2bce194d8454616d16d3ee756fef0c83970556233851fb9da2e5d154952338b8",
         "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdt_coin::CELER_USDT_COIN"
+    },
+    {
+        "decimals": 6,
+        "name": "PRIME",
+        "symbol": "PRIME",
+        "description": "Owned Objects < Shared Objects < Prime Objects (IYKYK)",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xf4b9d3ef9ead021579c8afd6e530df6ae79a5d73e2bac1ea05cb4d713ee7637d-prime-PRIME.webp",
+        "id": "0x120b8c8e5dea303db7e61a16c8926c699efcd9978017de4a1b4353f5eaea0c86",
+        "type": "0xf4b9d3ef9ead021579c8afd6e530df6ae79a5d73e2bac1ea05cb4d713ee7637d::prime::PRIME"
     }
 ];

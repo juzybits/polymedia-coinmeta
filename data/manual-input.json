@@ -88,7 +88,7 @@
     {
         "name": "REAP",
         "type": "0xde2d3e02ba60b806f81ee9220be2a34932a513fe8d7f553167649e95de21c066::reap_token::REAP_TOKEN",
-        "image": "https://images.releap.xyz/reap_token.jpeg"
+        "image": "manually added"
     },
     {
         "name": "Scallop",
@@ -288,7 +288,7 @@
     {
         "name": "KIMCHI",
         "type": "0xb6baa75577e4bbffba70207651824606e51d38ae23aa94fb9fb700e0ecf50064::kimchi::KIMCHI",
-        "image": "https://assets.kimchi.gg/CoinLogo.png"
+        "image": "manually added"
     },
     {
         "name": "Pikasui",
@@ -349,5 +349,11 @@
         "nameOverride": "cUSDTe",
         "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdt_coin::CELER_USDT_COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public"
+    },
+    {
+        "name": "PRIME",
+        "nameOverride": "PRIME",
+        "type": "0xf4b9d3ef9ead021579c8afd6e530df6ae79a5d73e2bac1ea05cb4d713ee7637d::prime::PRIME",
+        "image": "https://r.turbos.finance/icon/1730971059894.png"
     }
 ]
