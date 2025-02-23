@@ -1,554 +1,132 @@
 [
-    {
-        "name": "Sui",
-        "type": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/sui.svg/public"
-    },
-    {
-        "name": "FUD",
-        "type": "0x76cb819b01abed502bee8a702b4c2d547532c12f25001c9dea795a5e631c26f1::fud::FUD"
-    },
-    {
-        "name": "SPAM",
-        "type": "0x30a644c3485ee9b604f52165668895092191fcaf5489a846afa7fc11cdb9b24a::spam::SPAM"
-    },
-    {
-        "name": "DEEP",
-        "type": "0xdeeb7a4662eec9f2f3def03fb937a663dddaa2e215b8078a284d026b7946c270::deep::DEEP"
-    },
-    {
-        "name": "USDC",
-        "type": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC"
-    },
-    {
-        "name": "USDT",
-        "type": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public"
-    },
-    {
-        "name": "Bucket USD",
-        "type": "0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK"
-    },
-    {
-        "name": "Cetus Token",
-        "type": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS"
-    },
-    {
-        "name": "Turbos",
-        "type": "0x5d1f47ea69bb0de31c313d7acf89b890dbb8991ea8e03c6c355171f84bb1ba4a::turbos::TURBOS"
-    },
-    {
-        "name": "SPT",
-        "type": "0xb779486cfd6c19e9218cc7dc17c453014d2d9ba12d2ee4dbb0ec4e1e02ae1cca::spt::SPT"
-    },
-    {
-        "name": "KOTO",
-        "type": "0xa99166e802527eeb5439cbda12b0a02851bf2305d3c96a592b1440014fcb8975::koto::KOTO"
-    },
-    {
-        "name": "BLUB",
-        "type": "0xfa7ac3951fdca92c5200d468d31a365eb03b2be9936fde615e69f0c1274ad3a0::BLUB::BLUB"
-    },
-    {
-        "name": "Volo Staked SUI",
-        "type": "0x549e8b69270defbfafd4f94e17ec44cdbdd99820b33bda2278dea3b9a32d3f55::cert::CERT"
-    },
-    {
-        "name": "NAVX Token",
-        "type": "0xa99b8952d4f7d947ea77fe0ecdcc9e5fc0bcab2841d6e2a5aa00c3044e5544b5::navx::NAVX"
-    },
-    {
-        "name": "haSUI",
-        "type": "0xbde4ba4c2e274a60ce15c1cfff9e5c42e41654ac8b6d906a57efa4bd3c29f47d::hasui::HASUI"
-    },
-    {
-        "name": "HammerHead",
-        "type": "0x996374e9df45796fe8112663a37272af4d33e7531c67d21aaa5cc93b3d1ded5c::hhs::HHS"
-    },
-    {
-        "name": "Scallop",
-        "type": "0x7016aae72cfc67f2fadf55769c0a7dd54291a583b63051a5ed71081cce836ac6::sca::SCA"
-    },
-    {
-        "name": "afSUI",
-        "type": "0xf325ce1300e8dac124071d3152c5c5ee6174914f8bc2161e88329cf579246efc::afsui::AFSUI"
-    },
-    {
-        "name": "Suiswap Token",
-        "type": "0x361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc::TOKEN::TOKEN"
-    },
-    {
-        "name": "SuiBoxer Coin",
-        "type": "0xbff8dc60d3f714f678cd4490ff08cabbea95d308c6de47a150c79cc875e0c7c6::sbox::SBOX"
-    },
-    {
-        "name": "Sacabam",
-        "type": "0x9a5502414b5d51d01c8b5641db7436d789fa15a245694b24aa37c25c2a6ce001::scb::SCB"
-    },
-    {
-        "name": "MOVE",
-        "type": "0xd9f9b0b4f35276eecd1eea6985bfabe2a2bbd5575f9adb9162ccbdb4ddebde7f::smove::SMOVE"
-    },
-    {
-        "name": "Wrapped Ether",
-        "type": "0xaf8cd5edc19c4512f4259f0bee101a40d41ebed738ade5874359610ef8eeced5::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/weth.jpg/public"
-    },
-    {
-        "name": "SUIA",
-        "type": "0x1d58e26e85fbf9ee8596872686da75544342487f95b1773be3c9a49ab1061b19::suia_token::SUIA_TOKEN"
-    },
-    {
-        "name": "FlowX",
-        "type": "0x6dae8ca14311574fdfe555524ea48558e3d1360d1607d1c7f98af867e3b7976c::flx::FLX",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/flx.svg/public"
-    },
-    {
-        "name": "Aptos Coin",
-        "type": "0x3a5143bb1196e3bcdfab6203d1683ae29edd26294fc8bfeafe4aaa9d2704df37::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/aptos.png/public"
-    },
-    {
-        "name": "Wrapped SOL",
-        "type": "0xb7844e289a8410e50fb3ca48d69eb9cf29e27d223ef90353fe1bd8e27ff8f3f8::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/sol.png/public"
-    },
-    {
-        "name": "Wrapped Matic",
-        "type": "0xdbe380b13a6d0f5cdedd58de8f04625263f113b3f9db32b3e1983f49e2841676::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/matic.png/public"
-    },
-    {
-        "name": "Wrapped BNB",
-        "type": "0xb848cce11ef3a8f62eccea6eb5b35a12c4c2b1ee1af7755d02d7bd6218e8226f::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/bnb.png/public"
-    },
-    {
-        "name": "Flame Token",
-        "type": "0x247a6d271810efbe80943433e84b9360e2f976fce89e7c19dc680f5aae8738e2::flame::FLAME"
-    },
-    {
-        "name": "ISSP Coin",
-        "type": "0xd0ea9bc91c3855e9b58a51cd55e8455b37bd5c75f70b4d6e97e54b55c4ba4ae8::issp::ISSP",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/$ISSP_logo_200200-Bob.png/public"
-    },
-    {
-        "name": "Suizuki",
-        "type": "0x8d84e98518cab8bd2941cfb23fa78ad0538ed07ba8887e451f0b93380d479908::zuki::ZUKI"
-    },
-    {
-        "name": "Burrial",
-        "type": "0x6db9a7bb22829898fd281879778a175120ebfc77eafc1f8ee341654cfc3f8dc2::burry::BURRY"
-    },
-    {
-        "name": "Poseidollar",
-        "type": "0x4fc3949a4a8fe3ad9c75cec9724ff2b2d8520506b6129c9d8f0fcc2a1e4a8880::pdo::PDO"
-    },
-    {
-        "name": "Sudo LP Token",
-        "type": "0xc44d97a4bc4e5a33ca847b72b123172c88a6328196b71414f32c3070233604b2::slp::SLP"
-    },
-    {
-        "name": "Wrapped AVAX",
-        "type": "0x1e8b532cca6569cab9f9b9ebc73f8c13885012ade714729aa3b450e0339ac766::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/avax.png/public"
-    },
-    {
-        "name": "Wrapped BTC",
-        "type": "0x027792d9fed7f9844eb4839566001bb6f6cb4804f66aa2da6fe1ee242d896881::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/wbtc.png/public"
-    },
-    {
-        "name": "Wrapped Fantom",
-        "type": "0x6081300950a4f1e2081580e919c210436a1bed49080502834950d31ee55a2396::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/wfantom.png/public"
-    },
-    {
-        "name": "Celo native asset",
-        "type": "0xa198f3be41cda8c07b3bf3fee02263526e535d682499806979a111e88a5a8d0f::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/celo.png/public"
-    },
-    {
-        "name": "Poseidollar Shares",
-        "type": "0x3c1227010835ecf9cb8f2bf9993aa9378bb951f0b3a098de6f0ee20385e01c4a::psh::PSH"
-    },
-    {
-        "name": "Ondo US Dollar Yield",
-        "type": "0x960b531667636f39e85867775f52f6b1f220a058c4de786905bdf761e06a56bb::usdy::USDY"
-    },
-    {
-        "name": "Wrapped GLMR",
-        "type": "0x66f87084e49c38f76502d17f87d17f943f183bb94117561eb573e075fdc5ff75::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/glmr.png/public"
-    },
-    {
-        "name": "SUIZ",
-        "type": "0xda79c0756319ea12c1679cb0d2c9fa85c66c0c724f45b7d1af0f7ed79fe4573d::suiz::SUIZ",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suizzle.png/public"
-    },
-    {
-        "name": "Causa Sui",
-        "type": "0xc12fb8de513df4c6541d8dff0dbfd01b6079611703e01a4c0876e3c834c96be8::causa::CAUSA"
-    },
-    {
-        "name": "Suicune",
-        "type": "0x8c47c0bde84b7056520a44f46c56383e714cc9b6a55e919d8736a34ec7ccb533::suicune::SUICUNE"
-    },
-    {
-        "name": "Simba the lonely lion",
-        "type": "0x5d6881b68371f1d801ad93fb40d1cb130dd1975717170190207651b701938b72::simba::SIMBA"
-    },
-    {
-        "name": "Vaporeon",
-        "type": "0x84d155fb70aebcc1391bf497d8fc139154be745765dfec57faef4704f4112c79::vaporeon::VAPOREON"
-    },
-    {
-        "name": "ovan suu",
-        "type": "0x8b9dc9a32c2f5ae548cece17ca3e31bc0cda4bb505bcf8395c8351c76799cf24::suu::SUU"
-    },
-    {
-        "name": "Pearl",
-        "type": "0x4e56b39acd75721999cf833062dfb77b1d51e749b02d90f049a5688e21919a64::prl::PRL"
-    },
-    {
-        "name": "Suiba Inu",
-        "type": "0xed4504e791e1dad7bf93b41e089b4733c27f35fde505693e18186c2ba8e2e14b::suib::SUIB"
-    },
-    {
-        "name": "Pikasui",
-        "type": "0x4b8da3a458be156af7bd17c0e754c703d6f7318fcfb2cf2a293d39c080a06692::pika::PIKA"
-    },
-    {
-        "name": "HOMITOKEN",
-        "type": "0xf6e7fcac642280ba427bc1b3e158a169fa0624cad36cd79fc931aba3502880a5::homi::HOMI"
-    },
-    {
-        "name": "LAMBALL",
-        "type": "0xcfd2bc58d96eb86bc48110e1cfdeebb5b9531317c2203cb415dfd44fab587cf0::lamb::LAMB"
-    },
-    {
-        "name": "Wen Dexscreener",
-        "type": "0x9aff4aa4dd737a71dc374c03deaec1e11b20a51a46e64f4605e95cc3c966f272::wend::WEND"
-    },
-    {
-        "name": "Sui Generis",
-        "type": "0x18d1215fb5a050ed22da5cdefb9601adead8a9c3576e30c9bc03cbdb2eb17b47::generis::GENERIS"
-    },
-    {
-        "name": "SuiPad",
-        "type": "0xe4239cd951f6c53d9c41e25270d80d31f925ad1655e5ba5b543843d4a66975ee::SUIP::SUIP",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suipad.png/public"
-    },
-    {
-        "name": "wUSDC",
-        "nameOverride": "wUSDC",
-        "type": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
-    },
-    {
-        "name": "wUSDC (Sol)",
-        "nameOverride": "wUSDC (Sol)",
-        "type": "0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
-    },
-    {
-        "name": "wUSDC (Bnb)",
-        "nameOverride": "wUSDC (Bnb)",
-        "type": "0x909cba62ce96d54de25bec9502de5ca7b4f28901747bbf96b76c2e63ec5f1cba::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
-    },
-    {
-        "name": "wUSDC (Arb)",
-        "nameOverride": "wUSDC (Arb)",
-        "type": "0xe32d3ebafa42e6011b87ef1087bbc6053b499bf6f095807b9013aff5a6ecd7bb::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
-    },
-    {
-        "name": "cUSDCe",
-        "nameOverride": "cUSDCe",
-        "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdc_coin::CELER_USDC_COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
-    },
-    {
-        "name": "cUSDTe",
-        "nameOverride": "cUSDTe",
-        "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdt_coin::CELER_USDT_COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public"
-    },
-    {
-        "name": "sbUSDT",
-        "type": "0x375f70cf2ae4c00bf37117d0c85a2c71545e6ee05c4a5c7d282cd66a4504b068::usdt::USDT"
-    },
-    {
-        "name": "AlphaFi Staked SUI",
-        "type": "0xd1b72982e40348d069bb1ff701e634c117bb5f741f44dff91e472d3b01461e55::stsui::STSUI"
-    },
-    {
-        "name": "sudeng",
-        "type": "0x8993129d72e733985f7f1a00396cbd055bad6f817fee36576ce483c8bbb8b87b::sudeng::SUDENG"
-    },
-    {
-        "name": "SuiNS Token",
-        "type": "0x5145494a5f5100e645e4b0aa950fa6b68f614e8c59e17bc5ded3495123a79178::ns::NS"
-    },
-    {
-        "name": "sbETH",
-        "type": "0xd0e89b2af5e4910726fbcd8b8dd37bb79b29e5f83f7491bca830e94f7f226d29::eth::ETH"
-    },
-    {
-        "name": "Wrapped Bitcoin",
-        "type": "0xaafb102dd0902f5055cadecd687fb5b71ca82ef0e0285d90afde828ec58ca96b::btc::BTC"
-    },
-    {
-        "name": "ALPHA Token",
-        "type": "0xfe3afec26c59e874f3c1d60b8203cb3852d2bb2aa415df9548b8d688e6683f93::alpha::ALPHA"
-    },
-    {
-        "name": "Bluefin",
-        "type": "0xe1b45a0e641b9955a20aa0ad1c1f4ad86aad8afb07296d4085e349a50e90bdca::blue::BLUE"
-    },
-    {
-        "name": "LOFI",
-        "type": "0xf22da9a24ad027cccb5f2d496cbe91de953d363513db08a3a734d361c7c17503::LOFI::LOFI"
-    },
-    {
-        "name": "First Digital USD",
-        "type": "0xf16e6b723f242ec745dfd7634ad072c42d5c1d9ac9d62a39c381303eaa57693a::fdusd::FDUSD"
-    },
-    {
-        "name": "AUSD",
-        "type": "0x2053d08c1e2bd02791056171aab0fd12bd7cd7efad2ab8f6b9c8902f14df2ff2::ausd::AUSD"
-    },
-    {
-        "name": "mUSD",
-        "type": "0xe44df51c0b21a27ab915fa1fe2ca610cd3eaa6d9666fe5e62b988bf7f0bd8722::musd::MUSD"
-    },
-    {
-        "name": "AXOL",
-        "type": "0xae00e078a46616bf6e1e6fb673d18dcd2aa31319a07c9bc92f6063363f597b4e::AXOL::AXOL"
-    },
-    {
-        "name": "SuiAI",
-        "type": "0xbc732bc5f1e9a9f4bdf4c0672ee538dbf56c161afe04ff1de2176efabdf41f92::suai::SUAI"
-    },
-    {
-        "name": "Bucket Token",
-        "type": "0xbc858cb910b9914bee64fff0f9b38855355a040c49155a17b265d9086d256545::but::BUT"
-    },
-    {
-        "name": "MIU",
-        "type": "0x32a976482bf4154961bf20bfa3567a80122fdf8e8f8b28d752b609d8640f7846::miu::MIU"
-    },
-    {
-        "name": "Tardi",
-        "type": "0x4cf08813756dfa7519cb480a1a1a3472b5b4ec067592a8bee0f826808d218158::tardi::TARDI"
-    },
-    {
-        "name": "SEND",
-        "type": "0xb45fcfcc2cc07ce0702cc2d229621e046c906ef14d9b25e8e4d25f6e8763fef7::send::SEND"
-    },
-    {
-        "name": "Pyth Network",
-        "type": "0x9c6d76eb273e6b5ba2ec8d708b7fa336a5531f6be59f326b5be8d4d8b12348a4::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/pyth2.png/public"
-    },
-    {
-        "name": "Spring Staked SUI",
-        "type": "0x83556891f4a0f233ce7b05cfe7f957d4020492a34f5405b2cb9377d060bef4bf::spring_sui::SPRING_SUI"
-    },
-    {
-        "name": "WEWE",
-        "type": "0xb5b603827d1bfb2859200fd332d5e139ccac2598f0625de153a87cf78954e0c4::wewe::WEWE"
-    },
-    {
-        "name": "Agent S",
-        "type": "0xea65bb5a79ff34ca83e2995f9ff6edd0887b08da9b45bf2e31f930d3efb82866::s::S"
-    },
-    {
-        "name": "Mochi",
-        "type": "0xa26788cb462ae9242d9483bdbe5a82188ba0eaeae3c5e9237d30cbcb83ce7a88::mochi::MOCHI"
-    },
-    {
-        "name": "aaa cat",
-        "type": "0xd976fda9a9786cda1a36dee360013d775a5e5f206f8e20f84fad3385e99eeb2d::aaa::AAA"
-    },
-    {
-        "name": "MEMEFI",
-        "type": "0x506a6fc25f1c7d52ceb06ea44a3114c9380f8e2029b4356019822f248b49e411::memefi::MEMEFI"
-    },
-    {
-        "name": "Win",
-        "type": "0xe6b9e1033c72084ad01db37c77778ca53b9c4ebb263f28ffbfed39f4d5fd5057::win::WIN"
-    },
-    {
-        "name": "Aida",
-        "type": "0x57e93adcecd97fc8b30fc6f124be185f292b648e324773d8fbe6650e8274790f::aida::AIDA"
-    },
-    {
-        "name": "mSEND Series 1",
-        "type": "0xda097d57ae887fbd002fb5847dd0ab47ae7e1b183fd36832a51182c52257e1bc::msend_series_1::MSEND_SERIES_1"
-    },
-    {
-        "name": "SuiBets",
-        "type": "0x6a4d9c0eab7ac40371a7453d1aa6c89b130950e8af6868ba975fdd81371a7285::sbets::SBETS"
-    },
-    {
-        "name": "Uni",
-        "type": "0xaf9e228fd0292e2a27b4859bc57a2f3a9faedb9341b6307c84fef163e44790cc::uni::UNI",
-        "image": "https://optim.tildacdn.one/tild6162-3962-4535-b163-393337623833/-/resize/500x/-/format/webp/logo_uni.png"
-    },
-    {
-        "name": "Super Suiyan",
-        "type": "0xe0fbaffa16409259e431b3e1ff97bf6129641945b42e5e735c99aeda73a595ac::suiyan::SUIYAN"
-    },
-    {
-        "name": "Sonic Snipe Bot",
-        "type": "0x555f3aa7c9c60ca67f906557777fab78fd70a302da7d66a23fcb4f8808d15010::sonic::SONIC"
-    },
-    {
-        "name": "TUBBI",
-        "type": "0x06106c04a586f0f003fcdf7fb33564f373680ddcc1beb716fd22e2952e227eb3::tubbi::TUBBI"
-    },
-    {
-        "name": "Pepe on Sui",
-        "type": "0x288710173f12f677ac38b0c2b764a0fea8108cb5e32059c3dd8f650d65e2cb25::pepe::PEPE"
-    },
-    {
-        "name": "Typus",
-        "type": "0xf82dc05634970553615eef6112a1ac4fb7bf10272bf6cbe0f80ef44a6c489385::typus::TYPUS"
-    },
-    {
-        "name": "SUI Addict by SuiAI",
-        "type": "0x6c3870a9be084fee294355accc6036d0d0826c4e138bf034aa3485606f528a9e::suiad::SUIAD"
-    },
-    {
-        "name": "Elara News",
-        "type": "0xe78efc7724ab261e398b60a1248668977d2e4e2d5e7fe74fcfbb70a7439b798e::elara::ELARA"
-    },
-    {
-        "name": "Shork",
-        "type": "0x80a4b8e2fbc6b5741a301e2295e431c3ca54ad7ff0b20291c433c05cb53b35ce::shork::SHORK"
-    },
-    {
-        "name": "SUI Agents",
-        "type": "0xdc083ed335b5fe342cca1d5887530336246ed7d80da6bcecbc7c1becb88074ee::mycoin::MYCOIN",
-        "image": "https://app.turbos.finance/icon/suiai.jpg"
-    },
-    {
-        "name": "Rockee AI",
-        "type": "0xb4bc93ad1a07fe47943fc4d776fed31ce31923acb5bc9f92d2cab14d01fc06a4::ROCK::ROCK"
-    },
-    {
-        "name": "Lorenzo stBTC",
-        "type": "0x5f496ed5d9d045c5b788dc1bb85f54100f2ede11e46f6a232c29daada4c5bdb6::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/stBTC.png/public"
-    },
-    {
-        "name": "CryptoFellas",
-        "type": "0x25052c59b91435f542112ea3e03eef804fec150bc7ed3182682996c70315fd4a::wiseguy::WISEGUY"
-    },
-    {
-        "name": "PLANKz",
-        "type": "0xe68de9dcefed8f7b24183fb3f990f0cebffb1df001bddc4cde2d75187b369c7f::plankz::PLANKZ"
-    },
-    {
-        "name": "SUICY the Seal",
-        "type": "0x8989c726bf1ea8736919e41938f3801e286bc71d9612bfe250703232a375eaab::suicy::SUICY"
-    },
-    {
-        "name": "Chirp Token",
-        "type": "0x1ef4c0b20340b8c6a59438204467ca71e1e7cbe918526f9c2c6c5444517cd5ca::chirp::CHIRP"
-    },
-    {
-        "name": "ZenFrogs",
-        "type": "0x2665dc784c7ff17fddba2442b36cb8b2bbc8adfa9fe08794fd941d80ef2758ec::zen::ZEN"
-    },
-    {
-        "name": "Beeg Blue Whale",
-        "type": "0x727458212ca0be056d9ccc0d42981bdf41109779fbd9c7fad56c4456e0c3d0c6::beeg::BEEG"
-    },
-    {
-        "name": "KDX",
-        "type": "0x3b68324b392cee9cd28eba82df39860b6b220dc89bdd9b21f675d23d6b7416f1::kdx::KDX"
-    },
-    {
-        "name": "SUI Plop",
-        "type": "0x1c6cd615ed4c42a34977212a3407a28eec21acc572c8dbe7d0382bf0289a2590::plop::PLOP"
-    },
-    {
-        "name": "$E4C",
-        "type": "0x84b27ddadc6139c7e8837fef6759eba4670ba3fc0679acd118b4e9252f834e29::e4c::E4C"
-    },
-    {
-        "name": "SUINAMI",
-        "type": "0xe7397f9f6a5a60010a729ed1a470130936f090cafcdc0cdca6c3260b17ac0c9b::nami::NAMI"
-    },
-    {
-        "name": "DAOX",
-        "type": "0xc7b842347b0fbebabdee379414e874abc7fc5294b1e08961baa32e501ebedb48::daox::DAOX"
-    },
-    {
-        "name": "PIGU",
-        "type": "0xfc71274a94f5d9cd1ae6928ecfc9fa910d03eb28258fddeb9842ac3c7b4f3ae6::pigu::PIGU"
-    },
-    {
-        "name": "NeoNet AI by SuiAI",
-        "type": "0xc1a35b6a9771e6eb69e3b36e921a3a373e6d33e6f863dab6949ed3c2d1228f73::neonet::NEONET"
-    },
-    {
-        "name": "Tusk the Walrus",
-        "type": "0x1fc50c2a9edf1497011c793cb5c88fd5f257fd7009e85a489392f388b1118f82::tusk::TUSK"
-    },
-    {
-        "name": "PUMPKIN TOKEN",
-        "type": "0x09f1c8f05cb47bbcb61133dd2ef00583720694f41d4f8a61c94467d8f5911a14::pumpkin::PUMPKIN"
-    },
-    {
-        "name": "suitard",
-        "type": "0x2cddfc6d4fc855917e990e71cd122b1ee8098aa890186ee15a84524ed17cd8c9::suitard::SUITARD"
-    },
-    {
-        "name": "Ocean Token",
-        "type": "0xa8816d3a6e3136e86bc2873b1f94a15cadc8af2703c075f2d546c2ae367f4df9::ocean::OCEAN"
-    },
-    {
-        "name": "Osiris",
-        "type": "0x42e826aa6c71325e2aaaf031976e023d75eefe584116f9349de5b0e56e648e49::osiri::OSIRI"
-    },
-    {
-        "name": "Ronda On Sui",
-        "type": "0xdc9b462697876ff4c680e59b3756ac39a6899cfbc355a6880c60e01c8930b3cc::ronda::RONDA"
-    },
-    {
-        "name": "Sui Monster",
-        "type": "0xc0ba93a810adb498900c82bb6f7c16ca3046dfa7b6f364ec985595fdeb1ee9ad::suimon::SUIMON"
-    },
-    {
-        "name": "0xWSB on SUI",
-        "type": "0x4db126eac4fa99207e98db61d968477021fdeae153de3b244bcfbdc468ef0722::wsb::WSB"
-    },
-    {
-        "name": "SUICIDE SOCIAL CLUB",
-        "type": "0x1b16598b6c00ff66939d14d72a06b49b2a80578a76e3cd813a7be0a69818f03f::uicide::UICIDE"
-    },
-    {
-        "name": "SUI TRUMP",
-        "type": "0xdeb831e796f16f8257681c0d5d4108fa94333060300b2459133a96631bf470b8::suitrump::SUITRUMP"
-    },
-    {
-        "name": "Aya Asagiri",
-        "type": "0x8e9187b49143e6071d8bdee63e34224a8e79fdaa6207d2d2ed54007c45936e0b::aya::AYA"
-    },
-    {
-        "name": "Chop Sui",
-        "type": "0xd88eb58ee2961061052a103131f4a7232a7b47ed1256d9db3cb096b27178ffdb::chop::CHOP"
-    },
-    {
-        "name": "Captain GOOFY",
-        "type": "0xe0644f3e46b2d9f319a2cc3491155c75d1b6132ba9b3601c6e7e102e17296645::goof::GOOF"
-    },
-    {
-        "name": "SUI DEPIN",
-        "type": "0x3599429d66965021f6ce08a997e81bb3c1f2c1b9a8fbb19953e26f5dc55e91ef::suidepin::SUIDEPIN"
-    }
+    { "name": "$E4C", "type": "0x84b27ddadc6139c7e8837fef6759eba4670ba3fc0679acd118b4e9252f834e29::e4c::E4C" },
+    { "name": "0xWSB on SUI", "type": "0x4db126eac4fa99207e98db61d968477021fdeae153de3b244bcfbdc468ef0722::wsb::WSB" },
+    { "name": "aaa cat", "type": "0xd976fda9a9786cda1a36dee360013d775a5e5f206f8e20f84fad3385e99eeb2d::aaa::AAA" },
+    { "name": "afSUI", "type": "0xf325ce1300e8dac124071d3152c5c5ee6174914f8bc2161e88329cf579246efc::afsui::AFSUI" },
+    { "name": "Agent S", "type": "0xea65bb5a79ff34ca83e2995f9ff6edd0887b08da9b45bf2e31f930d3efb82866::s::S" },
+    { "name": "Aida", "type": "0x57e93adcecd97fc8b30fc6f124be185f292b648e324773d8fbe6650e8274790f::aida::AIDA" },
+    { "name": "ALPHA Token", "type": "0xfe3afec26c59e874f3c1d60b8203cb3852d2bb2aa415df9548b8d688e6683f93::alpha::ALPHA" },
+    { "name": "AlphaFi Staked SUI", "type": "0xd1b72982e40348d069bb1ff701e634c117bb5f741f44dff91e472d3b01461e55::stsui::STSUI" },
+    { "name": "Aptos Coin", "type": "0x3a5143bb1196e3bcdfab6203d1683ae29edd26294fc8bfeafe4aaa9d2704df37::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/aptos.png/public" },
+    { "name": "AUSD", "type": "0x2053d08c1e2bd02791056171aab0fd12bd7cd7efad2ab8f6b9c8902f14df2ff2::ausd::AUSD" },
+    { "name": "AXOL", "type": "0xae00e078a46616bf6e1e6fb673d18dcd2aa31319a07c9bc92f6063363f597b4e::AXOL::AXOL" },
+    { "name": "Aya Asagiri", "type": "0x8e9187b49143e6071d8bdee63e34224a8e79fdaa6207d2d2ed54007c45936e0b::aya::AYA" },
+    { "name": "Beeg Blue Whale", "type": "0x727458212ca0be056d9ccc0d42981bdf41109779fbd9c7fad56c4456e0c3d0c6::beeg::BEEG" },
+    { "name": "BLUB", "type": "0xfa7ac3951fdca92c5200d468d31a365eb03b2be9936fde615e69f0c1274ad3a0::BLUB::BLUB" },
+    { "name": "Bluefin", "type": "0xe1b45a0e641b9955a20aa0ad1c1f4ad86aad8afb07296d4085e349a50e90bdca::blue::BLUE" },
+    { "name": "Bucket Token", "type": "0xbc858cb910b9914bee64fff0f9b38855355a040c49155a17b265d9086d256545::but::BUT" },
+    { "name": "Bucket USD", "type": "0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK" },
+    { "name": "Burrial", "type": "0x6db9a7bb22829898fd281879778a175120ebfc77eafc1f8ee341654cfc3f8dc2::burry::BURRY" },
+    { "name": "Captain GOOFY", "type": "0xe0644f3e46b2d9f319a2cc3491155c75d1b6132ba9b3601c6e7e102e17296645::goof::GOOF" },
+    { "name": "Causa Sui", "type": "0xc12fb8de513df4c6541d8dff0dbfd01b6079611703e01a4c0876e3c834c96be8::causa::CAUSA" },
+    { "name": "Celo native asset", "type": "0xa198f3be41cda8c07b3bf3fee02263526e535d682499806979a111e88a5a8d0f::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/celo.png/public" },
+    { "name": "Cetus Token", "type": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS" },
+    { "name": "Chirp Token", "type": "0x1ef4c0b20340b8c6a59438204467ca71e1e7cbe918526f9c2c6c5444517cd5ca::chirp::CHIRP" },
+    { "name": "Chop Sui", "type": "0xd88eb58ee2961061052a103131f4a7232a7b47ed1256d9db3cb096b27178ffdb::chop::CHOP" },
+    { "name": "CryptoFellas", "type": "0x25052c59b91435f542112ea3e03eef804fec150bc7ed3182682996c70315fd4a::wiseguy::WISEGUY" },
+    { "name": "cUSDCe", "nameOverride": "cUSDCe", "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdc_coin::CELER_USDC_COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public" },
+    { "name": "cUSDTe", "nameOverride": "cUSDTe", "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdt_coin::CELER_USDT_COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public" },
+    { "name": "DAOX", "type": "0xc7b842347b0fbebabdee379414e874abc7fc5294b1e08961baa32e501ebedb48::daox::DAOX" },
+    { "name": "DEEP", "type": "0xdeeb7a4662eec9f2f3def03fb937a663dddaa2e215b8078a284d026b7946c270::deep::DEEP" },
+    { "name": "Elara News", "type": "0xe78efc7724ab261e398b60a1248668977d2e4e2d5e7fe74fcfbb70a7439b798e::elara::ELARA" },
+    { "name": "First Digital USD", "type": "0xf16e6b723f242ec745dfd7634ad072c42d5c1d9ac9d62a39c381303eaa57693a::fdusd::FDUSD" },
+    { "name": "Flame Token", "type": "0x247a6d271810efbe80943433e84b9360e2f976fce89e7c19dc680f5aae8738e2::flame::FLAME" },
+    { "name": "FlowX", "type": "0x6dae8ca14311574fdfe555524ea48558e3d1360d1607d1c7f98af867e3b7976c::flx::FLX", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/flx.svg/public" },
+    { "name": "FUD", "type": "0x76cb819b01abed502bee8a702b4c2d547532c12f25001c9dea795a5e631c26f1::fud::FUD" },
+    { "name": "HammerHead", "type": "0x996374e9df45796fe8112663a37272af4d33e7531c67d21aaa5cc93b3d1ded5c::hhs::HHS" },
+    { "name": "haSUI", "type": "0xbde4ba4c2e274a60ce15c1cfff9e5c42e41654ac8b6d906a57efa4bd3c29f47d::hasui::HASUI" },
+    { "name": "HOMITOKEN", "type": "0xf6e7fcac642280ba427bc1b3e158a169fa0624cad36cd79fc931aba3502880a5::homi::HOMI" },
+    { "name": "ISSP Coin", "type": "0xd0ea9bc91c3855e9b58a51cd55e8455b37bd5c75f70b4d6e97e54b55c4ba4ae8::issp::ISSP", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/$ISSP_logo_200200-Bob.png/public" },
+    { "name": "KDX", "type": "0x3b68324b392cee9cd28eba82df39860b6b220dc89bdd9b21f675d23d6b7416f1::kdx::KDX" },
+    { "name": "KOTO", "type": "0xa99166e802527eeb5439cbda12b0a02851bf2305d3c96a592b1440014fcb8975::koto::KOTO" },
+    { "name": "LAMBALL", "type": "0xcfd2bc58d96eb86bc48110e1cfdeebb5b9531317c2203cb415dfd44fab587cf0::lamb::LAMB" },
+    { "name": "LOFI", "type": "0xf22da9a24ad027cccb5f2d496cbe91de953d363513db08a3a734d361c7c17503::LOFI::LOFI" },
+    { "name": "Lorenzo stBTC", "type": "0x5f496ed5d9d045c5b788dc1bb85f54100f2ede11e46f6a232c29daada4c5bdb6::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/stBTC.png/public" },
+    { "name": "MEMEFI", "type": "0x506a6fc25f1c7d52ceb06ea44a3114c9380f8e2029b4356019822f248b49e411::memefi::MEMEFI" },
+    { "name": "MIU", "type": "0x32a976482bf4154961bf20bfa3567a80122fdf8e8f8b28d752b609d8640f7846::miu::MIU" },
+    { "name": "Mochi", "type": "0xa26788cb462ae9242d9483bdbe5a82188ba0eaeae3c5e9237d30cbcb83ce7a88::mochi::MOCHI" },
+    { "name": "MOVE", "type": "0xd9f9b0b4f35276eecd1eea6985bfabe2a2bbd5575f9adb9162ccbdb4ddebde7f::smove::SMOVE" },
+    { "name": "mSEND Series 1", "type": "0xda097d57ae887fbd002fb5847dd0ab47ae7e1b183fd36832a51182c52257e1bc::msend_series_1::MSEND_SERIES_1" },
+    { "name": "mUSD", "type": "0xe44df51c0b21a27ab915fa1fe2ca610cd3eaa6d9666fe5e62b988bf7f0bd8722::musd::MUSD" },
+    { "name": "NAVX Token", "type": "0xa99b8952d4f7d947ea77fe0ecdcc9e5fc0bcab2841d6e2a5aa00c3044e5544b5::navx::NAVX" },
+    { "name": "NeoNet AI by SuiAI", "type": "0xc1a35b6a9771e6eb69e3b36e921a3a373e6d33e6f863dab6949ed3c2d1228f73::neonet::NEONET" },
+    { "name": "Ocean Token", "type": "0xa8816d3a6e3136e86bc2873b1f94a15cadc8af2703c075f2d546c2ae367f4df9::ocean::OCEAN" },
+    { "name": "Ondo US Dollar Yield", "type": "0x960b531667636f39e85867775f52f6b1f220a058c4de786905bdf761e06a56bb::usdy::USDY" },
+    { "name": "Osiris", "type": "0x42e826aa6c71325e2aaaf031976e023d75eefe584116f9349de5b0e56e648e49::osiri::OSIRI" },
+    { "name": "ovan suu", "type": "0x8b9dc9a32c2f5ae548cece17ca3e31bc0cda4bb505bcf8395c8351c76799cf24::suu::SUU" },
+    { "name": "Pearl", "type": "0x4e56b39acd75721999cf833062dfb77b1d51e749b02d90f049a5688e21919a64::prl::PRL" },
+    { "name": "Pepe on Sui", "type": "0x288710173f12f677ac38b0c2b764a0fea8108cb5e32059c3dd8f650d65e2cb25::pepe::PEPE" },
+    { "name": "PIGU", "type": "0xfc71274a94f5d9cd1ae6928ecfc9fa910d03eb28258fddeb9842ac3c7b4f3ae6::pigu::PIGU" },
+    { "name": "Pikasui", "type": "0x4b8da3a458be156af7bd17c0e754c703d6f7318fcfb2cf2a293d39c080a06692::pika::PIKA" },
+    { "name": "PLANKz", "type": "0xe68de9dcefed8f7b24183fb3f990f0cebffb1df001bddc4cde2d75187b369c7f::plankz::PLANKZ" },
+    { "name": "Poseidollar Shares", "type": "0x3c1227010835ecf9cb8f2bf9993aa9378bb951f0b3a098de6f0ee20385e01c4a::psh::PSH" },
+    { "name": "Poseidollar", "type": "0x4fc3949a4a8fe3ad9c75cec9724ff2b2d8520506b6129c9d8f0fcc2a1e4a8880::pdo::PDO" },
+    { "name": "PUMPKIN TOKEN", "type": "0x09f1c8f05cb47bbcb61133dd2ef00583720694f41d4f8a61c94467d8f5911a14::pumpkin::PUMPKIN" },
+    { "name": "Pyth Network", "type": "0x9c6d76eb273e6b5ba2ec8d708b7fa336a5531f6be59f326b5be8d4d8b12348a4::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/pyth2.png/public" },
+    { "name": "Rockee AI", "type": "0xb4bc93ad1a07fe47943fc4d776fed31ce31923acb5bc9f92d2cab14d01fc06a4::ROCK::ROCK" },
+    { "name": "Ronda On Sui", "type": "0xdc9b462697876ff4c680e59b3756ac39a6899cfbc355a6880c60e01c8930b3cc::ronda::RONDA" },
+    { "name": "Sacabam", "type": "0x9a5502414b5d51d01c8b5641db7436d789fa15a245694b24aa37c25c2a6ce001::scb::SCB" },
+    { "name": "sbETH", "type": "0xd0e89b2af5e4910726fbcd8b8dd37bb79b29e5f83f7491bca830e94f7f226d29::eth::ETH" },
+    { "name": "sbUSDT", "type": "0x375f70cf2ae4c00bf37117d0c85a2c71545e6ee05c4a5c7d282cd66a4504b068::usdt::USDT" },
+    { "name": "Scallop", "type": "0x7016aae72cfc67f2fadf55769c0a7dd54291a583b63051a5ed71081cce836ac6::sca::SCA" },
+    { "name": "SEND", "type": "0xb45fcfcc2cc07ce0702cc2d229621e046c906ef14d9b25e8e4d25f6e8763fef7::send::SEND" },
+    { "name": "Shork", "type": "0x80a4b8e2fbc6b5741a301e2295e431c3ca54ad7ff0b20291c433c05cb53b35ce::shork::SHORK" },
+    { "name": "Simba the lonely lion", "type": "0x5d6881b68371f1d801ad93fb40d1cb130dd1975717170190207651b701938b72::simba::SIMBA" },
+    { "name": "Sonic Snipe Bot", "type": "0x555f3aa7c9c60ca67f906557777fab78fd70a302da7d66a23fcb4f8808d15010::sonic::SONIC" },
+    { "name": "SPAM", "type": "0x30a644c3485ee9b604f52165668895092191fcaf5489a846afa7fc11cdb9b24a::spam::SPAM" },
+    { "name": "Spring Staked SUI", "type": "0x83556891f4a0f233ce7b05cfe7f957d4020492a34f5405b2cb9377d060bef4bf::spring_sui::SPRING_SUI" },
+    { "name": "SPT", "type": "0xb779486cfd6c19e9218cc7dc17c453014d2d9ba12d2ee4dbb0ec4e1e02ae1cca::spt::SPT" },
+    { "name": "sudeng", "type": "0x8993129d72e733985f7f1a00396cbd055bad6f817fee36576ce483c8bbb8b87b::sudeng::SUDENG" },
+    { "name": "Sudo LP Token", "type": "0xc44d97a4bc4e5a33ca847b72b123172c88a6328196b71414f32c3070233604b2::slp::SLP" },
+    { "name": "SUI Addict by SuiAI", "type": "0x6c3870a9be084fee294355accc6036d0d0826c4e138bf034aa3485606f528a9e::suiad::SUIAD" },
+    { "name": "SUI Agents", "type": "0xdc083ed335b5fe342cca1d5887530336246ed7d80da6bcecbc7c1becb88074ee::mycoin::MYCOIN", "image": "https://app.turbos.finance/icon/suiai.jpg" },
+    { "name": "SUI DEPIN", "type": "0x3599429d66965021f6ce08a997e81bb3c1f2c1b9a8fbb19953e26f5dc55e91ef::suidepin::SUIDEPIN" },
+    { "name": "Sui Generis", "type": "0x18d1215fb5a050ed22da5cdefb9601adead8a9c3576e30c9bc03cbdb2eb17b47::generis::GENERIS" },
+    { "name": "Sui Monster", "type": "0xc0ba93a810adb498900c82bb6f7c16ca3046dfa7b6f364ec985595fdeb1ee9ad::suimon::SUIMON" },
+    { "name": "SUI Plop", "type": "0x1c6cd615ed4c42a34977212a3407a28eec21acc572c8dbe7d0382bf0289a2590::plop::PLOP" },
+    { "name": "SUI TRUMP", "type": "0xdeb831e796f16f8257681c0d5d4108fa94333060300b2459133a96631bf470b8::suitrump::SUITRUMP" },
+    { "name": "Sui", "type": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/sui.svg/public" },
+    { "name": "SUIA", "type": "0x1d58e26e85fbf9ee8596872686da75544342487f95b1773be3c9a49ab1061b19::suia_token::SUIA_TOKEN" },
+    { "name": "SuiAI", "type": "0xbc732bc5f1e9a9f4bdf4c0672ee538dbf56c161afe04ff1de2176efabdf41f92::suai::SUAI" },
+    { "name": "Suiba Inu", "type": "0xed4504e791e1dad7bf93b41e089b4733c27f35fde505693e18186c2ba8e2e14b::suib::SUIB" },
+    { "name": "SuiBets", "type": "0x6a4d9c0eab7ac40371a7453d1aa6c89b130950e8af6868ba975fdd81371a7285::sbets::SBETS" },
+    { "name": "SuiBoxer Coin", "type": "0xbff8dc60d3f714f678cd4490ff08cabbea95d308c6de47a150c79cc875e0c7c6::sbox::SBOX" },
+    { "name": "SUICIDE SOCIAL CLUB", "type": "0x1b16598b6c00ff66939d14d72a06b49b2a80578a76e3cd813a7be0a69818f03f::uicide::UICIDE" },
+    { "name": "Suicune", "type": "0x8c47c0bde84b7056520a44f46c56383e714cc9b6a55e919d8736a34ec7ccb533::suicune::SUICUNE" },
+    { "name": "SUICY the Seal", "type": "0x8989c726bf1ea8736919e41938f3801e286bc71d9612bfe250703232a375eaab::suicy::SUICY" },
+    { "name": "SUINAMI", "type": "0xe7397f9f6a5a60010a729ed1a470130936f090cafcdc0cdca6c3260b17ac0c9b::nami::NAMI" },
+    { "name": "SuiNS Token", "type": "0x5145494a5f5100e645e4b0aa950fa6b68f614e8c59e17bc5ded3495123a79178::ns::NS" },
+    { "name": "SuiPad", "type": "0xe4239cd951f6c53d9c41e25270d80d31f925ad1655e5ba5b543843d4a66975ee::SUIP::SUIP", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suipad.png/public" },
+    { "name": "Suiswap Token", "type": "0x361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc::TOKEN::TOKEN" },
+    { "name": "suitard", "type": "0x2cddfc6d4fc855917e990e71cd122b1ee8098aa890186ee15a84524ed17cd8c9::suitard::SUITARD" },
+    { "name": "SUIZ", "type": "0xda79c0756319ea12c1679cb0d2c9fa85c66c0c724f45b7d1af0f7ed79fe4573d::suiz::SUIZ", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suizzle.png/public" },
+    { "name": "Suizuki", "type": "0x8d84e98518cab8bd2941cfb23fa78ad0538ed07ba8887e451f0b93380d479908::zuki::ZUKI" },
+    { "name": "Super Suiyan", "type": "0xe0fbaffa16409259e431b3e1ff97bf6129641945b42e5e735c99aeda73a595ac::suiyan::SUIYAN" },
+    { "name": "Tardi", "type": "0x4cf08813756dfa7519cb480a1a1a3472b5b4ec067592a8bee0f826808d218158::tardi::TARDI" },
+    { "name": "TUBBI", "type": "0x06106c04a586f0f003fcdf7fb33564f373680ddcc1beb716fd22e2952e227eb3::tubbi::TUBBI" },
+    { "name": "Turbos", "type": "0x5d1f47ea69bb0de31c313d7acf89b890dbb8991ea8e03c6c355171f84bb1ba4a::turbos::TURBOS" },
+    { "name": "Tusk the Walrus", "type": "0x1fc50c2a9edf1497011c793cb5c88fd5f257fd7009e85a489392f388b1118f82::tusk::TUSK" },
+    { "name": "Typus", "type": "0xf82dc05634970553615eef6112a1ac4fb7bf10272bf6cbe0f80ef44a6c489385::typus::TYPUS" },
+    { "name": "Uni", "type": "0xaf9e228fd0292e2a27b4859bc57a2f3a9faedb9341b6307c84fef163e44790cc::uni::UNI", "image": "https://optim.tildacdn.one/tild6162-3962-4535-b163-393337623833/-/resize/500x/-/format/webp/logo_uni.png" },
+    { "name": "USDC", "type": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC" },
+    { "name": "USDT", "type": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public" },
+    { "name": "Vaporeon", "type": "0x84d155fb70aebcc1391bf497d8fc139154be745765dfec57faef4704f4112c79::vaporeon::VAPOREON" },
+    { "name": "Volo Staked SUI", "type": "0x549e8b69270defbfafd4f94e17ec44cdbdd99820b33bda2278dea3b9a32d3f55::cert::CERT" },
+    { "name": "Wen Dexscreener", "type": "0x9aff4aa4dd737a71dc374c03deaec1e11b20a51a46e64f4605e95cc3c966f272::wend::WEND" },
+    { "name": "WEWE", "type": "0xb5b603827d1bfb2859200fd332d5e139ccac2598f0625de153a87cf78954e0c4::wewe::WEWE" },
+    { "name": "Win", "type": "0xe6b9e1033c72084ad01db37c77778ca53b9c4ebb263f28ffbfed39f4d5fd5057::win::WIN" },
+    { "name": "Wrapped AVAX", "type": "0x1e8b532cca6569cab9f9b9ebc73f8c13885012ade714729aa3b450e0339ac766::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/avax.png/public" },
+    { "name": "Wrapped Bitcoin", "type": "0xaafb102dd0902f5055cadecd687fb5b71ca82ef0e0285d90afde828ec58ca96b::btc::BTC" },
+    { "name": "Wrapped BNB", "type": "0xb848cce11ef3a8f62eccea6eb5b35a12c4c2b1ee1af7755d02d7bd6218e8226f::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/bnb.png/public" },
+    { "name": "Wrapped BTC", "type": "0x027792d9fed7f9844eb4839566001bb6f6cb4804f66aa2da6fe1ee242d896881::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/wbtc.png/public" },
+    { "name": "Wrapped Ether", "type": "0xaf8cd5edc19c4512f4259f0bee101a40d41ebed738ade5874359610ef8eeced5::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/weth.jpg/public" },
+    { "name": "Wrapped Fantom", "type": "0x6081300950a4f1e2081580e919c210436a1bed49080502834950d31ee55a2396::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/wfantom.png/public" },
+    { "name": "Wrapped GLMR", "type": "0x66f87084e49c38f76502d17f87d17f943f183bb94117561eb573e075fdc5ff75::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/glmr.png/public" },
+    { "name": "Wrapped Matic", "type": "0xdbe380b13a6d0f5cdedd58de8f04625263f113b3f9db32b3e1983f49e2841676::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/matic.png/public" },
+    { "name": "Wrapped SOL", "type": "0xb7844e289a8410e50fb3ca48d69eb9cf29e27d223ef90353fe1bd8e27ff8f3f8::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/sol.png/public" },
+    { "name": "wUSDC (Arb)", "nameOverride": "wUSDC (Arb)", "type": "0xe32d3ebafa42e6011b87ef1087bbc6053b499bf6f095807b9013aff5a6ecd7bb::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public" },
+    { "name": "wUSDC (Bnb)", "nameOverride": "wUSDC (Bnb)", "type": "0x909cba62ce96d54de25bec9502de5ca7b4f28901747bbf96b76c2e63ec5f1cba::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public" },
+    { "name": "wUSDC (Sol)", "nameOverride": "wUSDC (Sol)", "type": "0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public" },
+    { "name": "wUSDC", "nameOverride": "wUSDC", "type": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public" },
+    { "name": "ZenFrogs", "type": "0x2665dc784c7ff17fddba2442b36cb8b2bbc8adfa9fe08794fd941d80ef2758ec::zen::ZEN" }
 ]
