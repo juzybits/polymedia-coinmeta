@@ -63,6 +63,7 @@ async function main()
         meta.iconUrl = BASE_URL_IMG + path.basename(prodImagePath);
         prodMetas.push(meta);
     }
+    prodMetas.sort((a, b) => a.name.localeCompare(b.name));
     writeTextFile(OUTPUT_SDK_META_FILE, `export const data = ${JSON.stringify(prodMetas, null, 4)};`);
     writeJsonFile(OUTPUT_WEB_META_FILE, prodMetas);
 }
