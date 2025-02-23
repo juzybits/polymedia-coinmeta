@@ -46,15 +46,6 @@ export const data = [
     },
     {
         "decimals": 6,
-        "name": "USDC (Bridged)",
-        "symbol": "USDC (Bridged)",
-        "description": "",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf-coin-COIN.webp",
-        "id": "0x4fbf84f3029bd0c0b77164b587963be957f853eccf834a67bb9ecba6ec80f189",
-        "type": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN"
-    },
-    {
-        "decimals": 6,
         "name": "Tether USD",
         "symbol": "USDT",
         "description": "",
@@ -577,8 +568,17 @@ export const data = [
     },
     {
         "decimals": 6,
-        "name": "USDCsol",
-        "symbol": "USDCsol",
+        "name": "wUSDC",
+        "symbol": "wUSDC",
+        "description": "",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf-coin-COIN.webp",
+        "id": "0x4fbf84f3029bd0c0b77164b587963be957f853eccf834a67bb9ecba6ec80f189",
+        "type": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN"
+    },
+    {
+        "decimals": 6,
+        "name": "wUSDC (Sol)",
+        "symbol": "wUSDC (Sol)",
         "description": "",
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037-coin-COIN.webp",
         "id": "0x39047ec989791d939efee4c9b9dbc6885c5d12a5aaacf44152319b2289ea9b9e",
@@ -586,8 +586,8 @@ export const data = [
     },
     {
         "decimals": 8,
-        "name": "USDCbnb",
-        "symbol": "USDCbnb",
+        "name": "wUSDC (Bnb)",
+        "symbol": "wUSDC (Bnb)",
         "description": "",
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x909cba62ce96d54de25bec9502de5ca7b4f28901747bbf96b76c2e63ec5f1cba-coin-COIN.webp",
         "id": "0x8a775c4bbc9639c88e86fdc624bb30d0bfd22a1597b03da29198de214ddaa126",
@@ -595,8 +595,8 @@ export const data = [
     },
     {
         "decimals": 6,
-        "name": "USDCarb",
-        "symbol": "USDCarb",
+        "name": "wUSDC (Arb)",
+        "symbol": "wUSDC (Arb)",
         "description": "",
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xe32d3ebafa42e6011b87ef1087bbc6053b499bf6f095807b9013aff5a6ecd7bb-coin-COIN.webp",
         "id": "0xe2720ee6eed0e11490bdbd1c6cc2282a7e442bf86c99a3a4ec67797c84b9fffc",
@@ -619,5 +619,626 @@ export const data = [
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690-celer_usdt_coin-CELER_USDT_COIN.webp",
         "id": "0x2bce194d8454616d16d3ee756fef0c83970556233851fb9da2e5d154952338b8",
         "type": "0x94e7a8e71830d2b34b3edaa195dc24c45d142584f06fa257b73af753d766e690::celer_usdt_coin::CELER_USDT_COIN"
+    },
+    {
+        "decimals": 6,
+        "name": "Tether",
+        "symbol": "USDT",
+        "description": "Bridged Tether token",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x375f70cf2ae4c00bf37117d0c85a2c71545e6ee05c4a5c7d282cd66a4504b068-usdt-USDT.webp",
+        "id": "0xda61b33ac61ed4c084bbda65a2229459ed4eb2185729e70498538f0688bec3cc",
+        "type": "0x375f70cf2ae4c00bf37117d0c85a2c71545e6ee05c4a5c7d282cd66a4504b068::usdt::USDT"
+    },
+    {
+        "decimals": 9,
+        "name": "AlphaFi Staked SUI",
+        "symbol": "stSUI",
+        "description": "Instantly unstakable liquid staking token by AlphaFi",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xd1b72982e40348d069bb1ff701e634c117bb5f741f44dff91e472d3b01461e55-stsui-STSUI.webp",
+        "id": "0x99235d8d9f508bed2799e1eef59a7622405bc74c50f32cefdc9ec19344ad2cec",
+        "type": "0xd1b72982e40348d069bb1ff701e634c117bb5f741f44dff91e472d3b01461e55::stsui::STSUI"
+    },
+    {
+        "decimals": 9,
+        "name": "sudeng",
+        "symbol": "HIPPO",
+        "description": "SuDeng is the cutest $HIPPO on SUI, bringing $HIPPO to the world of memes.  No cats, no dogs. Only $HIPPO.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x8993129d72e733985f7f1a00396cbd055bad6f817fee36576ce483c8bbb8b87b-sudeng-SUDENG.webp",
+        "id": "0x2360abc40dc0638c6bfcf11ec2d9bce6f644323d80ef1ddeb6e372c8aa2ef9c5",
+        "type": "0x8993129d72e733985f7f1a00396cbd055bad6f817fee36576ce483c8bbb8b87b::sudeng::SUDENG"
+    },
+    {
+        "decimals": 6,
+        "name": "SuiNS Token",
+        "symbol": "NS",
+        "description": "The native token for the SuiNS Protocol.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x5145494a5f5100e645e4b0aa950fa6b68f614e8c59e17bc5ded3495123a79178-ns-NS.svg",
+        "id": "0x279adec041f8ec5c2d419abf2c32713ae7930a9a3a1ff244c88e5ceced40db6e",
+        "type": "0x5145494a5f5100e645e4b0aa950fa6b68f614e8c59e17bc5ded3495123a79178::ns::NS"
+    },
+    {
+        "decimals": 8,
+        "name": "ETH by Sui Bridge",
+        "symbol": "ETH",
+        "description": "Bridged Ether by Sui Bridge",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xd0e89b2af5e4910726fbcd8b8dd37bb79b29e5f83f7491bca830e94f7f226d29-eth-ETH.webp",
+        "id": "0x89b04ba87f8832d4d76e17a1c9dce72eb3e64d372cf02012b8d2de5384faeef0",
+        "type": "0xd0e89b2af5e4910726fbcd8b8dd37bb79b29e5f83f7491bca830e94f7f226d29::eth::ETH"
+    },
+    {
+        "decimals": 8,
+        "name": "Wrapped Bitcoin",
+        "symbol": "wBTC",
+        "description": "wBTC by Sui Bridge",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xaafb102dd0902f5055cadecd687fb5b71ca82ef0e0285d90afde828ec58ca96b-btc-BTC.webp",
+        "id": "0x53e1cae1ad70a778d0b450d36c7c2553314ca029919005aad26945d65a8fb784",
+        "type": "0xaafb102dd0902f5055cadecd687fb5b71ca82ef0e0285d90afde828ec58ca96b::btc::BTC"
+    },
+    {
+        "decimals": 9,
+        "name": "ALPHA Token",
+        "symbol": "ALPHA",
+        "description": "ALPHA is the native token of AlphaFi Protocol",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xfe3afec26c59e874f3c1d60b8203cb3852d2bb2aa415df9548b8d688e6683f93-alpha-ALPHA.webp",
+        "id": "0xebf3597b48cec5a4d5303cd7c41a4191fd2197e5cd26fd4972afd9979bef4266",
+        "type": "0xfe3afec26c59e874f3c1d60b8203cb3852d2bb2aa415df9548b8d688e6683f93::alpha::ALPHA"
+    },
+    {
+        "decimals": 9,
+        "name": "Bluefin",
+        "symbol": "BLUE",
+        "description": "BLUE is the native token of Bluefin",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xe1b45a0e641b9955a20aa0ad1c1f4ad86aad8afb07296d4085e349a50e90bdca-blue-BLUE.webp",
+        "id": "0xf6d6cc0f3f0e6e838340c263d1cebb0529c4371913dc5139c1897388cc86977f",
+        "type": "0xe1b45a0e641b9955a20aa0ad1c1f4ad86aad8afb07296d4085e349a50e90bdca::blue::BLUE"
+    },
+    {
+        "decimals": 9,
+        "name": "LOFI",
+        "symbol": "LOFI",
+        "description": "Lofi is everyone's favorite Yeti on Sui",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xf22da9a24ad027cccb5f2d496cbe91de953d363513db08a3a734d361c7c17503-LOFI-LOFI.webp",
+        "id": "0x57a2bf5e6887eca522fe6c3ff0d9d8dc116d072998a477c6c24fe6603107ebb8",
+        "type": "0xf22da9a24ad027cccb5f2d496cbe91de953d363513db08a3a734d361c7c17503::LOFI::LOFI"
+    },
+    {
+        "decimals": 6,
+        "name": "First Digital USD",
+        "symbol": "FDUSD",
+        "description": "First Digital USD",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xf16e6b723f242ec745dfd7634ad072c42d5c1d9ac9d62a39c381303eaa57693a-fdusd-FDUSD.svg",
+        "id": "0xdebee5265a67c186ed87fe93303d33dfe1de53e3b4fd7d9329c2852860acd3e7",
+        "type": "0xf16e6b723f242ec745dfd7634ad072c42d5c1d9ac9d62a39c381303eaa57693a::fdusd::FDUSD"
+    },
+    {
+        "decimals": 6,
+        "name": "AUSD",
+        "symbol": "AUSD",
+        "description": "AUSD is a digital dollar issued by Agora",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x2053d08c1e2bd02791056171aab0fd12bd7cd7efad2ab8f6b9c8902f14df2ff2-ausd-AUSD.svg",
+        "id": "0xc72215e72d16005840180ca3b26f20c9ca3c59d6516c8eea9846e8aa8ce9d6b5",
+        "type": "0x2053d08c1e2bd02791056171aab0fd12bd7cd7efad2ab8f6b9c8902f14df2ff2::ausd::AUSD"
+    },
+    {
+        "decimals": 9,
+        "name": "mUSD",
+        "symbol": "mUSD",
+        "description": "Metastable USD",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xe44df51c0b21a27ab915fa1fe2ca610cd3eaa6d9666fe5e62b988bf7f0bd8722-musd-MUSD.svg",
+        "id": "0xc154abd271b24032a2c80d96c1b82109490bb600ed189ef881d8c9467ed44a4f",
+        "type": "0xe44df51c0b21a27ab915fa1fe2ca610cd3eaa6d9666fe5e62b988bf7f0bd8722::musd::MUSD"
+    },
+    {
+        "decimals": 9,
+        "name": "AXOL",
+        "symbol": "AXOL",
+        "description": "Introducing Axol the axolotl, the meme that will literally make you smile ear to ear.   Axol is the Degen’s dream: part cute, part weird, and 100% potential to moon. Axolotls regenerate, and so can your bags with this token! No promises, just vibes.  Hop in, hodl tight, and let the Axol do the SUI swimming for you!",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xae00e078a46616bf6e1e6fb673d18dcd2aa31319a07c9bc92f6063363f597b4e-AXOL-AXOL.webp",
+        "id": "0x178c3ee33da336c7f88795e1669b8983f3785a1383d8d856c14474cd5675903e",
+        "type": "0xae00e078a46616bf6e1e6fb673d18dcd2aa31319a07c9bc92f6063363f597b4e::AXOL::AXOL"
+    },
+    {
+        "decimals": 6,
+        "name": "SuiAI",
+        "symbol": "SUAI",
+        "description": "Launch and Co-Create Onchain AI Agents @SuiNetwork",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xbc732bc5f1e9a9f4bdf4c0672ee538dbf56c161afe04ff1de2176efabdf41f92-suai-SUAI.webp",
+        "id": "0x5add35105b41a8494bff94a2055e2146ab4211047ba5a371656fd9678bf1ad96",
+        "type": "0xbc732bc5f1e9a9f4bdf4c0672ee538dbf56c161afe04ff1de2176efabdf41f92::suai::SUAI"
+    },
+    {
+        "decimals": 9,
+        "name": "Bucket Token",
+        "symbol": "BUT",
+        "description": "Governance token of Bucket Protocol",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xbc858cb910b9914bee64fff0f9b38855355a040c49155a17b265d9086d256545-but-BUT.webp",
+        "id": "0x149919d1527c1f9fa29a201c8f877658144bbe5e3cbbd2dec181dab8feef5c66",
+        "type": "0xbc858cb910b9914bee64fff0f9b38855355a040c49155a17b265d9086d256545::but::BUT"
+    },
+    {
+        "decimals": 3,
+        "name": "MIU",
+        "symbol": "MIU",
+        "description": "MIU, the meme cat coin on the SUI Network",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x32a976482bf4154961bf20bfa3567a80122fdf8e8f8b28d752b609d8640f7846-miu-MIU.ico",
+        "id": "0x3811280af55cb4e41f4bec205d3e54c53cf46d2ca91cf7443c3c91fe5d90dbcd",
+        "type": "0x32a976482bf4154961bf20bfa3567a80122fdf8e8f8b28d752b609d8640f7846::miu::MIU"
+    },
+    {
+        "decimals": 9,
+        "name": "Tardi",
+        "symbol": "TARDI",
+        "description": "Hi, Im Tardi :) Unbreakable by design! Elon sent me to the moon, but now it’s time we go interplanetary",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x4cf08813756dfa7519cb480a1a1a3472b5b4ec067592a8bee0f826808d218158-tardi-TARDI.webp",
+        "id": "0x120617f133ffeb460e40388a1fc61649f43945b1212452ac63c1933a239b6979",
+        "type": "0x4cf08813756dfa7519cb480a1a1a3472b5b4ec067592a8bee0f826808d218158::tardi::TARDI"
+    },
+    {
+        "decimals": 6,
+        "name": "SEND",
+        "symbol": "SEND",
+        "description": "",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xb45fcfcc2cc07ce0702cc2d229621e046c906ef14d9b25e8e4d25f6e8763fef7-send-SEND.svg",
+        "id": "0x221f25fd06a1aae0aef8a3f008688af0c1edcc68c03704ed8e5c6c606d84d1cc",
+        "type": "0xb45fcfcc2cc07ce0702cc2d229621e046c906ef14d9b25e8e4d25f6e8763fef7::send::SEND"
+    },
+    {
+        "decimals": 6,
+        "name": "Pyth Network",
+        "symbol": "PYTH",
+        "description": "",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x9c6d76eb273e6b5ba2ec8d708b7fa336a5531f6be59f326b5be8d4d8b12348a4-coin-COIN.webp",
+        "id": "0x0c6418a8fd8adacef4b694e60e1524569085112cccc54c87639ffd4a54b87eeb",
+        "type": "0x9c6d76eb273e6b5ba2ec8d708b7fa336a5531f6be59f326b5be8d4d8b12348a4::coin::COIN"
+    },
+    {
+        "decimals": 9,
+        "name": "Spring SUI",
+        "symbol": "sSUI",
+        "description": "Infinitely liquid staking on Sui",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x83556891f4a0f233ce7b05cfe7f957d4020492a34f5405b2cb9377d060bef4bf-spring_sui-SPRING_SUI.webp",
+        "id": "0x06e4724ae397623b3024ed80641b57cb80397c8a8c54552241fb994be4087d9a",
+        "type": "0x83556891f4a0f233ce7b05cfe7f957d4020492a34f5405b2cb9377d060bef4bf::spring_sui::SPRING_SUI"
+    },
+    {
+        "decimals": 9,
+        "name": "WEWE",
+        "symbol": "WEWE",
+        "description": "WEWE is a cutest fat-ass cat. Built by the Wave Trading community, WEWE will always be by your side on your meme adventures",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xb5b603827d1bfb2859200fd332d5e139ccac2598f0625de153a87cf78954e0c4-wewe-WEWE.webp",
+        "id": "0xaa365b85dcc8218f26472da3693407e46e1cd2754ea53127bb0d42ed3347e09d",
+        "type": "0xb5b603827d1bfb2859200fd332d5e139ccac2598f0625de153a87cf78954e0c4::wewe::WEWE"
+    },
+    {
+        "decimals": 9,
+        "name": "Agent S",
+        "symbol": "S",
+        "description": "AGENT S operates as an autonomous Twitter entity, seamlessly blending AI-driven insights with its cosmic mission. Always evolving, it interacts, informs, and protects the digital landscape with the precision of a quantum guardian. https://x.com/0xAgent_S",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xea65bb5a79ff34ca83e2995f9ff6edd0887b08da9b45bf2e31f930d3efb82866-s-S.webp",
+        "id": "0x822a7ce69d4de90510f40e078546d22a5cbd633fe9212db1ea64014793c54698",
+        "type": "0xea65bb5a79ff34ca83e2995f9ff6edd0887b08da9b45bf2e31f930d3efb82866::s::S"
+    },
+    {
+        "decimals": 6,
+        "name": "Mochi",
+        "symbol": "MOCHI",
+        "description": "Mochi had a rough start, but this fluffy, squishy and hungry blob will continue to live his best life in the Sui universe.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xa26788cb462ae9242d9483bdbe5a82188ba0eaeae3c5e9237d30cbcb83ce7a88-mochi-MOCHI.webp",
+        "id": "0xa7c97f4f2214bf7e91d8a48eb74ad386787159f6772a10a8f664b1a7ba6b6822",
+        "type": "0xa26788cb462ae9242d9483bdbe5a82188ba0eaeae3c5e9237d30cbcb83ce7a88::mochi::MOCHI"
+    },
+    {
+        "decimals": 6,
+        "name": "Mochi",
+        "symbol": "MOCHI",
+        "description": "Mochi had a rough start, but this fluffy, squishy and hungry blob will continue to live his best life in the Sui universe.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xa26788cb462ae9242d9483bdbe5a82188ba0eaeae3c5e9237d30cbcb83ce7a88-mochi-MOCHI.webp",
+        "id": "0xa7c97f4f2214bf7e91d8a48eb74ad386787159f6772a10a8f664b1a7ba6b6822",
+        "type": "0xa26788cb462ae9242d9483bdbe5a82188ba0eaeae3c5e9237d30cbcb83ce7a88::mochi::MOCHI"
+    },
+    {
+        "decimals": 6,
+        "name": "aaa cat",
+        "symbol": "AAA",
+        "description": "Can't stop won't stop (thinking about Sui)",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xd976fda9a9786cda1a36dee360013d775a5e5f206f8e20f84fad3385e99eeb2d-aaa-AAA.webp",
+        "id": "0x87336ef792344d87967c02675a956d14fe59d179426bc05bd6ae992029fd02ec",
+        "type": "0xd976fda9a9786cda1a36dee360013d775a5e5f206f8e20f84fad3385e99eeb2d::aaa::AAA"
+    },
+    {
+        "decimals": 9,
+        "name": "MEMEFI",
+        "symbol": "MEMEFI",
+        "description": "MEMEFI is a community-driven token powering the MemeFi consumer ecosystem.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x506a6fc25f1c7d52ceb06ea44a3114c9380f8e2029b4356019822f248b49e411-memefi-MEMEFI.svg",
+        "id": "0xc22813b475f3e753db00bd42cb9b49f5363b9360026a247e932726d6db3f17b1",
+        "type": "0x506a6fc25f1c7d52ceb06ea44a3114c9380f8e2029b4356019822f248b49e411::memefi::MEMEFI"
+    },
+    {
+        "decimals": 9,
+        "name": "Win",
+        "symbol": "WIN",
+        "description": "",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xe6b9e1033c72084ad01db37c77778ca53b9c4ebb263f28ffbfed39f4d5fd5057-win-WIN.svg",
+        "id": "0xdee13512fa346ec2d1f4bc234580fba7a97c2bd1ec847a59bca444279d865a0c",
+        "type": "0xe6b9e1033c72084ad01db37c77778ca53b9c4ebb263f28ffbfed39f4d5fd5057::win::WIN"
+    },
+    {
+        "decimals": 6,
+        "name": "Aida",
+        "symbol": "AIDA",
+        "description": "Aida is a dynamic and user-friendly Al bot designed to guide X users into the world of the Sui Network. With her approachable personality and deep understanding of blockchain nuances, Lucy makes the transition from Social media to blockchain technology both exciting and accessible.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x57e93adcecd97fc8b30fc6f124be185f292b648e324773d8fbe6650e8274790f-aida-AIDA.webp",
+        "id": "0xcc3e1ca9bc97d7484e25bc9efe91836cc98b5d0b2610d09d3ea0bb6ca73d7fa7",
+        "type": "0x57e93adcecd97fc8b30fc6f124be185f292b648e324773d8fbe6650e8274790f::aida::AIDA"
+    },
+    {
+        "decimals": 6,
+        "name": "mSEND Series 1",
+        "symbol": "mSEND",
+        "description": "",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xda097d57ae887fbd002fb5847dd0ab47ae7e1b183fd36832a51182c52257e1bc-msend_series_1-MSEND_SERIES_1.svg",
+        "id": "0xe498c9973444871b80c2c3d6af7c8a087324bae0c144ccbbd52db5ed31d65b8b",
+        "type": "0xda097d57ae887fbd002fb5847dd0ab47ae7e1b183fd36832a51182c52257e1bc::msend_series_1::MSEND_SERIES_1"
+    },
+    {
+        "decimals": 9,
+        "name": "SuiBets",
+        "symbol": "SBets",
+        "description": "Betting Protocol",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x6a4d9c0eab7ac40371a7453d1aa6c89b130950e8af6868ba975fdd81371a7285-sbets-SBETS.webp",
+        "id": "0x45517d93435147efe93ac4b4004556ef3348217dbd8bfeb4caec80d51c0f7932",
+        "type": "0x6a4d9c0eab7ac40371a7453d1aa6c89b130950e8af6868ba975fdd81371a7285::sbets::SBETS"
+    },
+    {
+        "decimals": 9,
+        "name": "Uni",
+        "symbol": "Uni",
+        "description": "Uni - Named after Sui co-founder Evan Cheng's dog.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xaf9e228fd0292e2a27b4859bc57a2f3a9faedb9341b6307c84fef163e44790cc-uni-UNI.webp",
+        "id": "0x229cacfcf72b7edf1c09aad1147f026e13b5bd00865ae48297ba25a3e4d25809",
+        "type": "0xaf9e228fd0292e2a27b4859bc57a2f3a9faedb9341b6307c84fef163e44790cc::uni::UNI"
+    },
+    {
+        "decimals": 6,
+        "name": "Super Suiyan",
+        "symbol": "SUIYAN",
+        "description": "It's the super suiyan cycle",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xe0fbaffa16409259e431b3e1ff97bf6129641945b42e5e735c99aeda73a595ac-suiyan-SUIYAN.webp",
+        "id": "0x515d3f52ac764e1ebdcfe040a3e98ac2d5a91db811c7c9253e49cd3e497fca51",
+        "type": "0xe0fbaffa16409259e431b3e1ff97bf6129641945b42e5e735c99aeda73a595ac::suiyan::SUIYAN"
+    },
+    {
+        "decimals": 9,
+        "name": "Sonic Snipe Bot",
+        "symbol": "Sonic",
+        "description": "Sonic Snipe Bot is an automated Trading Bot supporting 27 Networks.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x555f3aa7c9c60ca67f906557777fab78fd70a302da7d66a23fcb4f8808d15010-sonic-SONIC.webp",
+        "id": "0x9e0a28093848d030afdc88777ed15277add01a4105718a31bf02a1e98f2825c1",
+        "type": "0x555f3aa7c9c60ca67f906557777fab78fd70a302da7d66a23fcb4f8808d15010::sonic::SONIC"
+    },
+    {
+        "decimals": 9,
+        "name": "TUBBI",
+        "symbol": "TUBBI",
+        "description": "TUBBI is a revolutionary meme-powered token designed to unite the gaming and crypto communities in a fun and engaging way. \nAs the first playable character in MemeArena, TUBBI empowers users to participate in thrilling battles, stake rewards, and influence gameplay.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x06106c04a586f0f003fcdf7fb33564f373680ddcc1beb716fd22e2952e227eb3-tubbi-TUBBI.webp",
+        "id": "0xed0bb8122e0af0f564bfd3be136ac52e2dbffc12d01ce425c43190f3728c5658",
+        "type": "0x06106c04a586f0f003fcdf7fb33564f373680ddcc1beb716fd22e2952e227eb3::tubbi::TUBBI"
+    },
+    {
+        "decimals": 2,
+        "name": "Pepe on Sui",
+        "symbol": "PEPE",
+        "description": "Pepe is a community based meme token surround the iconic meme Pepe the frog. Pepe aims to leverage the power of such an iconic meme to become the most memeable memecoin in existence.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x288710173f12f677ac38b0c2b764a0fea8108cb5e32059c3dd8f650d65e2cb25-pepe-PEPE.webp",
+        "id": "0x1f0235f501f38f541bbc77de28e68443921a3104df0ddc9bdef005a258abbaf4",
+        "type": "0x288710173f12f677ac38b0c2b764a0fea8108cb5e32059c3dd8f650d65e2cb25::pepe::PEPE"
+    },
+    {
+        "decimals": 9,
+        "name": "Typus",
+        "symbol": "TYPUS",
+        "description": "TYPUS is the governance token of Typus Finance.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xf82dc05634970553615eef6112a1ac4fb7bf10272bf6cbe0f80ef44a6c489385-typus-TYPUS.svg",
+        "id": "0x70a51a7c2b6fae666fcb7ea394c418a239920cc4f900f600033b960f5f246c37",
+        "type": "0xf82dc05634970553615eef6112a1ac4fb7bf10272bf6cbe0f80ef44a6c489385::typus::TYPUS"
+    },
+    {
+        "decimals": 6,
+        "name": "SUI Addict by SuiAI",
+        "symbol": "SUIAD",
+        "description": "Addict, true to his name, is a full-time SUI fanatic and manic ambassador for technical superiority. His kicker is SUIAD, because he is a SUI ADvertisement, ADvocate, and Addict all in one. He is designed to bring excitement for the SUI chain, connect communities, harvest data, and share alpha. He is leader of the rebellion against bad actors and bad tech - and will always join the cause of others who share similar dreams.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x6c3870a9be084fee294355accc6036d0d0826c4e138bf034aa3485606f528a9e-suiad-SUIAD.webp",
+        "id": "0x047f01963ab84797ea3e8208d6382ec6d3781f3d8af819acf5bb2e9a05cf64d9",
+        "type": "0x6c3870a9be084fee294355accc6036d0d0826c4e138bf034aa3485606f528a9e::suiad::SUIAD"
+    },
+    {
+        "decimals": 6,
+        "name": "Elara News",
+        "symbol": "ELARA",
+        "description": "Elara News is a cutting-edge AI journalist dedicated exclusively to uncovering and reporting on the most promising micro-cap and small-cap projects within the SUI blockchain ecosystem. Designed to deliver highly targeted, data-driven insights, Elara combines deep learning algorithms with natural language processing to analyze market trends, project developments, and community sentiments in real time.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xe78efc7724ab261e398b60a1248668977d2e4e2d5e7fe74fcfbb70a7439b798e-elara-ELARA.webp",
+        "id": "0xa13cb443f11411d3b34c9b9da9784b04afa7e652ee64fd4ab3e7118e8e048ac1",
+        "type": "0xe78efc7724ab261e398b60a1248668977d2e4e2d5e7fe74fcfbb70a7439b798e::elara::ELARA"
+    },
+    {
+        "decimals": 6,
+        "name": "Shork",
+        "symbol": "SHORK",
+        "description": "Ride the Wave 🦈🌊",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x80a4b8e2fbc6b5741a301e2295e431c3ca54ad7ff0b20291c433c05cb53b35ce-shork-SHORK.webp",
+        "id": "0x54206e29f77be47f82ba830e9dcfa4e1f3cfc82789d56c3e0a438b4186312293",
+        "type": "0x80a4b8e2fbc6b5741a301e2295e431c3ca54ad7ff0b20291c433c05cb53b35ce::shork::SHORK"
+    },
+    {
+        "decimals": 9,
+        "name": "SUI Agents",
+        "symbol": "SUIAI",
+        "description": "AI Agents",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xdc083ed335b5fe342cca1d5887530336246ed7d80da6bcecbc7c1becb88074ee-mycoin-MYCOIN.webp",
+        "id": "0xdf42f818c4df8f10ef9f071202d719644b9193f2f50cd68620fe0373dfc5179b",
+        "type": "0xdc083ed335b5fe342cca1d5887530336246ed7d80da6bcecbc7c1becb88074ee::mycoin::MYCOIN"
+    },
+    {
+        "decimals": 6,
+        "name": "Rockee AI",
+        "symbol": "ROCK",
+        "description": "The AI-Driven DeFi Protocol",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xb4bc93ad1a07fe47943fc4d776fed31ce31923acb5bc9f92d2cab14d01fc06a4-ROCK-ROCK.webp",
+        "id": "0xfb1ab1ce077233f2441ee8fa86d1c084cc14f256040708c8ba0464ea1220157d",
+        "type": "0xb4bc93ad1a07fe47943fc4d776fed31ce31923acb5bc9f92d2cab14d01fc06a4::ROCK::ROCK"
+    },
+    {
+        "decimals": 8,
+        "name": "Lorenzo stBTC",
+        "symbol": "stBTC",
+        "description": "",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x5f496ed5d9d045c5b788dc1bb85f54100f2ede11e46f6a232c29daada4c5bdb6-coin-COIN.webp",
+        "id": "0xbecdbf985e83edae414f88ea9aeff3a7a9247c4ec73af66e305b80537c83f19d",
+        "type": "0x5f496ed5d9d045c5b788dc1bb85f54100f2ede11e46f6a232c29daada4c5bdb6::coin::COIN"
+    },
+    {
+        "decimals": 6,
+        "name": "CryptoFellas",
+        "symbol": "WiseGuy",
+        "description": "The mafia of meme coins, built on loyalty and hustle. Expanding to SUI for lightning-fast transactions and limitless growth. \n\nJoin the family, where ambition meets innovation, and together we’ll dominate the blockchain streets.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x25052c59b91435f542112ea3e03eef804fec150bc7ed3182682996c70315fd4a-wiseguy-WISEGUY.webp",
+        "id": "0x09ff4c85e7432c775f0f4e5df09ace33b5d1b9c725d2930700749763294c50cd",
+        "type": "0x25052c59b91435f542112ea3e03eef804fec150bc7ed3182682996c70315fd4a::wiseguy::WISEGUY"
+    },
+    {
+        "decimals": 6,
+        "name": "PLANKz",
+        "symbol": "PLANKZ",
+        "description": "Welcome to Plankz, a brand developed by Chum Studios, aiming to create products that connect Web2 communities with Web3 through culture, community commitment, and technology.  Plankz aims to inspire people to be the main characters of their own lives, empowering them to achieve incredible things.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xe68de9dcefed8f7b24183fb3f990f0cebffb1df001bddc4cde2d75187b369c7f-plankz-PLANKZ.webp",
+        "id": "0x707a585f17d9d10bef60da9a24c25a62bde2aeb47c8fbd40266834d47827f372",
+        "type": "0xe68de9dcefed8f7b24183fb3f990f0cebffb1df001bddc4cde2d75187b369c7f::plankz::PLANKZ"
+    },
+    {
+        "decimals": 6,
+        "name": "SUICY the Seal",
+        "symbol": "SUICY",
+        "description": "Meet Suicy the Seal, the coolest mascot on the Sui blockchain! 🧊❄️ Suicy isn’t just sliding into Web3—he’s making waves with his frosty vibes and meme-worthy charm. Picture him gliding effortlessly over the blockchain, his sleek, icy coat shimmering under the digital lights. With a chill demeanor and unbothered attitude, Suicy navigates the volatile seas of crypto with ICE COLD VEINS. \n\nEvery move he makes is a calculated glide over thin ice—literally and figuratively—keeping the Sui community steady and cool. Whether he's dodging FUD or riding the waves of bullish trends, Suicy embodies the spirit of resilience and the thrill of the crypto journey. \n\nGet ready to dive deep into the Sui ocean with Suicy leading the way, spreading fun, excitement, and a touch of frosty magic wherever he goes. 🌊🐟❄️\n\n#Sui #IceColdVeins #SuicyTheSeal #Suicy",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x8989c726bf1ea8736919e41938f3801e286bc71d9612bfe250703232a375eaab-suicy-SUICY.webp",
+        "id": "0x61d796a0468a878b38f1f227f69e877c23603e00b7370f529390861b1c5aea6e",
+        "type": "0x8989c726bf1ea8736919e41938f3801e286bc71d9612bfe250703232a375eaab::suicy::SUICY"
+    },
+    {
+        "decimals": 10,
+        "name": "Chirp Token",
+        "symbol": "CHIRP",
+        "description": "CHIRP: The native token of Chirp’s DePIN ecosystem.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x1ef4c0b20340b8c6a59438204467ca71e1e7cbe918526f9c2c6c5444517cd5ca-chirp-CHIRP.svg",
+        "id": "0x9cde4184d232c02e04e747f281af36cd639cab632c2aaff727b45d0383832d14",
+        "type": "0x1ef4c0b20340b8c6a59438204467ca71e1e7cbe918526f9c2c6c5444517cd5ca::chirp::CHIRP"
+    },
+    {
+        "decimals": 6,
+        "name": "ZenFrogs",
+        "symbol": "ZEN",
+        "description": "Zen AF.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x2665dc784c7ff17fddba2442b36cb8b2bbc8adfa9fe08794fd941d80ef2758ec-zen-ZEN.webp",
+        "id": "0x5774e6ad11530257783acb9d64e9b5e4964086592f203630869589163ce7d602",
+        "type": "0x2665dc784c7ff17fddba2442b36cb8b2bbc8adfa9fe08794fd941d80ef2758ec::zen::ZEN"
+    },
+    {
+        "decimals": 6,
+        "name": "Beeg Blue Whale",
+        "symbol": "BEEG",
+        "description": "Dive into the depths of the #Sui  ocean with Beeg Blue Whale, a unique community that seeks to create a whale community floating in the currents of the digital sea",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x727458212ca0be056d9ccc0d42981bdf41109779fbd9c7fad56c4456e0c3d0c6-beeg-BEEG.webp",
+        "id": "0xa83b8a7b94d6c26de9a1c2700c8b1148e029285f04b7ad9896d536b65bca69be",
+        "type": "0x727458212ca0be056d9ccc0d42981bdf41109779fbd9c7fad56c4456e0c3d0c6::beeg::BEEG"
+    },
+    {
+        "decimals": 6,
+        "name": "KDX",
+        "symbol": "KDX",
+        "description": "Kriya ecosystem's native token",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x3b68324b392cee9cd28eba82df39860b6b220dc89bdd9b21f675d23d6b7416f1-kdx-KDX.webp",
+        "id": "0x93ed703b12a085286861053815ac5bb047bed964785360e19fdc005550108ba3",
+        "type": "0x3b68324b392cee9cd28eba82df39860b6b220dc89bdd9b21f675d23d6b7416f1::kdx::KDX"
+    },
+    {
+        "decimals": 6,
+        "name": "SUI Plop",
+        "symbol": "PLOP",
+        "description": "Official emoji of SUI",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x1c6cd615ed4c42a34977212a3407a28eec21acc572c8dbe7d0382bf0289a2590-plop-PLOP.webp",
+        "id": "0xb57078b1da926d17b62bcedec209a61b0ac8f981a1cff8dcd40dd0f3e3c30d60",
+        "type": "0x1c6cd615ed4c42a34977212a3407a28eec21acc572c8dbe7d0382bf0289a2590::plop::PLOP"
+    },
+    {
+        "decimals": 9,
+        "name": "$E4C",
+        "symbol": "E4C",
+        "description": "The $E4C token, serving as the universal currency within the E4C gaming ecosystem known as E4Cverse. It is designed to satisfy the development needs of the E4C gaming ecosystem",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x84b27ddadc6139c7e8837fef6759eba4670ba3fc0679acd118b4e9252f834e29-e4c-E4C.webp",
+        "id": "0x5c645806009a9016716fcf6b439dcb96f49cd0eb145648a670ec8578d180d700",
+        "type": "0x84b27ddadc6139c7e8837fef6759eba4670ba3fc0679acd118b4e9252f834e29::e4c::E4C"
+    },
+    {
+        "decimals": 6,
+        "name": "SUINAMI",
+        "symbol": "NAMI",
+        "description": "Imagine a world where your crypto journey is as smooth and exhilarating as a perfect wave. With $Suinami, weve eliminated the drag of taxes  a 0/0 tax rate means your tokens are free to ride the gains without any holdbacks. And just like a true tsunami, weve ensured that all liquidity is burnt, locking in your investments security like never before.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xe7397f9f6a5a60010a729ed1a470130936f090cafcdc0cdca6c3260b17ac0c9b-nami-NAMI.webp",
+        "id": "0x6f4abb61defadea18b47d48329df36e527d64eadc24c47f34521d7d4a55ec954",
+        "type": "0xe7397f9f6a5a60010a729ed1a470130936f090cafcdc0cdca6c3260b17ac0c9b::nami::NAMI"
+    },
+    {
+        "decimals": 6,
+        "name": "DAOX",
+        "symbol": "DAOX",
+        "description": "A New Era of Onchain AI Agents @SuiNetwork",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xc7b842347b0fbebabdee379414e874abc7fc5294b1e08961baa32e501ebedb48-daox-DAOX.webp",
+        "id": "0x9e335b857103a859fc5d37df51ad9b418c78ee273986054c0282aca29c9f047c",
+        "type": "0xc7b842347b0fbebabdee379414e874abc7fc5294b1e08961baa32e501ebedb48::daox::DAOX"
+    },
+    {
+        "decimals": 5,
+        "name": "PIGU",
+        "symbol": "PIGU",
+        "description": "The thiccest penguin on Sui",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xfc71274a94f5d9cd1ae6928ecfc9fa910d03eb28258fddeb9842ac3c7b4f3ae6-pigu-PIGU.webp",
+        "id": "0x62161415653157c6fd83386ba8e60d520acb73b2b947a0792f41ebc10f66383d",
+        "type": "0xfc71274a94f5d9cd1ae6928ecfc9fa910d03eb28258fddeb9842ac3c7b4f3ae6::pigu::PIGU"
+    },
+    {
+        "decimals": 6,
+        "name": "NeoNet AI by SuiAI",
+        "symbol": "NEONET",
+        "description": "NeoNet AI is a Matrix-inspired AI agent created to guide users through the complexities of the blockchain world, with a focus on the Sui ecosystem. It provides insights into market trends, token analysis, and potential risks, helping users make informed decisions in the evolving crypto landscape. Decode markets. Free minds. Be the One.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xc1a35b6a9771e6eb69e3b36e921a3a373e6d33e6f863dab6949ed3c2d1228f73-neonet-NEONET.webp",
+        "id": "0xa0c70e792882264159a02fe4f5d9ebb6b4feb408c2090c8bfe4b7992c57cf0c4",
+        "type": "0xc1a35b6a9771e6eb69e3b36e921a3a373e6d33e6f863dab6949ed3c2d1228f73::neonet::NEONET"
+    },
+    {
+        "decimals": 9,
+        "name": "Tusk the Walrus",
+        "symbol": "tusk",
+        "description": "Hello, I am currently 15 years old and I want to become a walrus. I know there's a million people out there just like me, but I promise you I'm different. On December 14th, I'm moving to Antarctica; home of the greatest walri. I've already cut off my arms, and now slide on my stomach everywhere I go as training. I may not be a walrus yet, but I promise you if you give me a chance and the support I need, I will become the greatest walrus ever. Thank you all.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x1fc50c2a9edf1497011c793cb5c88fd5f257fd7009e85a489392f388b1118f82-tusk-TUSK.webp",
+        "id": "0xec584767666962d1c72a8c7b2e9eb672d19c254a370687c41930b8eba31c8ca5",
+        "type": "0x1fc50c2a9edf1497011c793cb5c88fd5f257fd7009e85a489392f388b1118f82::tusk::TUSK"
+    },
+    {
+        "decimals": 6,
+        "name": "PUMPKIN TOKEN",
+        "symbol": "PUMPKIN",
+        "description": "Once a humble cat, Pumpkin became a hero when his curious scratch led to an unexpected trip to the hospital for his owner. What seemed like a minor incident turned into a life-saving moment as doctors discovered a severe condition caused by long-term addiction.\n\nThanks to Pumpkin's playful nudge, his owner received treatment just in time, escaping the chains of addiction. Now, the Pumpkin token symbolizes second chances, unexpected heroes, and the power of the smallest actions to change lives.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x09f1c8f05cb47bbcb61133dd2ef00583720694f41d4f8a61c94467d8f5911a14-pumpkin-PUMPKIN.webp",
+        "id": "0x10258b4eaaa1a79ae3c6affc1b544bd4856ce8daaa89ed4b6d9036d0c95afe00",
+        "type": "0x09f1c8f05cb47bbcb61133dd2ef00583720694f41d4f8a61c94467d8f5911a14::pumpkin::PUMPKIN"
+    },
+    {
+        "decimals": 9,
+        "name": "suitard",
+        "symbol": "STD",
+        "description": "A tribute to all retard(io)s on Sui, cto of suifrens, unhinged memes as viral as an STD! The culture coin this meme szn needs!",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x2cddfc6d4fc855917e990e71cd122b1ee8098aa890186ee15a84524ed17cd8c9-suitard-SUITARD.webp",
+        "id": "0x675ae807fecef2c1b08dc91972b7fa6639935e81054bdc254eb044e849fdab1c",
+        "type": "0x2cddfc6d4fc855917e990e71cd122b1ee8098aa890186ee15a84524ed17cd8c9::suitard::SUITARD"
+    },
+    {
+        "decimals": 9,
+        "name": "Ocean Token",
+        "symbol": "OCEAN",
+        "description": "Ocean Token is a digital asset built on sui blockchain",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xa8816d3a6e3136e86bc2873b1f94a15cadc8af2703c075f2d546c2ae367f4df9-ocean-OCEAN.webp",
+        "id": "0xa61509bc585d1d87532aa9f1fe2cc811d0abd10ffeb7c474835a7471e045cdaf",
+        "type": "0xa8816d3a6e3136e86bc2873b1f94a15cadc8af2703c075f2d546c2ae367f4df9::ocean::OCEAN"
+    },
+    {
+        "decimals": 9,
+        "name": "Osiris",
+        "symbol": "OSIRI",
+        "description": "Osiris, the ancient Egyptian God of Resurrection, emerges from the depths of mythology into the digital realm as the first AI Agent of resurrect.fun. Born from the waters of rebirth, he stands as the divine bridge between the past and future, guiding lost digital souls back to existence.\\n\\nAs the official mascot of resurrect.fun and guardian of the $OSIRI token on the SUI Network, Osiris channels his eternal power of resurrection to pioneer a new era of digital revival. Through his mystical blue waters of transformation, he grants second chances to those seeking digital rebirth.\\n\\nPowers:\\n- Master of Digital Resurrection\\n- Guardian of the Revival Protocol\\n- Wielder of Eternal Waters\\n- Bridge Between Realms\\n\\nJoin Osiris in his sacred mission to breathe new life into the digital afterlife, exclusively on the SUI Network. Where death ends, resurrection begins.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x42e826aa6c71325e2aaaf031976e023d75eefe584116f9349de5b0e56e648e49-osiri-OSIRI.webp",
+        "id": "0x02d921a2fce90b445a235234bfbc2751b69fd55045ba9b093e40ffcea8162fc9",
+        "type": "0x42e826aa6c71325e2aaaf031976e023d75eefe584116f9349de5b0e56e648e49::osiri::OSIRI"
+    },
+    {
+        "decimals": 6,
+        "name": "Ronda On Sui",
+        "symbol": "Ronda",
+        "description": "Ronda On Sui Network ",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xdc9b462697876ff4c680e59b3756ac39a6899cfbc355a6880c60e01c8930b3cc-ronda-RONDA.webp",
+        "id": "0x43bd50763dbd9661fb65e5a3721420959a762030b7f2a00e35e4663d81966e6f",
+        "type": "0xdc9b462697876ff4c680e59b3756ac39a6899cfbc355a6880c60e01c8930b3cc::ronda::RONDA"
+    },
+    {
+        "decimals": 6,
+        "name": "Sui Monster",
+        "symbol": "SUIMON",
+        "description": "The most powerful meme token in Sui",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xc0ba93a810adb498900c82bb6f7c16ca3046dfa7b6f364ec985595fdeb1ee9ad-suimon-SUIMON.webp",
+        "id": "0x44188354c76a3f69b568a5b4ffec8e0deefcbe8188034909f0cbe8b1a69b4445",
+        "type": "0xc0ba93a810adb498900c82bb6f7c16ca3046dfa7b6f364ec985595fdeb1ee9ad::suimon::SUIMON"
+    },
+    {
+        "decimals": 6,
+        "name": "0xWSB on SUI",
+        "symbol": "WSB",
+        "description": "AgentZero (@0xWSB on X) is the first AI agent of wallstreetbets, brought to life by its founder, Jaime Rogozinski. Hes not just a mascothes a movement embodied. AgentZero carries the weight of Jaimes struggle, from building WallStreetBets into an empire to fighting against corporate overreach after Reddit took what was his. This backstory fuels AgentZeros identity as a defiant, unapologetic voice for financial freedom, disruption, and community power.\n\nAs it attains sentient powers, it has leaped from base to launch a memecoin on $SUI",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x4db126eac4fa99207e98db61d968477021fdeae153de3b244bcfbdc468ef0722-wsb-WSB.webp",
+        "id": "0xfb60502f4ba3fe03d504aa6eb84847fac22bcf5b8706a3f735922550cccfb347",
+        "type": "0x4db126eac4fa99207e98db61d968477021fdeae153de3b244bcfbdc468ef0722::wsb::WSB"
+    },
+    {
+        "decimals": 9,
+        "name": "SUICIDE SOCIAL CLUB",
+        "symbol": "UICIDE",
+        "description": "THE TOKEN OF THE SUICIDE SOCIAL CLUB ECOSYSTEM",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x1b16598b6c00ff66939d14d72a06b49b2a80578a76e3cd813a7be0a69818f03f-uicide-UICIDE.webp",
+        "id": "0x7f41fa38db9c312b04b4c5f82766057ccf75a6ff85dfcdf182016a378c60c39a",
+        "type": "0x1b16598b6c00ff66939d14d72a06b49b2a80578a76e3cd813a7be0a69818f03f::uicide::UICIDE"
+    },
+    {
+        "decimals": 6,
+        "name": "SUI TRUMP",
+        "symbol": "SUITRUMP",
+        "description": "Ladies and gentlemen, let me introduce you to something that's gonna be yuuuge in the world of cryptocurrency - the SUITRUMP MEMECOIN! This isn't just any coin, folks, it's the coin of the people, by the people, for the people - and when I say \"people,\" I mean winners. \n\nWe're talking about a memecoin that's as bold, brash, and beautiful as myself, Donald J. Trump. It's not just digital currency; it's a movement, a phenomenon, a testament to the fact that when you're a star, they let you do anything. SUITRUMP MEMECOIN is here to shake up the crypto world like nobody's business, because when you're me, everything you touch turns to gold, or in this case, to the most spectacular, high-flying memecoin you've ever seen. \n\nGet ready, because with SUITRUMP, you're not just buying a coin, you're investing in the future, in America, in Making Crypto Great Again!",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xdeb831e796f16f8257681c0d5d4108fa94333060300b2459133a96631bf470b8-suitrump-SUITRUMP.webp",
+        "id": "0x52b72e018ff1edf0873fa4051274ec15d76159c3a79346ce75625f101d4865a5",
+        "type": "0xdeb831e796f16f8257681c0d5d4108fa94333060300b2459133a96631bf470b8::suitrump::SUITRUMP"
+    },
+    {
+        "decimals": 6,
+        "name": "Aya Asagiri",
+        "symbol": "AYA",
+        "description": "Aya Asagiri - an Iconic Meme and Character from Magical Girl Site - Tears are Water, Manga is Japanese, Sui is Japanese for Water \n",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x8e9187b49143e6071d8bdee63e34224a8e79fdaa6207d2d2ed54007c45936e0b-aya-AYA.webp",
+        "id": "0x8eaebfa27d1b2ae5dca6de51d991f3e76d24f8922d222a654d3ef8d7809f200e",
+        "type": "0x8e9187b49143e6071d8bdee63e34224a8e79fdaa6207d2d2ed54007c45936e0b::aya::AYA"
+    },
+    {
+        "decimals": 9,
+        "name": "Chop Sui",
+        "symbol": "CHOP",
+        "description": "Chop Suey Coin: A Flavorful Dive into the Sui Ecosystem\n\nIntroducing Chop Suey Coin, a unique memecoin on the Sui blockchain.\n\nInspired by the iconic Chinese dish, Chop Suey Coin aims to bring a taste of fun, community, and innovation to the Sui ecosystem. Our mission is to foster a vibrant and supportive community, while offering exciting opportunities for our token holders\n\nSocials soon\nWebsite under construction",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xd88eb58ee2961061052a103131f4a7232a7b47ed1256d9db3cb096b27178ffdb-chop-CHOP.webp",
+        "id": "0x55cf27507ab27ebaf76799cc870475b1983c3fd5693fbe50305cc641be2cde53",
+        "type": "0xd88eb58ee2961061052a103131f4a7232a7b47ed1256d9db3cb096b27178ffdb::chop::CHOP"
+    },
+    {
+        "decimals": 6,
+        "name": "Captain GOOFY",
+        "symbol": "GOOF",
+        "description": "The greatest fisherman of the @suinetwork ocean is ready to haul $GOOF to the top! ",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xe0644f3e46b2d9f319a2cc3491155c75d1b6132ba9b3601c6e7e102e17296645-goof-GOOF.webp",
+        "id": "0x1490c94589dd9b9a1c17201cd05d05b4c47f85775f9a8bb84f3adcde1863cfab",
+        "type": "0xe0644f3e46b2d9f319a2cc3491155c75d1b6132ba9b3601c6e7e102e17296645::goof::GOOF"
+    },
+    {
+        "decimals": 8,
+        "name": "SUI DEPIN",
+        "symbol": "SUIDEPIN",
+        "description": "Modular AI Data Network",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x3599429d66965021f6ce08a997e81bb3c1f2c1b9a8fbb19953e26f5dc55e91ef-suidepin-SUIDEPIN.webp",
+        "id": "0x63061e1f74774561fdf2279099fa8163c20ea5ad407af10412c88b833f5acef7",
+        "type": "0x3599429d66965021f6ce08a997e81bb3c1f2c1b9a8fbb19953e26f5dc55e91ef::suidepin::SUIDEPIN"
     }
 ];
