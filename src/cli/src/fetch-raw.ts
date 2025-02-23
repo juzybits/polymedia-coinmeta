@@ -47,10 +47,13 @@ async function main()
             }
             coinMetas.push(coinMeta);
 
-            await downloadImage(
-                getFilename(coinType),
-                coinMeta.iconUrl ?? coin.image
-            );
+            const imageUrl = coin.image ?? coinMeta.iconUrl;
+            if (imageUrl) {
+                await downloadImage(
+                    getFilename(coinType),
+                    imageUrl
+                );
+            }
         } else {
             throw new Error(`CoinMetadata was null for type ${coinType}`);
         }

@@ -5,7 +5,7 @@ export function getFilename(normalizedCoinType: string): string {
     return normalizedCoinType.replace(/::/g, "-").replace(/\W+/g, "-");
 }
 
-// Function to find the image path based on the filename without extension
+// find the image path based on the filename without extension
 export function findImagePath(directory: string, filename: string): string | null {
     const files = readdirSync(directory);
     const file = files.find(f => path.basename(f, path.extname(f)) === filename);
