@@ -1,6 +1,7 @@
 import { parseStructTag } from "@mysten/sui/utils";
-import { shortenAddress } from "@polymedia/suitcase-core";
 import { ReactNode } from "react";
+
+import { shortenAddress } from "@polymedia/suitcase-core";
 
 import { data } from "./data.js";
 

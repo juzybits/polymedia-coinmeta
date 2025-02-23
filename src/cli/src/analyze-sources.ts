@@ -1,4 +1,5 @@
 import { normalizeStructTag } from "@mysten/sui/utils";
+
 import { readJsonFile, writeTsvFile } from "@polymedia/suitcase-node";
 
 /*

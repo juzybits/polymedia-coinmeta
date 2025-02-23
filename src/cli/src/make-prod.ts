@@ -1,9 +1,10 @@
 import { cpSync, mkdirSync, rmSync, writeFileSync } from "fs";
 import path from "path";
 
+import sharp from "sharp";
+
 import { CoinMeta } from "@polymedia/suitcase-core";
 import { readJsonFile, writeJsonFile } from "@polymedia/suitcase-node";
-import sharp from "sharp";
 
 import { findImagePath, getFilename } from "./utils.js";
 

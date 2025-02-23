@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from "fs";
 
 import { SuiClient, getFullnodeUrl } from "@mysten/sui/client";
 import { normalizeStructTag } from "@mysten/sui/utils";
+
 import { CoinMeta } from "@polymedia/suitcase-core";
 import { readJsonFile, writeJsonFile } from "@polymedia/suitcase-node";
 

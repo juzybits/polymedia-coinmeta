@@ -3,6 +3,7 @@ import eslint from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 import eslintPluginImport from "eslint-plugin-import";
 import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
+import unusedImports from "eslint-plugin-unused-imports";
 import tsEslint from "typescript-eslint";
 
 export default [
@@ -24,6 +25,7 @@ export default [
         plugins: {
             "@stylistic": stylistic,
             import: eslintPluginImport,
+            "unused-imports": unusedImports,
         },
         rules: {
             // === stylistic ===
@@ -33,24 +35,32 @@ export default [
             "@stylistic/quotes": [ "error", "double", { avoidEscape: true } ],
             "@stylistic/semi": [ "error", "always" ],
 
-            // === import organization ===
+            // === imports ===
+            "import/extensions": ["error", "ignorePackages", { ts: "never", tsx: "never" }], // require .js
+            "import/first": "error",
+            "import/newline-after-import": "error",
+            "import/no-duplicates": "error",
             "import/order": ["error", {
                 "groups": [
-                    "builtin",     // Node.js built-in modules (fs, path, etc.)
-                    "external",    // npm packages
-                    "internal",    // your own modules
-                    ["parent", "sibling"], // relative imports (.. and .)
-                    "index"       // index files
+                    "builtin", // Node.js built-in modules (fs, path, etc.)
+                    "external", // npm packages
+                    ["internal", "parent", "sibling", "index"] // project imports (aliased + relative)
                 ],
-                "newlines-between": "always",  // Add blank lines between groups
-                "alphabetize": {               // Sort imports alphabetically
-                    "order": "asc",           // A-Z order
-                    "caseInsensitive": true   // Ignore case when sorting
+                "pathGroups": [
+                    {
+                        "pattern": "@polymedia/**",
+                        "group": "external",
+                        "position": "after",
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": ["builtin"],
+                "newlines-between": "always",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true,
                 }
             }],
-            "import/first": "error",           // Imports must be at the top
-            "import/newline-after-import": "error", // Require blank line after imports
-            "import/no-duplicates": "error",   // No duplicate imports
+            "unused-imports/no-unused-imports": "error",
 
             // === typescript ===
             "@typescript-eslint/consistent-type-definitions": [ "error", "type" ],
@@ -64,6 +74,8 @@ export default [
             "@typescript-eslint/no-unnecessary-type-parameters": "off",
             "@typescript-eslint/no-unused-expressions": [ "error", { allowShortCircuit: true, allowTernary: true } ],
             "@typescript-eslint/no-unused-vars": [ "error", { argsIgnorePattern: "^_", varsIgnorePattern: "^_", caughtErrorsIgnorePattern: "^_" } ],
+            // "@typescript-eslint/no-unused-expressions": "off",
+            // "@typescript-eslint/no-unused-vars": "off",
             "@typescript-eslint/prefer-nullish-coalescing": "off",
             "@typescript-eslint/restrict-template-expressions": "off",
             "@typescript-eslint/use-unknown-in-catch-callback-variable": "off",
@@ -84,15 +96,9 @@ export default [
         },
     },
     {
-        files: ["src/core/**/*.ts?(x)", "src/sdk/**/*.ts?(x)"],
+        files: ["**/__tests__/**/*.ts?(x)", "src/web/src/**/*.ts?(x)", "src/react/src/**/*.ts?(x)"],
         rules: {
-            "import/extensions": ["error", "ignorePackages", { ts: "never", tsx: "never" }],
-        },
-    },
-    {
-        files: ["**/__tests__/**/*.ts?(x)"],
-        rules: {
-            "import/extensions": ["off", "ignorePackages"],
+            "import/extensions": ["off", "ignorePackages"], // don't require .js
         },
     },
 ];
