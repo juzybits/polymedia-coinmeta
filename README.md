@@ -6,72 +6,37 @@ CoinMetadata for Sui coins, and web-optimized logos.
 
 ### The problem
 
-Sui apps often need to fetch `CoinMetadata` objects, which determine how coin amounts get displayed to the user, because they contain info like the coin decimals, ticker, and logo.
+Sui apps often fetch `CoinMetadata` objects, which specify coin info like the decimals, ticker, and logo.
 
 While `CoinMetadata` objects can be fetched from a Sui RPC with `SuiClient.getCoinMetadata()`, this has drawbacks that can lead to bad UX:
 - If your app needs metadata for many coin types, it will make an RPC request for each of them, which is slow.
-- The coin logo is often missing from `CoinMetadata`. And the image may be huge, or stored in a slow web server.
+- The coin logo is often missing from `CoinMetadata`. Also the image could be huge, or stored in a slow web server.
 
 ### How CoinMeta helps
 
-It provides pre-fetched `CoinMetadata` for Sui coins, and web-optimized logos.
+It provides pre-fetched `CoinMetadata` for Sui coins and web-optimized logos for top Sui coins.
 
-The top coins on Sui were selected and pre-fetched. The logos are served from CloudFlare, compressed and resized, so they load quickly in your app.
+The logos are served from CloudFlare, compressed and resized, so they load quickly in your app.
 
 If your app needs a `CoinMetadata` that's not already pre-fetched, CoinMeta falls back to `SuiClient.getCoinMetadata()`, and caches the response.
 
 ### How to use it
 
-You can access the data in different ways:
-- In plain JS/TS, the `@polymedia/coinmeta` package provides the helper functions `getCoinMeta()` and `getCoinMetas()`
-- In React apps, the `@polymedia/coinmeta-react` package provides the React hooks `useCoinMeta()` and `useCoinMetas()`
-- You can also fetch all data with a REST API request
-
-## SDK: [src/sdk](./src/sdk/)
-
-The `@polymedia/coinmeta` NPM package.
-
-It provides the TypeScript helper functions `getCoinMeta()` and `getCoinMetas()`, which use
-a list of pre-fetched `CoinMetadata<T>` to avoid Sui RPC requests.
-
-If a `CoinMetadata<T>` is not known, they fetch it from the Sui RPC with
-`SuiClient.getCoinMetadata()` and cache the response.
-
-### How to use it
-
-Add the package to your project:
-```bash
-pnpm add @polymedia/coinmeta
+```shell
+pnpm add @polymedia/suitcase-core
 ```
 
-Use it in your code:
 ```typescript
-import { getCoinMeta, getCoinMetas } from "@polymedia/coinmeta";
-...
-const meta = await getCoinMeta(suiClient, coinType);    // one coin
-const metas = await getCoinMetas(suiClient, coinTypes); // many coins
-```
+import { CoinMetaFetcher } from "@polymedia/suitcase-core";
 
-## React: [src/react](./src/react/)
+// reuse the same fetcher across your app
+const fetcher = new CoinMetaFetcher({ client: suiClient });
 
-The `@polymedia/coinmeta-react` NPM package.
+// fetch one coin
+const coinMeta = await fetcher.getCoinMeta("0x2::sui::SUI");
 
-It provides the React hooks `useCoinMeta()` and `useCoinMetas()`, which under the hood use
-the SDK helper functions (see previous section).
-
-### How to use it
-
-Add the package to your project:
-```bash
-pnpm add @polymedia/coinmeta-react
-```
-
-Use it in your code:
-```typescript
-import { useCoinMeta, useCoinMetas } from '@polymedia/coinmeta-react';
-...
-const { coinMeta, errorCoinMeta } = useCoinMeta(suiClient, coinType);      // one coin
-const { coinMetas, errorCoinMetas } = useCoinMetas(suiClient, coinTypes);  // many coins
+// fetch multiple coins
+const coinMetas = await fetcher.getCoinMetas([ "0x2::sui::SUI", "0x123::coin::COIN" ]);
 ```
 
 ## Web: [src/web](./src/web/)

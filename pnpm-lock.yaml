@@ -58,25 +58,6 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
 
-  src/react:
-    dependencies:
-      '@mysten/sui':
-        specifier: ^1.21.1
-        version: 1.21.2(typescript@5.7.3)
-      '@polymedia/coinmeta':
-        specifier: workspace:*
-        version: link:../sdk
-      react:
-        specifier: '18'
-        version: 18.3.1
-    devDependencies:
-      '@types/react':
-        specifier: ^18.3.18
-        version: 18.3.18
-      typescript:
-        specifier: ^5.7.3
-        version: 5.7.3
-
   src/sdk:
     dependencies:
       '@mysten/sui':
