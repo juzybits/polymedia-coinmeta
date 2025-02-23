@@ -24,7 +24,6 @@
     },
     "dependencies": {
         "@mysten/sui": "^1.21.2",
-        "@polymedia/coinmeta": "workspace:*",
         "@polymedia/suitcase-core": "^0.0.47",
         "normalize.css": "^8.0.1",
         "react": "^18.3.1",

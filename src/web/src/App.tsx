@@ -1,7 +1,9 @@
 import { parseStructTag } from "@mysten/sui/utils";
-import { allCoinMetas } from "@polymedia/coinmeta";
 import { shortenAddress } from "@polymedia/suitcase-core";
 import { ReactNode } from "react";
+
+import { data } from "./data.js";
+
 import "./styles/.shared.app.less";
 import "./styles/App.less";
 import "./styles/ListCoinMetas.less";
@@ -60,7 +62,7 @@ const Header: React.FC = () =>
 const ListCoinMetas: React.FC = () =>
 (
     <div id="ListCoinMetas">
-        {allCoinMetas.map(meta => (
+        {data.map(meta => (
             <div key={meta.type} className="meta tight">
                 <p><img className="logo" src={getIconUrl(meta.iconUrl)} alt={meta.symbol} /></p>
                 <p>{meta.name}</p>

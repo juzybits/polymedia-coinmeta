@@ -21,7 +21,7 @@ import { findImagePath, getFilename } from "./utils.js";
 
 const INPUT_RAW_META_FILE = "../../data/raw-meta.json";
 const INPUT_RAW_IMAGE_DIR = "../../data/raw-img";
-const OUTPUT_SDK_META_FILE = "../sdk/src/data.ts";
+const OUTPUT_SDK_META_FILE = "../web/src/data.ts";
 const OUTPUT_WEB_META_FILE = "../web/public/api/data.json";
 const OUTPUT_WEB_IMAGE_DIR = "../web/public/img/coins"; // careful, gets deleted
 const BASE_URL_IMG = "https://coinmeta.polymedia.app/img/coins/";

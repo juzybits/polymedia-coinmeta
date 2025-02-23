@@ -23,7 +23,6 @@
     },
     "dependencies": {
         "@mysten/sui": "^1.21.2",
-        "@polymedia/coinmeta": "workspace:*",
         "@polymedia/suitcase-core": "^0.0.47",
         "@polymedia/suitcase-node": "^0.0.47",
         "sharp": "^0.33.5"
