@@ -6,21 +6,22 @@ CoinMetadata for Sui coins, and web-optimized logos.
 
 ### The problem
 
-Sui apps often fetch `CoinMetadata` objects, which specify coin info like the decimals, ticker, and logo.
+Sui apps often rely on `CoinMetadata` objects to find coin info like the decimals, ticker, and logo.
 
-While `CoinMetadata` objects can be fetched from a Sui RPC with `SuiClient.getCoinMetadata()`, this has drawbacks that can lead to bad UX:
-- If your app needs metadata for many coin types, it will make an RPC request for each of them, which is slow.
-- The coin logo is often missing from `CoinMetadata`. Also the image could be huge, or stored in a slow web server.
+While `CoinMetadata` objects can be fetched directly from a Sui RPC, this has drawbacks that can lead to bad UX:
+- If the app needs metadata for many coin types, it will make an RPC request for each of them, which is slow.
+- The coin logo is often missing from the `CoinMetadata` object.
+- The image could be very large, or stored in a slow web server.
 
 ### How CoinMeta helps
 
-It provides pre-fetched `CoinMetadata` for Sui coins and web-optimized logos for top Sui coins.
+It provides pre-fetched `CoinMetadata` and web-optimized logos for top Sui coins.
 
 The logos are served from CloudFlare, compressed and resized, so they load quickly in your app.
 
-If your app needs a `CoinMetadata` that's not already pre-fetched, CoinMeta falls back to `SuiClient.getCoinMetadata()`, and caches the response.
+If your app needs a `CoinMetadata` that's not already pre-fetched, CoinMetaFetcher falls back to `SuiClient.getCoinMetadata()`, and caches the response.
 
-### How to use it
+## How to use
 
 ```shell
 pnpm add @polymedia/suitcase-core
@@ -43,7 +44,7 @@ const coinMetas = await fetcher.getCoinMetas([ "0x2::sui::SUI", "0x123::coin::CO
 
 The https://coinmeta.polymedia.app webapp, hosted on CloudFlare.
 
-\- It serves the coin logos, optimized for the web, e.g. [`/img/coins/0x76cb…FUD.webp`](https://coinmeta.polymedia.app/img/coins/0x76cb819b01abed502bee8a702b4c2d547532c12f25001c9dea795a5e631c26f1-fud-FUD.webp)<br/>
+\- It serves the coin logos, optimized for the web, e.g. [`/img/coins/0x30a6…SPAM.webp`](https://coinmeta.polymedia.app/img/coins/0x30a644c3485ee9b604f52165668895092191fcaf5489a846afa7fc11cdb9b24a-spam-SPAM.webp)<br/>
 \- It serves the full list of pre-fetched `CoinMetadata<T>` via [`/api/data.json`](https://coinmeta.polymedia.app/api/data.json)
 
 ## CLI: [src/cli](./src/cli/)
@@ -52,13 +53,13 @@ Command line tools to fetch `CoinMetadata<T>` objects and coin logo images.
 
 ### `pnpm cli:fetch-raw`
 
-It downloads the `CoinMetadata<T>` objects and the coin logos for all coins in [./data/manual-input.json](./data/manual-input.json)
+Downloads the `CoinMetadata<T>` objects and the coin logos for all coins in [./data/manual-input.json](./data/manual-input.json)
 
 ### `pnpm cli:make-prod`
 
-It transforms the output of the previous script into production-ready images (compressed and resized) and hard-coded data for the `getCoinMeta()` function and the `api/data.json` endpoint.
+Transforms the output of the previous script into production-ready images (compressed and resized) and updates `api/data.json`.
 
-## How to contribute
+## Contributing
 
 If you want to add a new coin, you can either let me know on Twitter / Telegram, or add it yourself:
 
