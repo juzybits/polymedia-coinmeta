@@ -1,14 +1,14 @@
 import { cpSync, mkdirSync, rmSync, writeFileSync } from "fs";
 import path from "path";
 
-import { CoinMeta } from "@polymedia/coinmeta";
+import { CoinMeta } from "@polymedia/suitcase-core";
 import { readJsonFile, writeJsonFile } from "@polymedia/suitcase-node";
 import sharp from "sharp";
 
 import { findImagePath, getFilename } from "./utils.js";
 
+// === about ===
 /*
-This script:
 - Reads a list of CoinMeta<T> from INPUT_RAW_META_FILE
 - For each CoinMeta<T>:
     - Resizes and compresses the coin logo image
@@ -17,7 +17,8 @@ This script:
 - Saves all coin logos in OUTPUT_WEB_IMAGE_DIR
 */
 
-/* Config */
+// === config ===
+
 const INPUT_RAW_META_FILE = "../../data/raw-meta.json";
 const INPUT_RAW_IMAGE_DIR = "../../data/raw-img";
 const OUTPUT_SDK_META_FILE = "../sdk/src/data.ts";

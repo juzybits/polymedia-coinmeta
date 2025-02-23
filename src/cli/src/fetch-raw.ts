@@ -2,35 +2,48 @@ import { mkdirSync, writeFileSync } from "fs";
 
 import { SuiClient, getFullnodeUrl } from "@mysten/sui/client";
 import { normalizeStructTag } from "@mysten/sui/utils";
-import { CoinMeta } from "@polymedia/coinmeta";
+import { CoinMeta } from "@polymedia/suitcase-core";
 import { readJsonFile, writeJsonFile } from "@polymedia/suitcase-node";
 
-import { InputFile } from "./types.js";
 import { findImagePath, getFilename } from "./utils.js";
 
-
+// === about ===
 /*
-This script:
 - Reads a list of coin types and icon URLs from INPUT_MANUAL_FILE
 - For each coin:
     - Fetches the CoinMetadata<T> from Sui
     - Downloads the coin logo from the URL
 - Writes all CoinMeta<T> to OUTPUT_RAW_META_FILE
 - Saves all coin logos in OUTPUT_RAW_IMAGE_DIR
- */
+*/
 
-/* Config */
+// === config ===
+
 const INPUT_MANUAL_FILE = "../../data/manual-input.json";
 const OUTPUT_RAW_META_FILE = "../../data/raw-meta.json";
 const OUTPUT_RAW_IMAGE_DIR = "../../data/raw-img";
 const REFETCH_IMAGES = false;
+
+// === types ===
+
+type InputCoin = {
+    name: string;
+    nameOverride?: string;
+    type: string;
+    image: string;
+};
+
+/**
+ * The type of data/manual-input.json
+ */
+type InputFile = InputCoin[];
 
 async function main()
 {
     // ensure the output directory exists
     mkdirSync(OUTPUT_RAW_IMAGE_DIR, { recursive: true });
 
-    const coinMetas: CoinMeta[] = [];
+    const coinMetas: Partial<CoinMeta>[] = [];
     const inputCoins = readJsonFile<InputFile>(INPUT_MANUAL_FILE);
 
     const suiClient = new SuiClient({ url: getFullnodeUrl("mainnet") });

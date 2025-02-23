@@ -44,6 +44,9 @@ importers:
       '@polymedia/coinmeta':
         specifier: workspace:*
         version: link:../sdk
+      '@polymedia/suitcase-core':
+        specifier: ^0.0.47
+        version: 0.0.47(@mysten/sui@1.21.2(typescript@5.7.3))
       '@polymedia/suitcase-node':
         specifier: ^0.0.47
         version: 0.0.47(@mysten/sui@1.21.2(typescript@5.7.3))
