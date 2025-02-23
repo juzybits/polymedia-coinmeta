@@ -4,7 +4,6 @@ import { ReactNode } from "react";
 import { shortenAddress } from "@polymedia/suitcase-core";
 
 import { data } from "./data.js";
-
 import "./styles/.shared.app.less";
 import "./styles/App.less";
 import "./styles/ListCoinMetas.less";
