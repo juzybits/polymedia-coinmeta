@@ -49,7 +49,7 @@ async function main()
 
             await downloadImage(
                 getFilename(coinType),
-                coin.image
+                coinMeta.iconUrl ?? coin.image
             );
         } else {
             throw new Error(`CoinMetadata was null for type ${coinType}`);

@@ -48,8 +48,8 @@ async function main()
 
         // resize and convert the image to .webp
         let prodImagePath: string;
-        if (ext === ".svg") {
-            prodImagePath = `${OUTPUT_WEB_IMAGE_DIR}/${filename}.svg`;
+        if (ext === ".svg" || ext === ".ico") {
+            prodImagePath = `${OUTPUT_WEB_IMAGE_DIR}/${filename}.${ext.slice(1)}`;
             cpSync(rawImagePath, prodImagePath);
         } else {
             prodImagePath = `${OUTPUT_WEB_IMAGE_DIR}/${filename}.webp`;
