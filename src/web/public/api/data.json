@@ -40,7 +40,7 @@
         "name": "USDC",
         "symbol": "USDC",
         "description": "USDC is a US dollar-backed stablecoin issued by Circle. USDC is designed to provide a faster, safer, and more efficient way to send, spend, and exchange money around the world.",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7-usdc-USDC.webp",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7-usdc-USDC.svg",
         "id": "0x69b7a7c3c200439c1b5f3b19d7d495d5966d5f08de66c69276152f8db3992ec6",
         "type": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC"
     },
@@ -145,15 +145,6 @@
     },
     {
         "decimals": 9,
-        "name": "REAP",
-        "symbol": "REAP",
-        "description": "Reap Token",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xde2d3e02ba60b806f81ee9220be2a34932a513fe8d7f553167649e95de21c066-reap_token-REAP_TOKEN.webp",
-        "id": "0x4602dc7bd60d623c57424af5480fe9c104d30bbbb051af18e0a283b3dd7a5367",
-        "type": "0xde2d3e02ba60b806f81ee9220be2a34932a513fe8d7f553167649e95de21c066::reap_token::REAP_TOKEN"
-    },
-    {
-        "decimals": 9,
         "name": "Scallop",
         "symbol": "SCA",
         "description": "SCA is the native token of Scallop Protocol.",
@@ -166,7 +157,7 @@
         "name": "afSUI",
         "symbol": "AFSUI",
         "description": "Aftermath Staked Sui",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xf325ce1300e8dac124071d3152c5c5ee6174914f8bc2161e88329cf579246efc-afsui-AFSUI.webp",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xf325ce1300e8dac124071d3152c5c5ee6174914f8bc2161e88329cf579246efc-afsui-AFSUI.svg",
         "id": "0x2f9217f533e51334873a39b8026a4aa6919497b47f49d0986a4f1aec66f8a34d",
         "type": "0xf325ce1300e8dac124071d3152c5c5ee6174914f8bc2161e88329cf579246efc::afsui::AFSUI"
     },
@@ -175,7 +166,7 @@
         "name": "Suiswap Token",
         "symbol": "SSWP",
         "description": "Suiswap Platform Governance Token",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc-TOKEN-TOKEN.webp",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc-TOKEN-TOKEN.svg",
         "id": "0x41911b7d8d87ceee4043ea3b83f402a03d0ffa0b286e78b23dcd81c9cde0f02f",
         "type": "0x361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc::TOKEN::TOKEN"
     },
@@ -187,15 +178,6 @@
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xbff8dc60d3f714f678cd4490ff08cabbea95d308c6de47a150c79cc875e0c7c6-sbox-SBOX.webp",
         "id": "0x7f35ac7fe5a05df9e68fa7d633a382db4f002209e57ccee3bf9d9f73eedff1b9",
         "type": "0xbff8dc60d3f714f678cd4490ff08cabbea95d308c6de47a150c79cc875e0c7c6::sbox::SBOX"
-    },
-    {
-        "decimals": 6,
-        "name": "SUI PEPE",
-        "symbol": "SPEPE",
-        "description": "The biggest memecoin on SUI blockchain.",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xebbf537bc3686be32fe22b498b42715641bbb209267be72236a352e0444cc5df-sui_pepe-SUI_PEPE.webp",
-        "id": "0xfdf83fbcc1ad8a407d32791e43a4019e89474f7031aa64b8c05834b1af420eae",
-        "type": "0xebbf537bc3686be32fe22b498b42715641bbb209267be72236a352e0444cc5df::sui_pepe::SUI_PEPE"
     },
     {
         "decimals": 5,
@@ -406,15 +388,6 @@
     },
     {
         "decimals": 9,
-        "name": "BaySwap Token",
-        "symbol": "BSWT",
-        "description": "BaySwap governance token",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xf0fe2210b4f0c4e3aff7ed147f14980cf14f1114c6ad8fd531ab748ccf33373b-bswt-BSWT.webp",
-        "id": "0xeef5a485257ebd7e555c6d33a0a6a6cac157e10c05fe6a819488b8e521bce5f2",
-        "type": "0xf0fe2210b4f0c4e3aff7ed147f14980cf14f1114c6ad8fd531ab748ccf33373b::bswt::BSWT"
-    },
-    {
-        "decimals": 9,
         "name": "Causa Sui",
         "symbol": "CAUSA",
         "description": "Ex Unitae Vires - Ens Causa Sui * suiprivkey1qr3uhgze5yuglnr6uygkyesp8z76pxu0tt2pd63gyeglda60frpn7n5epp0",
@@ -430,33 +403,6 @@
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x8c47c0bde84b7056520a44f46c56383e714cc9b6a55e919d8736a34ec7ccb533-suicune-SUICUNE.webp",
         "id": "0x9770330e38ad3f4723463085e2cc8c5e2e3df98292c1b5ee83ed3ed1f08f8381",
         "type": "0x8c47c0bde84b7056520a44f46c56383e714cc9b6a55e919d8736a34ec7ccb533::suicune::SUICUNE"
-    },
-    {
-        "decimals": 5,
-        "name": "CHOPSUI",
-        "symbol": "CHOP",
-        "description": "Chopsui token",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xecac50a7ae52df320e71f87ed97b2c44fdd0695462080591d38a06e3927b6a8a-chopsui-CHOPSUI.webp",
-        "id": "0x78f4acfb5f55f354739be22231c0b166a6c0debb7464cf5bd0df3544780e6b62",
-        "type": "0xecac50a7ae52df320e71f87ed97b2c44fdd0695462080591d38a06e3927b6a8a::chopsui::CHOPSUI"
-    },
-    {
-        "decimals": 9,
-        "name": "Stork REDACTED",
-        "symbol": "STORKPOINT",
-        "description": "Stork Protocol.",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x3cf6e24398c526fd1e0c46e22d4c1f88e3f3c14ba3df6fdaa6dd6d4aab202736-storktoken-STORKTOKEN.webp",
-        "id": "0xf9281ff20ff16740a93f9d378732d0f87c7776d0325fee345c9c948d6a680629",
-        "type": "0x3cf6e24398c526fd1e0c46e22d4c1f88e3f3c14ba3df6fdaa6dd6d4aab202736::storktoken::STORKTOKEN"
-    },
-    {
-        "decimals": 9,
-        "name": "LUCKYSTAR",
-        "symbol": "LUCK",
-        "description": "LUCKYSTAR TOKEN",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x202591744d54ee4f4af736ef3b8508f3d46d982c36747d9587032bd549122179-luck-LUCK.svg",
-        "id": "0xa9cb7f72c96d23437199bcf6731b08a7e225d7efe427d04f4c69e63a8940c2f3",
-        "type": "0x202591744d54ee4f4af736ef3b8508f3d46d982c36747d9587032bd549122179::luck::LUCK"
     },
     {
         "decimals": 9,
@@ -502,15 +448,6 @@
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xed4504e791e1dad7bf93b41e089b4733c27f35fde505693e18186c2ba8e2e14b-suib-SUIB.svg",
         "id": "0xfd7cfcb627381de46e4d7bdd4a0cf3c37d8f241c8e0513565531d5e410037c59",
         "type": "0xed4504e791e1dad7bf93b41e089b4733c27f35fde505693e18186c2ba8e2e14b::suib::SUIB"
-    },
-    {
-        "decimals": 5,
-        "name": "KIMCHI",
-        "symbol": "KIMCHI",
-        "description": "Kimchi stands as a symbol of the Asian builder community’s innovation and creativity, serving as a platform for individuals to collaborate, exchange ideas, and push the boundaries of decentralized finance. The coin aims to form an unstoppable force within the Sui ecosystem.",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xb6baa75577e4bbffba70207651824606e51d38ae23aa94fb9fb700e0ecf50064-kimchi-KIMCHI.webp",
-        "id": "0x494f68995d31da43d11567a68f8fd686cb5821a7b65b63f6f2d3d950cd242d3e",
-        "type": "0xb6baa75577e4bbffba70207651824606e51d38ae23aa94fb9fb700e0ecf50064::kimchi::KIMCHI"
     },
     {
         "decimals": 2,
@@ -817,15 +754,6 @@
         "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xea65bb5a79ff34ca83e2995f9ff6edd0887b08da9b45bf2e31f930d3efb82866-s-S.webp",
         "id": "0x822a7ce69d4de90510f40e078546d22a5cbd633fe9212db1ea64014793c54698",
         "type": "0xea65bb5a79ff34ca83e2995f9ff6edd0887b08da9b45bf2e31f930d3efb82866::s::S"
-    },
-    {
-        "decimals": 6,
-        "name": "Mochi",
-        "symbol": "MOCHI",
-        "description": "Mochi had a rough start, but this fluffy, squishy and hungry blob will continue to live his best life in the Sui universe.",
-        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0xa26788cb462ae9242d9483bdbe5a82188ba0eaeae3c5e9237d30cbcb83ce7a88-mochi-MOCHI.webp",
-        "id": "0xa7c97f4f2214bf7e91d8a48eb74ad386787159f6772a10a8f664b1a7ba6b6822",
-        "type": "0xa26788cb462ae9242d9483bdbe5a82188ba0eaeae3c5e9237d30cbcb83ce7a88::mochi::MOCHI"
     },
     {
         "decimals": 6,
