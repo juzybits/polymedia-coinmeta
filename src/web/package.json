@@ -25,6 +25,7 @@
     "dependencies": {
         "@mysten/sui": "^1.21.2",
         "@polymedia/suitcase-core": "^0.0.47",
+        "@polymedia/suitcase-react": "^0.0.47",
         "normalize.css": "^8.0.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"

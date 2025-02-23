@@ -2,6 +2,7 @@ import { parseStructTag } from "@mysten/sui/utils";
 import { ReactNode } from "react";
 
 import { shortenAddress } from "@polymedia/suitcase-core";
+import { LinkExternal } from "@polymedia/suitcase-react";
 
 import { data } from "./data.js";
 import "./styles/.shared.app.less";
@@ -35,15 +36,14 @@ const PageHome: React.FC = () => (
             CoinMetadata for Sui coins, and web-optimized logos
         </h2>
         <p>
-            The data can be accessed in JS/TS with <i>@polymedia/coinmeta</i>, in React apps with <i>@polymedia/coinmeta-react</i>, or anywhere with a REST API request.
+            You can get the data from this <LinkExternal href="/api/data.json">endpoint</LinkExternal>, or use <i>CoinMetaFetcher</i> from <i>@polymedia/suitcase-core</i>.
         </p>
         <p>
-            <a href="https://github.com/juzybits/polymedia-coinmeta">Read the docs</a>
+            <LinkExternal href="https://github.com/juzybits/polymedia-coinmeta">Read the docs</LinkExternal>
         </p>
 
         <br /><br />
-        <h2>Supported Coins:</h2>
-
+        <h2>Pre-fetched coins:</h2>
         <ListCoinMetas />
 
     </div>
