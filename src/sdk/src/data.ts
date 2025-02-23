@@ -1018,6 +1018,15 @@ export const data = [
     },
     {
         "decimals": 9,
+        "name": "WAL Token",
+        "symbol": "WAL",
+        "description": "The native token for the Walrus Protocol.",
+        "iconUrl": "https://coinmeta.polymedia.app/img/coins/0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59-wal-WAL.svg",
+        "id": "0xcf8a31804ae40cb3e7183fe57320f87467a7750d4fa701bca1ffbb1edd37781e",
+        "type": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL"
+    },
+    {
+        "decimals": 9,
         "name": "Wen Dexscreener",
         "symbol": "WEND",
         "description": "When will Dexscreener integrate FlowX Finance ?",

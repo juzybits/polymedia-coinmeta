@@ -112,6 +112,7 @@
     { "name": "USDT", "type": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN", "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public" },
     { "name": "Vaporeon", "type": "0x84d155fb70aebcc1391bf497d8fc139154be745765dfec57faef4704f4112c79::vaporeon::VAPOREON" },
     { "name": "Volo Staked SUI", "type": "0x549e8b69270defbfafd4f94e17ec44cdbdd99820b33bda2278dea3b9a32d3f55::cert::CERT" },
+    { "name": "WAL", "type": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL" },
     { "name": "Wen Dexscreener", "type": "0x9aff4aa4dd737a71dc374c03deaec1e11b20a51a46e64f4605e95cc3c966f272::wend::WEND" },
     { "name": "WEWE", "type": "0xb5b603827d1bfb2859200fd332d5e139ccac2598f0625de153a87cf78954e0c4::wewe::WEWE" },
     { "name": "Win", "type": "0xe6b9e1033c72084ad01db37c77778ca53b9c4ebb263f28ffbfed39f4d5fd5057::win::WIN" },
