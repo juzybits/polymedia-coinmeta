@@ -25,12 +25,6 @@
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
     {
-        "name": "USDC (Bridged)",
-        "nameOverride": "USDC (Bridged)",
-        "type": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN",
-        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
-    },
-    {
         "name": "USDT",
         "type": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdt-new.png/public"
@@ -321,20 +315,26 @@
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/suipad.png/public"
     },
     {
-        "name": "USDCsol",
-        "nameOverride": "USDCsol",
+        "name": "wUSDC",
+        "nameOverride": "wUSDC",
+        "type": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN",
+        "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
+    },
+    {
+        "name": "wUSDC (Sol)",
+        "nameOverride": "wUSDC (Sol)",
         "type": "0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037::coin::COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
     {
-        "name": "USDCbnb",
-        "nameOverride": "USDCbnb",
+        "name": "wUSDC (Bnb)",
+        "nameOverride": "wUSDC (Bnb)",
         "type": "0x909cba62ce96d54de25bec9502de5ca7b4f28901747bbf96b76c2e63ec5f1cba::coin::COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
     {
-        "name": "USDCarb",
-        "nameOverride": "USDCarb",
+        "name": "wUSDC (Arb)",
+        "nameOverride": "wUSDC (Arb)",
         "type": "0xe32d3ebafa42e6011b87ef1087bbc6053b499bf6f095807b9013aff5a6ecd7bb::coin::COIN",
         "image": "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/usdc.png/public"
     },
