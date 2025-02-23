@@ -4,7 +4,7 @@ import path from "path";
 import sharp from "sharp";
 
 import { CoinMeta } from "@polymedia/suitcase-core";
-import { readJsonFile, writeJsonFile } from "@polymedia/suitcase-node";
+import { readJsonFile } from "@polymedia/suitcase-node";
 
 import { findImagePath, getFilename } from "./utils.js";
 
@@ -67,7 +67,7 @@ async function main()
     }
     prodMetas.sort((a, b) => a.name.localeCompare(b.name));
     writeTextFile(OUTPUT_SDK_META_FILE, `export const data = ${JSON.stringify(prodMetas, null, 4)};`);
-    writeJsonFile(OUTPUT_WEB_META_FILE, prodMetas);
+    writeTextFile(OUTPUT_WEB_META_FILE, JSON.stringify(prodMetas));
 }
 
 void main();
